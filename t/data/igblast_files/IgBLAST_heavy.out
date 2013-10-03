@@ -1,0 +1,1288 @@
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg385_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+SM7.1.44:115170164:115170468:-1	DSP2.3:114694931:114694947:-1	JH1:114667992:114668044:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+ACTAC	G	TGGTTACGAC	GGTCCCA	CTACT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	35	35	35	0	0	100
+CDR1	36	50	15	15	0	0	100
+FWR2	51	92	42	42	0	0	100
+CDR2	93	143	51	50	1	0	98
+FWR3	144	238	95	95	0	0	100
+Total	N/A	N/A	238	237	1	0	99.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg385_MsVHE	SM7.1.44:115170164:115170468:-1	99.58	238	1	0	1	238	67	304	2e-104	 369
+V	OrLNGCg385_MsVHE	SM7.4.63:115414649:115414953:-1	96.64	238	8	0	1	238	67	304	7e-98	 347
+V	OrLNGCg385_MsVHE	SM7.2.49:115232680:115232984:-1	96.62	237	8	0	1	237	67	303	2e-97	 346
+D	OrLNGCg385_MsVHE	DSP2.3:114694931:114694947:-1	100.00	10	0	0	240	249	8	17	0.036	20.4
+D	OrLNGCg385_MsVHE	DSP2.4:114694931:114694947:-1	100.00	10	0	0	240	249	8	17	0.036	20.4
+D	OrLNGCg385_MsVHE	DSP2.2:114708905:114708921:-1	100.00	7	0	0	243	249	11	17	2.3	14.4
+J	OrLNGCg385_MsVHE	JH1:114667992:114668044:-1	100.00	53	0	0	257	309	1	53	2e-27	 106
+J	OrLNGCg385_MsVHE	JH2:114667679:114667726:-1	100.00	8	0	0	256	263	10	17	2.2	16.4
+J	OrLNGCg385_MsVHE	JH4:114666725:114666778:-1	100.00	8	0	0	256	263	16	23	2.2	16.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg386_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.83.189:117150555:117150859:-1	DFL16.1:114720381:114720403:-1	JH4:114666725:114666778:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGCAA	C	TTACTACGGTAGT	GGT	TATGC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	42	42	42	0	0	100
+CDR1	43	57	15	15	0	0	100
+FWR2	58	99	42	42	0	0	100
+CDR2	100	150	51	49	2	0	96.1
+FWR3	151	244	94	94	0	0	100
+Total	N/A	N/A	244	242	2	0	99.2
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg386_MsVHE	J558.83.189:117150555:117150859:-1	99.18	244	2	0	1	244	60	303	3e-106	 375
+V	OrLNGCg386_MsVHE	J558.85.191:117190749:117191053:-1	95.49	244	11	0	1	244	60	303	7e-98	 347
+V	OrLNGCg386_MsVHE	J558.86.192:117202028:117202332:-1	89.34	244	26	0	1	244	60	303	9e-84	 300
+D	OrLNGCg386_MsVHE	DFL16.1:114720381:114720403:-1	100.00	13	0	0	246	258	5	17	6e-04	26.4
+D	OrLNGCg386_MsVHE	DSP2.9:114713611:114713627:-1	100.00	7	0	0	246	252	11	17	2.3	14.4
+D	OrLNGCg386_MsVHE	DSP2.3:114694931:114694947:-1	100.00	6	0	0	258	263	8	13	9.2	12.4
+J	OrLNGCg386_MsVHE	JH4:114666725:114666778:-1	100.00	49	0	0	262	310	6	54	5e-25	98.2
+J	OrLNGCg386_MsVHE	JH2:114667679:114667726:-1	94.12	17	1	0	271	287	9	25	0.009	24.4
+J	OrLNGCg386_MsVHE	JH3:114667296:114667343:-1	92.86	14	1	0	274	287	12	25	0.55	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg387_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.16.106:115920843:115921147:-1	DSP2.x:114699580:114699596:-1	JH3:114667296:114667343:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	AAGGGGGCT	TATAGTAACTAC	CTGG	CCTGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	47	47	45	2	0	95.7
+CDR1	48	62	15	15	0	0	100
+FWR2	63	104	42	42	0	0	100
+CDR2	105	155	51	46	5	0	90.2
+FWR3	156	251	96	94	2	0	97.9
+Total	N/A	N/A	251	242	9	0	96.4
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg387_MsVHE	J558.16.106:115920843:115921147:-1	96.41	251	9	0	1	251	55	305	5e-103	 364
+V	OrLNGCg387_MsVHE	J558.26.116:116026583:116026887:-1	93.63	251	16	0	1	251	55	305	2e-96	 343
+V	OrLNGCg387_MsVHE	J558.22.112:115984484:115984788:-1	92.43	251	19	0	1	251	55	305	1e-93	 333
+D	OrLNGCg387_MsVHE	DSP2.x:114699580:114699596:-1	100.00	12	0	0	261	272	6	17	0.002	24.4
+D	OrLNGCg387_MsVHE	DSP2.y:114704238:114704254:-1	100.00	12	0	0	261	272	6	17	0.002	24.4
+D	OrLNGCg387_MsVHE	DSP2.5:114689062:114689078:-1	100.00	8	0	0	265	272	10	17	0.60	16.4
+J	OrLNGCg387_MsVHE	JH3:114667296:114667343:-1	100.00	48	0	0	277	324	1	48	2e-24	96.2
+J	OrLNGCg387_MsVHE	JH2:114667679:114667726:-1	100.00	14	0	0	288	301	12	25	6e-04	28.4
+J	OrLNGCg387_MsVHE	JH4:114666725:114666778:-1	92.86	14	1	0	288	301	18	31	0.57	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg389_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.26.116:116026583:116026887:-1	DSP2.x:114699580:114699596:-1	JH3:114667296:114667343:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGCAA	CGG	ACTATAGT	GACTTA	TGGTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	29	29	28	1	0	96.6
+CDR1	30	44	15	14	1	0	93.3
+FWR2	45	86	42	41	1	0	97.6
+CDR2	87	137	51	45	6	0	88.2
+FWR3	138	231	94	93	1	0	98.9
+Total	N/A	N/A	231	221	10	0	95.7
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg389_MsVHE	J558.26.116:116026583:116026887:-1	95.67	231	10	0	1	231	73	303	1e-92	 330
+V	OrLNGCg389_MsVHE	J558.16.106:115920843:115921147:-1	93.51	231	15	0	1	231	73	303	5e-88	 315
+V	OrLNGCg389_MsVHE	J558.18.108:115946859:115947163:-1	92.21	231	18	0	1	231	73	303	3e-85	 305
+D	OrLNGCg389_MsVHE	DSP2.x:114699580:114699596:-1	100.00	8	0	0	235	242	4	11	0.56	16.4
+D	OrLNGCg389_MsVHE	DSP2.y:114704238:114704254:-1	100.00	8	0	0	235	242	4	11	0.56	16.4
+D	OrLNGCg389_MsVHE	DSP2.5:114689062:114689078:-1	100.00	5	0	0	235	239	4	8	   35	10.4
+J	OrLNGCg389_MsVHE	JH3:114667296:114667343:-1	100.00	44	0	0	249	292	3	46	5e-22	88.2
+J	OrLNGCg389_MsVHE	JH2:114667679:114667726:-1	100.00	14	0	0	258	271	12	25	5e-04	28.4
+J	OrLNGCg389_MsVHE	JH4:114666725:114666778:-1	92.86	14	1	0	258	271	18	31	0.53	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg390_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+7183.12.20:114940335:114940641:-1	DST4.2:114763524:114763540:-1	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGCCA	GG	GGGCTA	ACCC	CTACT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	29	29	29	0	0	100
+CDR1	30	44	15	14	1	0	93.3
+FWR2	45	86	42	41	1	0	97.6
+CDR2	87	137	51	51	0	0	100
+FWR3	138	233	96	94	2	0	97.9
+CDR3 (V region only)	233	235	3	2	1	0	66.7
+Total	N/A	N/A	236	231	5	0	97.9
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 8 hits found
+V	OrLNGCg390_MsVHE	7183.12.20:114940335:114940641:-1	98.30	235	4	0	1	235	73	307	3e-100	 355
+V	OrLNGCg390_MsVHE	7183.4.6:114835657:114835963:-1	92.67	232	17	0	1	232	73	304	1e-86	 310
+V	OrLNGCg390_MsVHE	7183.14.25:114974322:114974628:-1	92.24	232	18	0	1	232	73	304	1e-85	 307
+D	OrLNGCg390_MsVHE	DST4.2:114763524:114763540:-1	100.00	6	0	0	238	243	11	16	8.8	12.4
+D	OrLNGCg390_MsVHE	DQ52-C57BL/6:114668739:114668749:-1	100.00	5	0	0	241	245	1	5	   35	10.4
+J	OrLNGCg390_MsVHE	JH2:114667679:114667726:-1	100.00	47	0	0	248	294	2	48	8e-24	94.2
+J	OrLNGCg390_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	258	271	12	25	5e-04	28.4
+J	OrLNGCg390_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	255	271	15	31	0.008	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg415_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.66.165:116733836:116734140:-1	DFL16.1:114720381:114720403:-1	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAAGA	TTGAATTACCT	CGGTAGT	(A)	CTACT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	47	47	47	0	0	100
+CDR1	48	62	15	13	2	0	86.7
+FWR2	63	104	42	42	0	0	100
+CDR2	105	155	51	49	2	0	96.1
+FWR3	156	251	96	94	2	0	97.9
+Total	N/A	N/A	251	245	6	0	97.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg415_MsVHE	J558.66.165:116733836:116734140:-1	97.61	251	6	0	1	251	55	305	8e-106	 374
+V	OrLNGCg415_MsVHE	J558.76pg.179:117028804:117029109:-1	93.65	252	15	1	1	251	55	306	5e-95	 338
+V	OrLNGCg415_MsVHE	J558.54.148:116431886:116432190:-1	90.84	251	23	0	1	251	55	305	7e-90	 321
+D	OrLNGCg415_MsVHE	DFL16.1:114720381:114720403:-1	100.00	8	0	0	263	270	11	18	0.59	16.4
+D	OrLNGCg415_MsVHE	DSP2.x:114699580:114699596:-1	100.00	5	0	0	266	270	8	12	   37	10.4
+D	OrLNGCg415_MsVHE	DSP2.y:114704238:114704254:-1	100.00	5	0	0	266	270	8	12	   37	10.4
+J	OrLNGCg415_MsVHE	JH2:114667679:114667726:-1	100.00	48	0	0	270	317	1	48	2e-24	96.2
+J	OrLNGCg415_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	281	294	12	25	6e-04	28.4
+J	OrLNGCg415_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	278	294	15	31	0.009	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg416_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+VH10.3.91:115761652:115761964:-1	DST4-C57BL/6:114686425:114686440:-1	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	GGGT	AGACATCTCAGG	TTC	CTTTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	38	38	38	0	0	100
+CDR1	39	53	15	15	0	0	100
+FWR2	54	95	42	42	0	0	100
+CDR2	96	152	57	57	0	0	100
+FWR3	153	248	96	96	0	0	100
+CDR3 (V region only)	249	249	1	1	0	0	100
+Total	N/A	N/A	249	249	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 8 hits found
+V	OrLNGCg416_MsVHE	VH10.3.91:115761652:115761964:-1	100.00	249	0	0	1	249	64	312	2e-110	 389
+V	OrLNGCg416_MsVHE	VH10.1.86:115717216:115717528:-1	96.77	248	8	0	1	248	64	311	2e-102	 363
+V	OrLNGCg416_MsVHE	VH10.2pg.89:115734214:115734514:-1	84.62	221	31	1	18	238	73	290	1e-63	 233
+D	OrLNGCg416_MsVHE	DST4-C57BL/6:114686425:114686440:-1	91.67	12	1	0	254	265	1	12	2.3	14.4
+D	OrLNGCg416_MsVHE	DFL16.1:114720381:114720403:-1	100.00	5	0	0	251	255	12	16	   37	10.4
+J	OrLNGCg416_MsVHE	JH2:114667679:114667726:-1	100.00	44	0	0	269	312	5	48	5e-22	88.2
+J	OrLNGCg416_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	276	289	12	25	5e-04	28.4
+J	OrLNGCg416_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	273	289	15	31	0.009	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg436_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.18.108:115946859:115947163:-1	DSP2.9:114713611:114713627:-1	JH4:114666725:114666778:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GTGCA	CGGCTTTTCTG	TGATGGTTACT	CC	TACTA	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	42	42	42	0	0	100
+CDR1	43	57	15	13	2	0	86.7
+FWR2	58	99	42	42	0	0	100
+CDR2	100	150	51	47	4	0	92.2
+FWR3	151	243	93	90	3	0	96.8
+Total	N/A	N/A	243	234	9	0	96.3
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg436_MsVHE	J558.18.108:115946859:115947163:-1	96.30	243	9	0	1	243	60	302	3e-99	 352
+V	OrLNGCg436_MsVHE	J558.26.116:116026583:116026887:-1	92.59	243	18	0	1	243	60	302	8e-91	 324
+V	OrLNGCg436_MsVHE	J558.33pg.123:116081862:116082165:-1	92.18	243	18	1	1	243	60	301	5e-88	 315
+D	OrLNGCg436_MsVHE	DSP2.9:114713611:114713627:-1	100.00	11	0	0	255	265	5	15	0.009	22.4
+D	OrLNGCg436_MsVHE	DSP2.3:114694931:114694947:-1	100.00	8	0	0	257	264	7	14	0.59	16.4
+D	OrLNGCg436_MsVHE	DSP2.4:114694931:114694947:-1	100.00	8	0	0	257	264	7	14	0.59	16.4
+J	OrLNGCg436_MsVHE	JH4:114666725:114666778:-1	96.15	52	2	0	268	319	3	54	8e-21	84.3
+J	OrLNGCg436_MsVHE	JH3:114667296:114667343:-1	92.31	13	1	0	284	296	13	25	2.2	16.4
+J	OrLNGCg436_MsVHE	JH2:114667679:114667726:-1	92.31	13	1	0	284	296	13	25	2.2	16.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg437_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.16.106:115920843:115921147:-1	DSP2.x:114699580:114699596:-1	JH3:114667296:114667343:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	AAGGGGGCT	TATAGTAACTAC	CTGG	CCTGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	31	31	29	2	0	93.5
+CDR1	32	46	15	15	0	0	100
+FWR2	47	88	42	42	0	0	100
+CDR2	89	139	51	48	3	0	94.1
+FWR3	140	235	96	94	2	0	97.9
+Total	N/A	N/A	235	228	7	0	97
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg437_MsVHE	J558.16.106:115920843:115921147:-1	97.02	235	7	0	1	235	71	305	2e-97	 346
+V	OrLNGCg437_MsVHE	J558.26.116:116026583:116026887:-1	94.42	233	13	0	3	235	73	305	8e-91	 324
+V	OrLNGCg437_MsVHE	J558.22.112:115984484:115984788:-1	93.56	233	15	0	3	235	73	305	6e-89	 318
+D	OrLNGCg437_MsVHE	DSP2.x:114699580:114699596:-1	100.00	12	0	0	245	256	6	17	0.002	24.4
+D	OrLNGCg437_MsVHE	DSP2.y:114704238:114704254:-1	100.00	12	0	0	245	256	6	17	0.002	24.4
+D	OrLNGCg437_MsVHE	DSP2.5:114689062:114689078:-1	100.00	8	0	0	249	256	10	17	0.58	16.4
+J	OrLNGCg437_MsVHE	JH3:114667296:114667343:-1	100.00	48	0	0	261	308	1	48	2e-24	96.2
+J	OrLNGCg437_MsVHE	JH2:114667679:114667726:-1	100.00	14	0	0	272	285	12	25	5e-04	28.4
+J	OrLNGCg437_MsVHE	JH4:114666725:114666778:-1	92.86	14	1	0	272	285	18	31	0.55	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg439_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.18.108:115946859:115947163:-1	N/A	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCAAG	N/A	N/A	TGC	CTACT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	36	36	36	0	0	100
+CDR1	37	51	15	13	2	0	86.7
+FWR2	52	93	42	42	0	0	100
+CDR2	94	144	51	47	4	0	92.2
+FWR3	145	239	95	92	3	0	96.8
+Total	N/A	N/A	239	230	9	0	96.2
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg439_MsVHE	J558.18.108:115946859:115947163:-1	96.23	239	9	0	1	239	66	304	2e-97	 346
+V	OrLNGCg439_MsVHE	J558.26.116:116026583:116026887:-1	92.89	239	17	0	1	239	66	304	7e-90	 321
+V	OrLNGCg439_MsVHE	J558.33pg.123:116081862:116082165:-1	92.05	239	18	1	1	239	66	303	4e-86	 308
+J	OrLNGCg439_MsVHE	JH2:114667679:114667726:-1	97.87	47	1	0	243	289	2	48	8e-21	84.3
+J	OrLNGCg439_MsVHE	JH4:114666725:114666778:-1	100.00	11	0	0	250	260	15	25	0.033	22.4
+J	OrLNGCg439_MsVHE	JH3:114667296:114667343:-1	100.00	10	0	0	253	262	12	21	0.13	20.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg457_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.69.170:116831321:116831625:-1	N/A	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	N/A	N/A	ACAGGGT	ACTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	2	42	41	39	2	0	95.1
+CDR1	43	57	15	15	0	0	100
+FWR2	58	99	42	42	0	0	100
+CDR2	100	150	51	49	2	0	96.1
+FWR3	151	246	96	94	2	0	97.9
+Total	N/A	N/A	245	239	6	0	97.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg457_MsVHE	J558.69.170:116831321:116831625:-1	97.55	245	6	0	2	246	61	305	5e-103	 364
+V	OrLNGCg457_MsVHE	J558.87.193:117218913:117219217:-1	92.24	245	19	0	2	246	61	305	8e-91	 324
+V	OrLNGCg457_MsVHE	J558.79.184:117086092:117086396:-1	90.61	245	23	0	2	246	61	305	4e-87	 311
+J	OrLNGCg457_MsVHE	JH2:114667679:114667726:-1	97.92	48	1	0	254	301	1	48	2e-21	86.3
+J	OrLNGCg457_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	265	278	12	25	5e-04	28.4
+J	OrLNGCg457_MsVHE	JH4:114666725:114666778:-1	92.86	14	1	0	265	278	18	31	0.54	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg458_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+36-60.5.67:115500863:115501172:-1	N/A	JH1:114667992:114668044:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAGA	N/A	N/A	TTCGGCTGG	CTGGT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR3	1	19	19	19	0	0	100
+CDR3 (V region only)	20	21	2	2	0	0	100
+Total	N/A	N/A	21	21	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg458_MsVHE	36-60.5.67:115500863:115501172:-1	100.00	21	0	0	1	21	290	310	5e-04	34.6
+V	OrLNGCg458_MsVHE	36-60.4.66:115491828:115492137:-1	90.48	21	2	0	1	21	290	310	0.039	28.3
+V	OrLNGCg458_MsVHE	36-60.6.70:115526363:115526669:-1	90.48	21	2	0	1	21	287	307	0.039	28.3
+J	OrLNGCg458_MsVHE	JH1:114667992:114668044:-1	100.00	50	0	0	31	80	4	53	5e-26	 100
+J	OrLNGCg458_MsVHE	JH3:114667296:114667343:-1	100.00	7	0	0	46	52	14	20	3.4	14.4
+J	OrLNGCg458_MsVHE	JH2:114667679:114667726:-1	100.00	7	0	0	46	52	14	20	3.4	14.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg461_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.37.127:116134449:116134753:-1	DFL16.1:114720381:114720403:-1	JH1:114667992:114668044:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCAAG	GTCTAAT	TACG	(G)	GTACT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	42	42	41	1	0	97.6
+CDR1	43	57	15	15	0	0	100
+FWR2	58	99	42	42	0	0	100
+CDR2	100	150	51	49	2	0	96.1
+FWR3	151	245	95	95	0	0	100
+Total	N/A	N/A	245	242	3	0	98.8
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 8 hits found
+V	OrLNGCg461_MsVHE	J558.37.127:116134449:116134753:-1	98.78	245	3	0	1	245	60	304	8e-106	 374
+V	OrLNGCg461_MsVHE	J558.19.109:115961983:115962287:-1	97.55	245	6	0	1	245	60	304	5e-103	 364
+V	OrLNGCg461_MsVHE	J558.25pg.115:116019620:116019924:-1	91.84	245	20	0	1	245	60	304	7e-90	 321
+D	OrLNGCg461_MsVHE	DFL16.1:114720381:114720403:-1	100.00	5	0	0	253	257	9	13	   36	10.4
+D	OrLNGCg461_MsVHE	DFL16.1:114720381:114720403:-1	100.00	5	0	0	251	255	4	8	   36	10.4
+J	OrLNGCg461_MsVHE	JH1:114667992:114668044:-1	100.00	48	0	0	257	304	6	53	2e-24	96.2
+J	OrLNGCg461_MsVHE	JH3:114667296:114667343:-1	100.00	7	0	0	270	276	14	20	8.6	14.4
+J	OrLNGCg461_MsVHE	JH2:114667679:114667726:-1	100.00	7	0	0	270	276	14	20	8.6	14.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg463_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+7183.20.37:115097360:115097664:-1	N/A	JH3:114667296:114667343:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGG	N/A	N/A	CCAG	GGTTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	35	35	35	0	0	100
+CDR1	36	50	15	15	0	0	100
+FWR2	51	92	42	41	1	0	97.6
+CDR2	93	143	51	49	2	0	96.1
+FWR3	144	239	96	94	2	0	97.9
+Total	N/A	N/A	239	234	5	0	97.9
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 5 hits found
+V	OrLNGCg463_MsVHE	7183.20.37:115097360:115097664:-1	97.91	239	5	0	1	239	67	305	4e-101	 358
+V	OrLNGCg463_MsVHE	7183.14.25:114974322:114974628:-1	88.66	238	27	0	1	238	67	304	5e-80	 288
+V	OrLNGCg463_MsVHE	7183.12.20:114940335:114940641:-1	87.82	238	29	0	1	238	67	304	4e-78	 282
+J	OrLNGCg463_MsVHE	JH3:114667296:114667343:-1	97.78	45	1	0	244	288	4	48	1e-19	80.3
+J	OrLNGCg463_MsVHE	JH2:114667679:114667726:-1	92.86	14	1	0	252	265	12	25	0.52	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg481_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.83.189:117150555:117150859:-1	DFL16.1:114720381:114720403:-1	JH4:114666725:114666778:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGCAA	C	TTACTACGGTAGT	GGT	TATGC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	41	41	41	0	0	100
+CDR1	42	56	15	13	2	0	86.7
+FWR2	57	98	42	42	0	0	100
+CDR2	99	149	51	47	4	0	92.2
+FWR3	150	243	94	94	0	0	100
+Total	N/A	N/A	243	237	6	0	97.5
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg481_MsVHE	J558.83.189:117150555:117150859:-1	97.53	243	6	0	1	243	61	303	4e-102	 361
+V	OrLNGCg481_MsVHE	J558.85.191:117190749:117191053:-1	94.65	243	13	0	1	243	61	303	2e-95	 339
+V	OrLNGCg481_MsVHE	J558.87.193:117218913:117219217:-1	88.07	243	29	0	1	243	61	303	2e-80	 290
+D	OrLNGCg481_MsVHE	DFL16.1:114720381:114720403:-1	100.00	13	0	0	245	257	5	17	6e-04	26.4
+D	OrLNGCg481_MsVHE	DSP2.9:114713611:114713627:-1	100.00	7	0	0	245	251	11	17	2.3	14.4
+D	OrLNGCg481_MsVHE	DSP2.3:114694931:114694947:-1	100.00	6	0	0	257	262	8	13	9.2	12.4
+J	OrLNGCg481_MsVHE	JH4:114666725:114666778:-1	100.00	49	0	0	261	309	6	54	5e-25	98.2
+J	OrLNGCg481_MsVHE	JH2:114667679:114667726:-1	94.12	17	1	0	270	286	9	25	0.009	24.4
+J	OrLNGCg481_MsVHE	JH3:114667296:114667343:-1	92.86	14	1	0	273	286	12	25	0.55	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg482_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.83.189:117150555:117150859:-1	DFL16.1:114720381:114720403:-1	JH4:114666725:114666778:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGCAA	C	TTACTACGGTAGT	GGT	TATGC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	44	44	44	0	0	100
+CDR1	45	59	15	13	2	0	86.7
+FWR2	60	101	42	42	0	0	100
+CDR2	102	152	51	47	4	0	92.2
+FWR3	153	246	94	94	0	0	100
+Total	N/A	N/A	246	240	6	0	97.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg482_MsVHE	J558.83.189:117150555:117150859:-1	97.56	246	6	0	1	246	58	303	2e-103	 366
+V	OrLNGCg482_MsVHE	J558.85.191:117190749:117191053:-1	94.72	246	13	0	1	246	58	303	6e-97	 344
+V	OrLNGCg482_MsVHE	J558.87.193:117218913:117219217:-1	88.11	244	29	0	3	246	60	303	6e-81	 291
+D	OrLNGCg482_MsVHE	DFL16.1:114720381:114720403:-1	100.00	13	0	0	248	260	5	17	6e-04	26.4
+D	OrLNGCg482_MsVHE	DSP2.9:114713611:114713627:-1	100.00	7	0	0	248	254	11	17	2.3	14.4
+D	OrLNGCg482_MsVHE	DSP2.3:114694931:114694947:-1	100.00	6	0	0	260	265	8	13	9.2	12.4
+J	OrLNGCg482_MsVHE	JH4:114666725:114666778:-1	100.00	49	0	0	264	312	6	54	5e-25	98.2
+J	OrLNGCg482_MsVHE	JH2:114667679:114667726:-1	94.12	17	1	0	273	289	9	25	0.009	24.4
+J	OrLNGCg482_MsVHE	JH3:114667296:114667343:-1	92.86	14	1	0	276	289	12	25	0.55	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg483_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.16.106:115920843:115921147:-1	DFL16.1:114720381:114720403:-1	JH1:114667992:114668044:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	GTAGGGAG	TTATTACTAC	AGACGGG	GGTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	43	43	43	0	0	100
+CDR1	44	58	15	14	1	0	93.3
+FWR2	59	100	42	41	1	0	97.6
+CDR2	101	151	51	46	5	0	90.2
+FWR3	152	247	96	94	2	0	97.9
+Total	N/A	N/A	247	238	9	0	96.4
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg483_MsVHE	J558.16.106:115920843:115921147:-1	96.36	247	9	0	1	247	59	305	4e-101	 358
+V	OrLNGCg483_MsVHE	J558.26.116:116026583:116026887:-1	94.33	247	14	0	1	247	59	305	2e-96	 343
+V	OrLNGCg483_MsVHE	J558.22.112:115984484:115984788:-1	92.71	247	18	0	1	247	59	305	1e-92	 330
+D	OrLNGCg483_MsVHE	DFL16.1:114720381:114720403:-1	100.00	10	0	0	256	265	2	11	0.037	20.4
+D	OrLNGCg483_MsVHE	DSP2.9:114713611:114713627:-1	100.00	7	0	0	259	265	11	17	2.4	14.4
+D	OrLNGCg483_MsVHE	DSP2.5:114689062:114689078:-1	100.00	5	0	0	261	265	13	17	   38	10.4
+J	OrLNGCg483_MsVHE	JH1:114667992:114668044:-1	100.00	48	0	0	273	320	6	53	2e-24	96.2
+J	OrLNGCg483_MsVHE	JH3:114667296:114667343:-1	100.00	7	0	0	286	292	14	20	9.0	14.4
+J	OrLNGCg483_MsVHE	JH2:114667679:114667726:-1	100.00	7	0	0	286	292	14	20	9.0	14.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg485_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.88.194:117238239:117238543:-1	DFL16.1:114720381:114720403:-1	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	GAC	ACTACGGTAGT	CCC	CTTTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	42	42	42	0	0	100
+CDR1	43	57	15	14	1	0	93.3
+FWR2	58	99	42	42	0	0	100
+CDR2	100	150	51	50	1	0	98
+FWR3	151	246	96	95	1	0	99
+Total	N/A	N/A	246	243	3	0	98.8
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg485_MsVHE	J558.88.194:117238239:117238543:-1	98.78	246	3	0	1	246	60	305	3e-106	 375
+V	OrLNGCg485_MsVHE	J558.87.193:117218913:117219217:-1	92.68	246	18	0	1	246	60	305	3e-92	 329
+V	OrLNGCg485_MsVHE	J558.78.182:117072161:117072465:-1	91.46	246	21	0	1	246	60	305	2e-89	 319
+D	OrLNGCg485_MsVHE	DFL16.1:114720381:114720403:-1	100.00	11	0	0	250	260	7	17	0.009	22.4
+D	OrLNGCg485_MsVHE	DSP2.5:114689062:114689078:-1	100.00	5	0	0	250	254	13	17	   36	10.4
+D	OrLNGCg485_MsVHE	DSP2.x:114699580:114699596:-1	100.00	5	0	0	250	254	13	17	   36	10.4
+J	OrLNGCg485_MsVHE	JH2:114667679:114667726:-1	100.00	44	0	0	264	307	5	48	5e-22	88.2
+J	OrLNGCg485_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	271	284	12	25	5e-04	28.4
+J	OrLNGCg485_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	268	284	15	31	0.009	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg487_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.16.106:115920843:115921147:-1	DSP2.x:114699580:114699596:-1	JH3:114667296:114667343:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	AAGGGGGCT	TATAGTAACTAC	CTGG	CCTGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	2	31	30	29	1	0	96.7
+CDR1	32	46	15	15	0	0	100
+FWR2	47	88	42	41	1	0	97.6
+CDR2	89	139	51	46	5	0	90.2
+FWR3	140	235	96	94	2	0	97.9
+Total	N/A	N/A	234	225	9	0	96.2
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg487_MsVHE	J558.16.106:115920843:115921147:-1	96.15	234	9	0	2	235	72	305	5e-95	 338
+V	OrLNGCg487_MsVHE	J558.26.116:116026583:116026887:-1	93.56	233	15	0	3	235	73	305	6e-89	 318
+V	OrLNGCg487_MsVHE	J558.22.112:115984484:115984788:-1	92.70	233	17	0	3	235	73	305	5e-87	 311
+D	OrLNGCg487_MsVHE	DSP2.x:114699580:114699596:-1	100.00	12	0	0	245	256	6	17	0.002	24.4
+D	OrLNGCg487_MsVHE	DSP2.y:114704238:114704254:-1	100.00	12	0	0	245	256	6	17	0.002	24.4
+D	OrLNGCg487_MsVHE	DSP2.5:114689062:114689078:-1	100.00	8	0	0	249	256	10	17	0.58	16.4
+J	OrLNGCg487_MsVHE	JH3:114667296:114667343:-1	100.00	48	0	0	261	308	1	48	2e-24	96.2
+J	OrLNGCg487_MsVHE	JH2:114667679:114667726:-1	100.00	14	0	0	272	285	12	25	5e-04	28.4
+J	OrLNGCg487_MsVHE	JH4:114666725:114666778:-1	92.86	14	1	0	272	285	18	31	0.55	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg507_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.50.143:116357959:116358263:-1	DFL16.1:114720381:114720403:-1	JH1:114667992:114668044:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	CAACC	TACTACGGTAGTAGC	GGAA	TACTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	24	24	24	0	0	100
+CDR1	25	39	15	14	1	0	93.3
+FWR2	40	81	42	39	3	0	92.9
+CDR2	82	132	51	48	3	0	94.1
+FWR3	133	228	96	94	2	0	97.9
+Total	N/A	N/A	228	219	9	0	96.1
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg507_MsVHE	J558.50.143:116357959:116358263:-1	96.05	228	9	0	1	228	78	305	3e-92	 329
+V	OrLNGCg507_MsVHE	J558.59.155:116573293:116573597:-1	94.74	228	12	0	1	228	78	305	2e-89	 319
+V	OrLNGCg507_MsVHE	J558.72.173:116861372:116861676:-1	94.74	228	12	0	1	228	78	305	2e-89	 319
+D	OrLNGCg507_MsVHE	DFL16.1:114720381:114720403:-1	100.00	15	0	0	234	248	6	20	3e-05	30.4
+D	OrLNGCg507_MsVHE	DSP2.x:114699580:114699596:-1	100.00	7	0	0	232	238	1	7	2.2	14.4
+D	OrLNGCg507_MsVHE	DSP2.y:114704238:114704254:-1	100.00	7	0	0	232	238	1	7	2.2	14.4
+J	OrLNGCg507_MsVHE	JH1:114667992:114668044:-1	100.00	46	0	0	253	298	8	53	3e-23	92.2
+J	OrLNGCg507_MsVHE	JH3:114667296:114667343:-1	100.00	7	0	0	264	270	14	20	8.5	14.4
+J	OrLNGCg507_MsVHE	JH2:114667679:114667726:-1	100.00	7	0	0	264	270	14	20	8.5	14.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg510_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.26.116:116026583:116026887:-1	DFL16.1:114720381:114720403:-1	JH4:114666725:114666778:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GTGCA	TTTAA	TTTATTTCTACGG	GGGG	ATGCT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	39	39	39	0	0	100
+CDR1	40	54	15	15	0	0	100
+FWR2	55	96	42	42	0	0	100
+CDR2	97	147	51	47	4	0	92.2
+FWR3	148	240	93	92	1	0	98.9
+Total	N/A	N/A	240	235	5	0	97.9
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg510_MsVHE	J558.26.116:116026583:116026887:-1	97.92	240	5	0	1	240	63	302	1e-101	 360
+V	OrLNGCg510_MsVHE	J558.16.106:115920843:115921147:-1	95.42	240	11	0	1	240	63	302	6e-96	 341
+V	OrLNGCg510_MsVHE	J558.34.124:116089401:116089705:-1	94.58	240	13	0	1	240	63	302	4e-94	 335
+D	OrLNGCg510_MsVHE	DFL16.1:114720381:114720403:-1	92.31	13	1	0	246	258	1	13	0.58	16.4
+D	OrLNGCg510_MsVHE	DSP2.5:114689062:114689078:-1	100.00	5	0	0	252	256	1	5	   37	10.4
+D	OrLNGCg510_MsVHE	DSP2.3:114694931:114694947:-1	100.00	5	0	0	252	256	1	5	   37	10.4
+J	OrLNGCg510_MsVHE	JH4:114666725:114666778:-1	97.92	48	1	0	263	310	7	54	2e-21	86.3
+J	OrLNGCg510_MsVHE	JH2:114667679:114667726:-1	94.12	17	1	0	271	287	9	25	0.009	24.4
+J	OrLNGCg510_MsVHE	JH3:114667296:114667343:-1	92.86	14	1	0	274	287	12	25	0.55	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg535_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.55.149:116446306:116446610:-1	DQ52-C57BL/6:114668739:114668749:-1	JH3:114667296:114667343:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGTTC	(AA)	CTGGGAC	GT	CTTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	21	21	21	0	0	100
+CDR1	22	36	15	14	1	0	93.3
+FWR2	37	78	42	42	0	0	100
+CDR2	79	129	51	50	1	0	98
+FWR3	130	223	94	93	1	0	98.9
+Total	N/A	N/A	223	220	3	0	98.7
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 7 hits found
+V	OrLNGCg535_MsVHE	J558.55.149:116446306:116446610:-1	98.65	223	3	0	1	223	81	303	1e-95	 339
+V	OrLNGCg535_MsVHE	J558.62pg.158:116610197:116610500:-1	95.07	223	11	0	1	223	80	302	5e-88	 315
+V	OrLNGCg535_MsVHE	J558.53.146:116396614:116396918:-1	93.72	223	14	0	1	223	81	303	3e-85	 305
+D	OrLNGCg535_MsVHE	DQ52-C57BL/6:114668739:114668749:-1	100.00	9	0	0	222	230	3	11	0.13	18.4
+J	OrLNGCg535_MsVHE	JH3:114667296:114667343:-1	100.00	39	0	0	233	271	10	48	5e-19	78.3
+J	OrLNGCg535_MsVHE	JH2:114667679:114667726:-1	100.00	14	0	0	235	248	12	25	5e-04	28.4
+J	OrLNGCg535_MsVHE	JH4:114666725:114666778:-1	92.86	14	1	0	235	248	18	31	0.50	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg536_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+SM7.2.49:115232680:115232984:-1	N/A	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CTAGA	N/A	N/A	GAGGACGGGG	ACTTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	41	41	41	0	0	100
+CDR1	42	56	15	15	0	0	100
+FWR2	57	98	42	42	0	0	100
+CDR2	99	149	51	50	1	0	98
+FWR3	150	245	96	96	0	0	100
+Total	N/A	N/A	245	244	1	0	99.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg536_MsVHE	SM7.2.49:115232680:115232984:-1	99.59	245	1	0	1	245	61	305	1e-107	 380
+V	OrLNGCg536_MsVHE	SM7.1.44:115170164:115170468:-1	96.71	243	8	0	1	243	61	303	3e-100	 355
+V	OrLNGCg536_MsVHE	SM7.3.54:115298056:115298360:-1	95.10	245	12	0	1	245	61	305	2e-97	 346
+J	OrLNGCg536_MsVHE	JH2:114667679:114667726:-1	100.00	45	0	0	256	300	4	48	1e-22	90.2
+J	OrLNGCg536_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	264	277	12	25	5e-04	28.4
+J	OrLNGCg536_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	261	277	15	31	0.009	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg557_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+7183.7.10:114863717:114864023:-1	DFL16.1:114720381:114720403:-1	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCAAG	GCCG	ACTACGG	AGAGG	TACTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	33	33	33	0	0	100
+CDR1	34	48	15	14	1	0	93.3
+FWR2	49	90	42	42	0	0	100
+CDR2	91	141	51	49	2	0	96.1
+FWR3	142	236	95	91	4	0	95.8
+Total	N/A	N/A	236	229	7	0	97
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg557_MsVHE	7183.7.10:114863717:114864023:-1	97.03	236	7	0	1	236	69	304	7e-98	 347
+V	OrLNGCg557_MsVHE	7183.4.6:114835657:114835963:-1	94.07	236	14	0	1	236	69	304	3e-91	 325
+V	OrLNGCg557_MsVHE	7183.9.15:114899980:114900286:-1	93.64	236	15	0	1	236	69	304	2e-90	 322
+D	OrLNGCg557_MsVHE	DFL16.1:114720381:114720403:-1	100.00	7	0	0	241	247	7	13	2.2	14.4
+D	OrLNGCg557_MsVHE	DSP2.5:114689062:114689078:-1	100.00	5	0	0	241	245	13	17	   36	10.4
+D	OrLNGCg557_MsVHE	DSP2.x:114699580:114699596:-1	100.00	5	0	0	241	245	13	17	   36	10.4
+J	OrLNGCg557_MsVHE	JH2:114667679:114667726:-1	100.00	46	0	0	253	298	3	48	3e-23	92.2
+J	OrLNGCg557_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	262	275	12	25	5e-04	28.4
+J	OrLNGCg557_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	259	275	15	31	0.008	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg560_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.84.190:117158490:117158794:-1	DFL16.1:114720381:114720403:-1	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	TCGGAGTAT	TACGGAAGTAGC	CT	CTTTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	28	28	28	0	0	100
+CDR1	29	43	15	13	2	0	86.7
+FWR2	44	85	42	42	0	0	100
+CDR2	86	136	51	48	3	0	94.1
+FWR3	137	232	96	94	2	0	97.9
+Total	N/A	N/A	232	225	7	0	97
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg560_MsVHE	J558.84.190:117158490:117158794:-1	96.98	232	7	0	1	232	74	305	5e-96	 341
+V	OrLNGCg560_MsVHE	J558.88.194:117238239:117238543:-1	90.52	232	22	0	1	232	74	305	6e-82	 294
+V	OrLNGCg560_MsVHE	J558.80.186:117100078:117100382:-1	90.09	232	23	0	1	232	74	305	6e-81	 291
+D	OrLNGCg560_MsVHE	DFL16.1:114720381:114720403:-1	91.67	12	1	0	242	253	9	20	2.2	14.4
+D	OrLNGCg560_MsVHE	DFL16.1:114720381:114720403:-1	100.00	6	0	0	239	244	3	8	8.9	12.4
+D	OrLNGCg560_MsVHE	DFL16.3:114766243:114766265:-1	100.00	5	0	0	249	253	16	20	   35	10.4
+J	OrLNGCg560_MsVHE	JH2:114667679:114667726:-1	97.73	44	1	0	256	299	5	48	5e-19	78.3
+J	OrLNGCg560_MsVHE	JH3:114667296:114667343:-1	100.00	12	0	0	265	276	14	25	0.008	24.4
+J	OrLNGCg560_MsVHE	JH1:114667992:114668044:-1	100.00	8	0	0	264	271	18	25	2.1	16.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg582_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.18.108:115946859:115947163:-1	N/A	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCAAG	N/A	N/A	TGC	CTACT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	41	41	41	0	0	100
+CDR1	42	56	15	14	1	0	93.3
+FWR2	57	98	42	42	0	0	100
+CDR2	99	149	51	49	2	0	96.1
+FWR3	150	244	95	91	4	0	95.8
+Total	N/A	N/A	244	237	7	0	97.1
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg582_MsVHE	J558.18.108:115946859:115947163:-1	97.13	244	7	0	1	244	61	304	1e-101	 360
+V	OrLNGCg582_MsVHE	J558.26.116:116026583:116026887:-1	93.85	244	15	0	1	244	61	304	4e-94	 335
+V	OrLNGCg582_MsVHE	J558.33pg.123:116081862:116082165:-1	93.03	244	16	1	1	244	61	303	2e-90	 322
+J	OrLNGCg582_MsVHE	JH2:114667679:114667726:-1	97.87	47	1	0	248	294	2	48	8e-21	84.3
+J	OrLNGCg582_MsVHE	JH4:114666725:114666778:-1	100.00	11	0	0	255	265	15	25	0.033	22.4
+J	OrLNGCg582_MsVHE	JH3:114667296:114667343:-1	100.00	10	0	0	258	267	12	21	0.13	20.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg606_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+7183.2.3:114816715:114817021:-1	DSP2.x:114699580:114699596:-1	JH3:114667296:114667343:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCAAG	CCCT	CTATAGTAA	GTACCA	CTTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	33	33	33	0	0	100
+CDR1	34	48	15	15	0	0	100
+FWR2	49	90	42	42	0	0	100
+CDR2	91	141	51	49	2	0	96.1
+FWR3	142	236	95	93	2	0	97.9
+Total	N/A	N/A	236	232	4	0	98.3
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg606_MsVHE	7183.2.3:114816715:114817021:-1	98.31	236	4	0	1	236	69	304	1e-100	 357
+V	OrLNGCg606_MsVHE	7183.9.15:114899980:114900286:-1	84.32	236	37	0	1	236	69	304	1e-69	 254
+V	OrLNGCg606_MsVHE	7183.12.20:114940335:114940641:-1	83.05	236	40	0	1	236	69	304	6e-67	 244
+D	OrLNGCg606_MsVHE	DSP2.x:114699580:114699596:-1	100.00	9	0	0	241	249	5	13	0.14	18.4
+D	OrLNGCg606_MsVHE	DSP2.y:114704238:114704254:-1	100.00	9	0	0	241	249	5	13	0.14	18.4
+D	OrLNGCg606_MsVHE	DSP2.9:114713611:114713627:-1	100.00	5	0	0	240	244	1	5	   35	10.4
+J	OrLNGCg606_MsVHE	JH3:114667296:114667343:-1	97.44	39	1	0	256	294	10	48	5e-16	68.3
+J	OrLNGCg606_MsVHE	JH2:114667679:114667726:-1	100.00	14	0	0	258	271	12	25	5e-04	28.4
+J	OrLNGCg606_MsVHE	JH4:114666725:114666778:-1	92.86	14	1	0	258	271	18	31	0.53	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg607_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+7183.7.10:114863717:114864023:-1	DFL16.1:114720381:114720403:-1	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AAGAC	CG	ACTACGG	AGAGG	TACTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	33	33	33	0	0	100
+CDR1	34	48	15	15	0	0	100
+FWR2	49	90	42	42	0	0	100
+CDR2	91	141	51	51	0	0	100
+FWR3	142	237	96	96	0	0	100
+CDR3 (V region only)	238	238	1	1	0	0	100
+Total	N/A	N/A	238	238	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg607_MsVHE	7183.7.10:114863717:114864023:-1	100.00	238	0	0	1	238	69	306	2e-105	 372
+V	OrLNGCg607_MsVHE	7183.9.15:114899980:114900286:-1	95.38	238	11	0	1	238	69	306	5e-95	 338
+V	OrLNGCg607_MsVHE	7183.4.6:114835657:114835963:-1	95.36	237	11	0	1	237	69	305	1e-94	 336
+D	OrLNGCg607_MsVHE	DFL16.1:114720381:114720403:-1	100.00	7	0	0	241	247	7	13	2.2	14.4
+D	OrLNGCg607_MsVHE	DSP2.5:114689062:114689078:-1	100.00	5	0	0	241	245	13	17	   36	10.4
+D	OrLNGCg607_MsVHE	DSP2.x:114699580:114699596:-1	100.00	5	0	0	241	245	13	17	   36	10.4
+J	OrLNGCg607_MsVHE	JH2:114667679:114667726:-1	100.00	46	0	0	253	298	3	48	3e-23	92.2
+J	OrLNGCg607_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	262	275	12	25	5e-04	28.4
+J	OrLNGCg607_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	259	275	15	31	0.008	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg626_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.16.106:115920843:115921147:-1	DSP2.9:114713611:114713627:-1	JH4:114666725:114666778:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	GGGA	TCTATGATGG	GCT	CTATG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	43	43	42	1	0	97.7
+CDR1	44	58	15	15	0	0	100
+FWR2	59	100	42	40	2	0	95.2
+CDR2	101	151	51	50	1	0	98
+FWR3	152	247	96	96	0	0	100
+Total	N/A	N/A	247	243	4	0	98.4
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg626_MsVHE	J558.16.106:115920843:115921147:-1	98.38	247	4	0	1	247	59	305	8e-106	 374
+V	OrLNGCg626_MsVHE	J558.26.116:116026583:116026887:-1	95.55	247	11	0	1	247	59	305	3e-99	 352
+V	OrLNGCg626_MsVHE	J558.22.112:115984484:115984788:-1	94.33	247	14	0	1	247	59	305	2e-96	 343
+D	OrLNGCg626_MsVHE	DSP2.9:114713611:114713627:-1	100.00	10	0	0	252	261	1	10	0.037	20.4
+D	OrLNGCg626_MsVHE	DSP2.2:114708905:114708921:-1	100.00	7	0	0	253	259	5	11	2.3	14.4
+D	OrLNGCg626_MsVHE	DSP2.5:114689062:114689078:-1	100.00	5	0	0	253	257	5	9	   37	10.4
+J	OrLNGCg626_MsVHE	JH4:114666725:114666778:-1	100.00	50	0	0	265	314	5	54	1e-25	 100
+J	OrLNGCg626_MsVHE	JH2:114667679:114667726:-1	94.12	17	1	0	275	291	9	25	0.009	24.4
+J	OrLNGCg626_MsVHE	JH3:114667296:114667343:-1	92.86	14	1	0	278	291	12	25	0.55	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg627_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.16.106:115920843:115921147:-1	DSP2.x:114699580:114699596:-1	JH3:114667296:114667343:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	AAGGGGGCT	TATAGTAACTAC	CTGG	CCTGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	47	47	44	3	0	93.6
+CDR1	48	62	15	15	0	0	100
+FWR2	63	104	42	42	0	0	100
+CDR2	105	155	51	48	3	0	94.1
+FWR3	156	251	96	94	2	0	97.9
+Total	N/A	N/A	251	243	8	0	96.8
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg627_MsVHE	J558.16.106:115920843:115921147:-1	96.81	251	8	0	1	251	55	305	6e-104	 367
+V	OrLNGCg627_MsVHE	J558.26.116:116026583:116026887:-1	94.02	251	15	0	1	251	55	305	2e-97	 346
+V	OrLNGCg627_MsVHE	J558.22.112:115984484:115984788:-1	92.83	251	18	0	1	251	55	305	1e-94	 336
+D	OrLNGCg627_MsVHE	DSP2.x:114699580:114699596:-1	100.00	12	0	0	261	272	6	17	0.002	24.4
+D	OrLNGCg627_MsVHE	DSP2.y:114704238:114704254:-1	100.00	12	0	0	261	272	6	17	0.002	24.4
+D	OrLNGCg627_MsVHE	DSP2.5:114689062:114689078:-1	100.00	8	0	0	265	272	10	17	0.60	16.4
+J	OrLNGCg627_MsVHE	JH3:114667296:114667343:-1	100.00	48	0	0	277	324	1	48	2e-24	96.2
+J	OrLNGCg627_MsVHE	JH2:114667679:114667726:-1	100.00	14	0	0	288	301	12	25	6e-04	28.4
+J	OrLNGCg627_MsVHE	JH4:114666725:114666778:-1	92.86	14	1	0	288	301	18	31	0.57	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg649_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+36-60.5.67:115500863:115501172:-1	N/A	JH1:114667992:114668044:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAGA	N/A	N/A	TTCGGCTGG	CTGGT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	43	43	43	0	0	100
+CDR1	44	64	21	21	0	0	100
+FWR2	65	106	42	42	0	0	100
+CDR2	107	154	48	47	1	0	97.9
+FWR3	155	250	96	95	1	0	99
+CDR3 (V region only)	251	252	2	2	0	0	100
+Total	N/A	N/A	252	250	2	0	99.2
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg649_MsVHE	36-60.5.67:115500863:115501172:-1	99.21	252	2	0	1	252	59	310	5e-110	 388
+V	OrLNGCg649_MsVHE	36-60.4.66:115491828:115492137:-1	84.92	252	38	0	1	252	59	310	3e-76	 276
+V	OrLNGCg649_MsVHE	36-60.2pg.51:115272014:115272319:-1	84.40	250	35	2	3	252	61	306	1e-70	 257
+J	OrLNGCg649_MsVHE	JH1:114667992:114668044:-1	100.00	50	0	0	262	311	4	53	1e-25	 100
+J	OrLNGCg649_MsVHE	JH3:114667296:114667343:-1	100.00	7	0	0	277	283	14	20	8.8	14.4
+J	OrLNGCg649_MsVHE	JH2:114667679:114667726:-1	100.00	7	0	0	277	283	14	20	8.8	14.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg651_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.18.108:115946859:115947163:-1	N/A	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCAAG	N/A	N/A	TGC	CTACT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	36	36	36	0	0	100
+CDR1	37	51	15	13	2	0	86.7
+FWR2	52	93	42	41	1	0	97.6
+CDR2	94	144	51	49	2	0	96.1
+FWR3	145	239	95	94	1	0	98.9
+Total	N/A	N/A	239	233	6	0	97.5
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg651_MsVHE	J558.18.108:115946859:115947163:-1	97.49	239	6	0	1	239	66	304	3e-100	 355
+V	OrLNGCg651_MsVHE	J558.26.116:116026583:116026887:-1	94.56	239	13	0	1	239	66	304	1e-93	 333
+V	OrLNGCg651_MsVHE	J558.16.106:115920843:115921147:-1	92.47	239	18	0	1	239	66	304	6e-89	 318
+J	OrLNGCg651_MsVHE	JH2:114667679:114667726:-1	100.00	47	0	0	243	289	2	48	8e-24	94.2
+J	OrLNGCg651_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	253	266	12	25	5e-04	28.4
+J	OrLNGCg651_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	250	266	15	31	0.008	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg652_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.66.165:116733836:116734140:-1	DFL16.1:114720381:114720403:-1	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	TTGA	ATTACTACGGT	GACAC	CTACT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	30	30	30	0	0	100
+CDR1	31	45	15	15	0	0	100
+FWR2	46	87	42	42	0	0	100
+CDR2	88	138	51	43	8	0	84.3
+FWR3	139	234	96	96	0	0	100
+Total	N/A	N/A	234	226	8	0	96.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg652_MsVHE	J558.66.165:116733836:116734140:-1	96.58	234	8	0	1	234	72	305	5e-96	 341
+V	OrLNGCg652_MsVHE	J558.76pg.179:117028804:117029109:-1	92.77	235	16	1	1	234	72	306	4e-86	 308
+V	OrLNGCg652_MsVHE	J558.54.148:116431886:116432190:-1	88.46	234	27	0	1	234	72	305	4e-78	 282
+D	OrLNGCg652_MsVHE	DFL16.1:114720381:114720403:-1	100.00	11	0	0	239	249	4	14	0.009	22.4
+D	OrLNGCg652_MsVHE	DSP2.9:114713611:114713627:-1	100.00	7	0	0	240	246	11	17	2.2	14.4
+D	OrLNGCg652_MsVHE	DSP2.5:114689062:114689078:-1	100.00	5	0	0	242	246	13	17	   36	10.4
+J	OrLNGCg652_MsVHE	JH2:114667679:114667726:-1	97.87	47	1	0	255	301	2	48	8e-21	84.3
+J	OrLNGCg652_MsVHE	JH3:114667296:114667343:-1	100.00	11	0	0	268	278	15	25	0.034	22.4
+J	OrLNGCg652_MsVHE	JH4:114666725:114666778:-1	100.00	7	0	0	239	245	1	7	8.5	14.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg654_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+SM7.2.49:115232680:115232984:-1	N/A	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CTAGA	N/A	N/A	GAGGACGGGG	ACTTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	41	41	40	1	0	97.6
+CDR1	42	56	15	13	2	0	86.7
+FWR2	57	98	42	42	0	0	100
+CDR2	99	149	51	50	1	0	98
+FWR3	150	245	96	94	2	0	97.9
+Total	N/A	N/A	245	239	6	0	97.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg654_MsVHE	SM7.2.49:115232680:115232984:-1	97.55	245	6	0	1	245	61	305	5e-103	 364
+V	OrLNGCg654_MsVHE	SM7.1.44:115170164:115170468:-1	94.65	243	13	0	1	243	61	303	2e-95	 339
+V	OrLNGCg654_MsVHE	SM7.3.54:115298056:115298360:-1	93.47	245	16	0	1	245	61	305	1e-93	 333
+J	OrLNGCg654_MsVHE	JH2:114667679:114667726:-1	100.00	45	0	0	256	300	4	48	1e-22	90.2
+J	OrLNGCg654_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	264	277	12	25	5e-04	28.4
+J	OrLNGCg654_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	261	277	15	31	0.008	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg656_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.84.190:117158490:117158794:-1	N/A	JH3:114667296:114667343:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	N/A	N/A	GGGAAG	GCTTA	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	32	32	32	0	0	100
+CDR1	33	47	15	13	2	0	86.7
+FWR2	48	89	42	42	0	0	100
+CDR2	90	140	51	47	4	0	92.2
+FWR3	141	236	96	94	2	0	97.9
+Total	N/A	N/A	236	228	8	0	96.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg656_MsVHE	J558.84.190:117158490:117158794:-1	96.61	236	8	0	1	236	70	305	6e-97	 344
+V	OrLNGCg656_MsVHE	J558.88.194:117238239:117238543:-1	90.68	236	22	0	1	236	70	305	8e-84	 300
+V	OrLNGCg656_MsVHE	J558.80.186:117100078:117100382:-1	90.60	234	22	0	3	236	72	305	7e-83	 297
+J	OrLNGCg656_MsVHE	JH3:114667296:114667343:-1	100.00	40	0	0	243	282	9	48	1e-19	80.3
+J	OrLNGCg656_MsVHE	JH2:114667679:114667726:-1	100.00	14	0	0	246	259	12	25	5e-04	28.4
+J	OrLNGCg656_MsVHE	JH4:114666725:114666778:-1	92.86	14	1	0	246	259	18	31	0.51	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg675_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+36-60.5.67:115500863:115501172:-1	N/A	JH1:114667992:114668044:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAGA	N/A	N/A	TTCGGCTGG	CTGGT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	9	9	9	0	0	100
+CDR1	10	30	21	21	0	0	100
+FWR2	31	72	42	42	0	0	100
+CDR2	73	120	48	48	0	0	100
+FWR3	121	216	96	95	1	0	99
+CDR3 (V region only)	217	218	2	2	0	0	100
+Total	N/A	N/A	218	217	1	0	99.5
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg675_MsVHE	36-60.5.67:115500863:115501172:-1	99.54	218	1	0	1	218	93	310	4e-95	 338
+V	OrLNGCg675_MsVHE	36-60.4.66:115491828:115492137:-1	84.86	218	33	0	1	218	93	310	5e-65	 238
+V	OrLNGCg675_MsVHE	36-60.2pg.51:115272014:115272319:-1	85.32	218	28	2	1	218	93	306	3e-62	 229
+J	OrLNGCg675_MsVHE	JH1:114667992:114668044:-1	100.00	50	0	0	228	277	4	53	1e-25	 100
+J	OrLNGCg675_MsVHE	JH3:114667296:114667343:-1	100.00	7	0	0	243	249	14	20	8.0	14.4
+J	OrLNGCg675_MsVHE	JH2:114667679:114667726:-1	100.00	7	0	0	243	249	14	20	8.0	14.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg679_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.42.132:116175324:116175628:-1	DSP2.x:114699580:114699596:-1	JH4:114666725:114666778:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCAAG	TCTCCA	CTACTATAGTAA	ACCCT	ATTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	30	30	30	0	0	100
+CDR1	31	45	15	14	1	0	93.3
+FWR2	46	87	42	42	0	0	100
+CDR2	88	138	51	51	0	0	100
+FWR3	139	233	95	93	2	0	97.9
+Total	N/A	N/A	233	230	3	0	98.7
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg679_MsVHE	J558.42.132:116175324:116175628:-1	98.71	233	3	0	1	233	72	304	3e-100	 355
+V	OrLNGCg679_MsVHE	J558.43.133:116184161:116184465:-1	95.28	233	11	0	1	233	72	304	1e-92	 330
+V	OrLNGCg679_MsVHE	J558.30pg.120:116055310:116055612:-1	93.99	233	12	1	1	233	72	302	5e-88	 315
+D	OrLNGCg679_MsVHE	DSP2.x:114699580:114699596:-1	100.00	12	0	0	240	251	2	13	0.002	24.4
+D	OrLNGCg679_MsVHE	DSP2.y:114704238:114704254:-1	100.00	12	0	0	240	251	2	13	0.002	24.4
+D	OrLNGCg679_MsVHE	DSP2.5:114689062:114689078:-1	100.00	7	0	0	240	246	2	8	2.3	14.4
+J	OrLNGCg679_MsVHE	JH4:114666725:114666778:-1	98.15	54	1	0	257	310	1	54	5e-25	98.2
+J	OrLNGCg679_MsVHE	JH2:114667679:114667726:-1	94.12	17	1	0	271	287	9	25	0.009	24.4
+J	OrLNGCg679_MsVHE	JH3:114667296:114667343:-1	92.86	14	1	0	274	287	12	25	0.55	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg680_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+36-60.5.67:115500863:115501172:-1	N/A	JH1:114667992:114668044:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAGA	N/A	N/A	TTCGGCTGG	CTGGT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	43	43	42	1	0	97.7
+CDR1	44	64	21	21	0	0	100
+FWR2	65	106	42	42	0	0	100
+CDR2	107	154	48	47	1	0	97.9
+FWR3	155	250	96	93	3	0	96.9
+CDR3 (V region only)	251	252	2	2	0	0	100
+Total	N/A	N/A	252	247	5	0	98
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg680_MsVHE	36-60.5.67:115500863:115501172:-1	98.02	252	5	0	1	252	59	310	3e-107	 378
+V	OrLNGCg680_MsVHE	36-60.4.66:115491828:115492137:-1	84.52	252	39	0	1	252	59	310	2e-75	 272
+V	OrLNGCg680_MsVHE	36-60.2pg.51:115272014:115272319:-1	84.00	250	36	2	3	252	61	306	1e-69	 254
+J	OrLNGCg680_MsVHE	JH1:114667992:114668044:-1	100.00	50	0	0	262	311	4	53	1e-25	 100
+J	OrLNGCg680_MsVHE	JH3:114667296:114667343:-1	100.00	7	0	0	277	283	14	20	8.8	14.4
+J	OrLNGCg680_MsVHE	JH2:114667679:114667726:-1	100.00	7	0	0	277	283	14	20	8.8	14.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg698_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+7183.7.10:114863717:114864023:-1	N/A	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AAGAC	N/A	N/A	CGACTTCGGAGAGG	TACTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	29	29	28	1	0	96.6
+CDR1	30	44	15	15	0	0	100
+FWR2	45	86	42	42	0	0	100
+CDR2	87	137	51	51	0	0	100
+FWR3	138	233	96	95	1	0	99
+CDR3 (V region only)	234	234	1	1	0	0	100
+Total	N/A	N/A	234	232	2	0	99.1
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg698_MsVHE	7183.7.10:114863717:114864023:-1	99.15	234	2	0	1	234	73	306	1e-101	 360
+V	OrLNGCg698_MsVHE	7183.9.15:114899980:114900286:-1	94.44	234	13	0	1	234	73	306	3e-91	 325
+V	OrLNGCg698_MsVHE	7183.4.6:114835657:114835963:-1	94.42	233	13	0	1	233	73	305	8e-91	 324
+J	OrLNGCg698_MsVHE	JH2:114667679:114667726:-1	100.00	46	0	0	249	294	3	48	3e-23	92.2
+J	OrLNGCg698_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	258	271	12	25	5e-04	28.4
+J	OrLNGCg698_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	255	271	15	31	0.008	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg703_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+7183.7.10:114863717:114864023:-1	N/A	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AAGAC	N/A	N/A	CGACTTCGGAGAGG	TACTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	5	39	35	34	1	0	97.1
+CDR1	40	54	15	15	0	0	100
+FWR2	55	96	42	42	0	0	100
+CDR2	97	147	51	51	0	0	100
+FWR3	148	243	96	94	2	0	97.9
+CDR3 (V region only)	244	244	1	1	0	0	100
+Total	N/A	N/A	240	237	3	0	98.8
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg703_MsVHE	7183.7.10:114863717:114864023:-1	98.75	240	3	0	5	244	67	306	2e-103	 366
+V	OrLNGCg703_MsVHE	7183.9.15:114899980:114900286:-1	94.17	240	14	0	5	244	67	306	4e-93	 332
+V	OrLNGCg703_MsVHE	7183.4.6:114835657:114835963:-1	94.14	239	14	0	5	243	67	305	1e-92	 330
+J	OrLNGCg703_MsVHE	JH2:114667679:114667726:-1	100.00	46	0	0	259	304	3	48	3e-23	92.2
+J	OrLNGCg703_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	268	281	12	25	5e-04	28.4
+J	OrLNGCg703_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	265	281	15	31	0.009	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg723_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+J558.55.149:116446306:116446610:-1	DQ52-C57BL/6:114668739:114668749:-1	JH3:114667296:114667343:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGTTC	(AA)	CTGGGAC	GT	CTTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	38	38	38	0	0	100
+CDR1	39	53	15	14	1	0	93.3
+FWR2	54	95	42	42	0	0	100
+CDR2	96	146	51	50	1	0	98
+FWR3	147	240	94	93	1	0	98.9
+Total	N/A	N/A	240	237	3	0	98.8
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 7 hits found
+V	OrLNGCg723_MsVHE	J558.55.149:116446306:116446610:-1	98.75	240	3	0	1	240	64	303	2e-103	 366
+V	OrLNGCg723_MsVHE	J558.53.146:116396614:116396918:-1	93.75	240	15	0	1	240	64	303	3e-92	 329
+V	OrLNGCg723_MsVHE	J558.62pg.158:116610197:116610500:-1	94.58	240	12	1	1	240	64	302	3e-92	 329
+D	OrLNGCg723_MsVHE	DQ52-C57BL/6:114668739:114668749:-1	100.00	9	0	0	239	247	3	11	0.14	18.4
+J	OrLNGCg723_MsVHE	JH3:114667296:114667343:-1	100.00	39	0	0	250	288	10	48	5e-19	78.3
+J	OrLNGCg723_MsVHE	JH2:114667679:114667726:-1	100.00	14	0	0	252	265	12	25	5e-04	28.4
+J	OrLNGCg723_MsVHE	JH4:114666725:114666778:-1	92.86	14	1	0	252	265	18	31	0.52	18.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg726_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+7183.7.10:114863717:114864023:-1	DFL16.1:114720381:114720403:-1	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AAGAC	CG	ACTACGG	AGAGG	TACTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	5	39	35	35	0	0	100
+CDR1	40	54	15	15	0	0	100
+FWR2	55	96	42	42	0	0	100
+CDR2	97	147	51	51	0	0	100
+FWR3	148	243	96	94	2	0	97.9
+CDR3 (V region only)	244	244	1	1	0	0	100
+Total	N/A	N/A	240	238	2	0	99.2
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	OrLNGCg726_MsVHE	7183.7.10:114863717:114864023:-1	99.17	240	2	0	5	244	67	306	2e-104	 369
+V	OrLNGCg726_MsVHE	7183.4.6:114835657:114835963:-1	94.98	239	12	0	5	243	67	305	1e-94	 336
+V	OrLNGCg726_MsVHE	7183.9.15:114899980:114900286:-1	94.58	240	13	0	5	244	67	306	4e-94	 335
+D	OrLNGCg726_MsVHE	DFL16.1:114720381:114720403:-1	100.00	7	0	0	247	253	7	13	2.3	14.4
+D	OrLNGCg726_MsVHE	DSP2.5:114689062:114689078:-1	100.00	5	0	0	247	251	13	17	   36	10.4
+D	OrLNGCg726_MsVHE	DSP2.x:114699580:114699596:-1	100.00	5	0	0	247	251	13	17	   36	10.4
+J	OrLNGCg726_MsVHE	JH2:114667679:114667726:-1	100.00	46	0	0	259	304	3	48	3e-23	92.2
+J	OrLNGCg726_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	268	281	12	25	5e-04	28.4
+J	OrLNGCg726_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	265	281	15	31	0.009	24.4
+# IGBLASTN 2.2.27+
+# Query: OrLNGCg745_MsVHE
+# Database: /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-V_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-D_segments_position_corrected.fasta /ru-auth/local/home/toliveira/irina/additional_files/custom_igblast_database/Ig-J_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+7183.7.10:114863717:114864023:-1	N/A	JH2:114667679:114667726:-1	VH	N/A	+
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AAGAC	N/A	N/A	CGACTTCGGAGAGGTAT	TTTGA	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	2	36	35	34	1	0	97.1
+CDR1	37	51	15	14	1	0	93.3
+FWR2	52	93	42	42	0	0	100
+CDR2	94	144	51	49	2	0	96.1
+FWR3	145	240	96	94	2	0	97.9
+CDR3 (V region only)	241	241	1	1	0	0	100
+Total	N/A	N/A	240	234	6	0	97.5
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	OrLNGCg745_MsVHE	7183.7.10:114863717:114864023:-1	97.50	240	6	0	2	241	67	306	1e-100	 357
+V	OrLNGCg745_MsVHE	7183.4.6:114835657:114835963:-1	93.72	239	15	0	2	240	67	305	9e-92	 327
+V	OrLNGCg745_MsVHE	7183.9.15:114899980:114900286:-1	92.92	240	17	0	2	241	67	306	2e-90	 322
+J	OrLNGCg745_MsVHE	JH2:114667679:114667726:-1	100.00	43	0	0	259	301	6	48	2e-21	86.3
+J	OrLNGCg745_MsVHE	JH3:114667296:114667343:-1	100.00	14	0	0	265	278	12	25	5e-04	28.4
+J	OrLNGCg745_MsVHE	JH4:114666725:114666778:-1	94.12	17	1	0	262	278	15	31	0.008	24.4
+# BLAST processed 43 queries

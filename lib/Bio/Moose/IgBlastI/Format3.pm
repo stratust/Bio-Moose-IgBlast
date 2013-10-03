@@ -9,7 +9,6 @@ class Bio::Moose::IgBlastI::Format3 {
     use Bio::Moose::IgBlast::Alignment;
     use Bio::Moose::IgBlast::Alignment::Region;
     use Bio::Moose::IgBlast::HitTable;
-    use Bio::Moose::IgBlast::HitTable::Entry;
     use Data::Printer;
     
     has 'file' => (
@@ -50,26 +49,30 @@ class Bio::Moose::IgBlastI::Format3 {
         # using the special variable "$/". When dealing with IgBlast files I normally change the
         # Input Record Separator to "IGBLASTN" which allows your script to take in a full, multiline
         # IGBLAST record at once
-        $/ = "Query=";
+        local $/ = "Query=";
 
         open( my $in, '<', $self->file ) || die "Cannot open/read file " . $self->file . "!";
 
         my $header = <$in>;    # Discard the first "Query="
         chomp $header;
-        $self->_parse_header($header);
+        my $header_param = $self->_parse_header($header);
 
         while ( my $block = <$in> ) {
             # Remove "Query"
             chomp $block;
 
             # Each IgBLAST aligment (block) can be divide em sub_blocks:
-            my ( $info_block, $rearrangement_block, $junction_block, $aln_block, $hit_table_block, $converted_block )
+            #
+            my ( $info_block, $germline_block, $rearrangement_block, $junction_block, $aln_block, $rendered_aln_block , $converted_block)
                 = $self->_guess_sub_blocks($block);
 
             my %obj_params;
 
             # Each sub block has specific parser methods
             my ( $info_param, $rearrangement_param, $junction_param, $aln_param, $hit_table_param );
+
+            %obj_params = (%obj_params, %{$header_param});
+
             if ($info_block) {
                 $info_param = $self->_parse_info_block($info_block);
                 %obj_params = (%obj_params, %{$info_param});
@@ -86,11 +89,6 @@ class Bio::Moose::IgBlastI::Format3 {
                 $aln_param = $self->_parse_alignment_block($aln_block);
                 %obj_params = (%obj_params, %{$aln_param});
             }
-            if ($hit_table_block) {
-                $hit_table_param = $self->_parse_hit_table_block($hit_table_block);
-                %obj_params = (%obj_params, %{$hit_table_param});
-            }
-    
 
             my $obj =
                 Bio::Moose::IgBlast->new( %obj_params, init_pos => $init_pos );
@@ -107,34 +105,42 @@ class Bio::Moose::IgBlastI::Format3 {
         return \@objects;
     }
 
+
     method _parse_header ($header) {
         my %hash;
-        if ( $header =~ /BLAST([PN])\s+(\S*).*Database:\s*(.*)?\n/mi ) {
+        local $/="\n";
+        if ( $header =~ /^BLAST([NP])\s+(\S+).*Database\:\s*(.*)\n\s*.*sequences/s ) {
             %hash = (
                 molecule =>$1,
                 version => $2,
                 database => $3,
             );
-            
+            $self->blast_version($2);
         }
-        p %hash;
-        die;
+        else{
+            die "REGEX NOT WORKING";
+        }
         return \%hash;
     }
 
+
     method _guess_sub_blocks (Str $block) {
         # IGBLAST record at once
-        local $/ = "IGBLAST";
+        local $/ = "Query=";
         chomp $block;
-
+        $block="ThisQuery=$block";
+    
         # Each IgBLAST aligment (block) can be divide em sub_blocks:
-        my ( $info_block, $rearrangement_block, $junction_block, $aln_block, $hit_table_block , $converted_block);
+        my ( $info_block, $germline_block, $rearrangement_block, $junction_block, $aln_block, $rendered_aln_block , $converted_block);
         
         my @sub_blocks = split /^\s*$/m, $block;
-
+        
         while (my $sb = shift @sub_blocks){
-            if ( $sb =~ /Query/mi && $sb =~ /domain classification/mi ) {
+            if ( $sb =~ /ThisQuery/mi ) {
                 $info_block = $sb;
+            }
+            elsif ( $sb =~ /domain classification/mi ) {
+                $info_block .= $sb;
             }
             elsif ( $sb =~ /rearrangement summary/mi ) {
                 $rearrangement_block = $sb;
@@ -142,11 +148,20 @@ class Bio::Moose::IgBlastI::Format3 {
             elsif ( $sb =~ /junction details/mi ) {
                 $junction_block = $sb;
             }
-            elsif ( $sb =~ /alignment/mi && $sb =~ /top germline/ ) {
+            elsif ( $sb =~ /Length/ && $sb =~ /alignment/mi && $sb =~ /producing/mi ) {
+                $germline_block = join "\n", ($sb, shift @sub_blocks);
+            }
+            elsif ( $sb =~ /Length/ && $sb !~ /alignment/mi && $sb !~ /producing/mi ) {
+                $germline_block = $sb;
+            }
+            elsif ( $sb =~ /alignment/mi && $sb =~ /top germline/mi ) {
                 $aln_block = $sb;
             }
-            elsif ( $sb =~ /hit table/mi && $sb =~ /fields/mi ) {
-                $hit_table_block = $sb;
+            elsif ( $sb =~ /^Alignments\n/mi || $sb =~ /no hits found/mi ) {
+                $rendered_aln_block = $sb;
+                while ( my $rest = shift @sub_blocks ) {
+                    $rendered_aln_block .= "\n$rest";
+                }
             }
             elsif ( $sb =~ /converted to the plus strand/mi) {
                 $converted_block = $sb;
@@ -156,34 +171,37 @@ class Bio::Moose::IgBlastI::Format3 {
             }
         } 
 
-        return ( $info_block, $rearrangement_block, $junction_block, $aln_block, $hit_table_block, $converted_block );
+        return ( $info_block, $germline_block, $rearrangement_block, $junction_block, $aln_block, $rendered_aln_block , $converted_block);
     }
 
 
     method _parse_info_block ($info) {
         my %hash;
         if ($info =~ /^
-            ([NP])          # get the molecule
-            \s+
-            (\S+[\+])       # get IgBlast version
-            .*Query:\s* 
+            .*ThisQuery=\s* 
             (\S+)           # Get query name
-            .*Database:\s* 
-            (.*)\n            # Get database V D and J
-            \W*\#\s+Domain\s+classification\s+requested:\s*
+            .*
+            \s+Domain\s+classification\s+requested:\s*
             (\S+)           # Get classification
             /xs
             )
         {
             %hash = (
-                molecule              => $1,
-                version               => $2,
-                query_id              => $3,
-                database              => $4,
-                domain_classification => $5,
+                query_id              => $1,
+                domain_classification => $2,
             );
-            $self->blast_version($2);
         }
+        elsif ($info =~ /^
+            .*ThisQuery=\s* 
+            (\S+)           # Get query name
+            /xs
+            )
+        {
+            %hash = (
+                query_id              => $1,
+            );
+        }
+
         else{
             die "Problem with info_block :\n$info";
         }
@@ -200,7 +218,7 @@ class Bio::Moose::IgBlastI::Format3 {
             chomp $row;
             next if $row =~ /^$/;
 
-            if ( $row =~ /^\#.*\((.*)\)/ ) {
+            if ( $row =~ /^V.*D.*\((.*)\)/ ) {
                 @fields = split /\s*,\s*/, $1;
                 
                 # normalize fields names
@@ -264,9 +282,9 @@ class Bio::Moose::IgBlastI::Format3 {
             chomp $row;
             next if $row =~ /^$/;
             
-            my $regex = qr/^[\#]\s*V.*[\(]D[\)].*J.*?\((.*)?\)\./;
+            my $regex = qr/V.*[\(]D[\)].*J.*?\((.*)?\)\./;
             if ( $self->blast_version eq '2.2.26+' ) {
-                $regex = qr/^[\#]\s*V.*[\(]D[\)].*J.*?\((.*J\s+start)\./;
+                $regex = qr/V.*[\(]D[\)].*J.*?\((.*J\s+start)\./;
             }
             if ( $row =~ /$regex/i ) {
                 @fields = split /\s*,\s*/, $1;
@@ -324,6 +342,7 @@ class Bio::Moose::IgBlastI::Format3 {
             chomp $row;
             next if $row =~ /^$/;
             next if $row =~ /^\#/;
+            next if $row =~ /Alignment summary/i;
             $row =~ s/\s+\(.*\)\s+/ /g;
             my @f = split /\s+/, $row;
 

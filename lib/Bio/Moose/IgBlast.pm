@@ -7,7 +7,7 @@ class Bio::Moose::IgBlast {
     has 'version'               => ( is => 'ro', isa => 'Str',  required => 1 );
     has 'query_id'              => ( is => 'ro', isa => 'Str',  required => 1 );
     has 'database'              => ( is => 'ro', isa => 'Str',  required => 1 );
-    has 'domain_classification' => ( is => 'ro', isa => 'Str',  required => 1 );
+    has 'domain_classification' => ( is => 'ro', isa => 'Str',  required => 0 );
     has 'converted_sequence'    => ( is => 'rw', isa => 'Bool', required => 1, default => 0 );
     has 'rearrangement_summary' => (
         is       => 'ro',
@@ -34,3 +34,5 @@ class Bio::Moose::IgBlast {
     has misc     => ( is => 'rw', isa => 'Any' );
     has init_pos => ( is => 'ro', isa => 'Int' );
 }
+
+ # ABSTRACT: turns baubles into trinkets

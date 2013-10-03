@@ -10,7 +10,7 @@ class Bio::Moose::IgBlastIO {
   
     has 'file' => (
         is            => 'ro',
-        isa           => 'Str | Path::Class::File',
+        isa           => 'Str|Object',
         required      => 1,
         documentation => 'IgBlast file to be open',
     );

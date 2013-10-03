@@ -1,0 +1,1984 @@
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_G3-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-69*01	IGHD2-21*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGTAT	(TATTGTG)	N/A	TCCAGAGAATGAAGTACCGCCATGTCGATCCCGACAGGG	ACTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	20	93	74	69	5	0	93.2
+CDR1	94	108	15	12	3	0	80
+FWR2	109	150	42	41	1	0	97.6
+CDR2	151	201	51	40	11	0	78.4
+FWR3	202	292	91	81	10	0	89
+Total	N/A	N/A	273	243	30	0	89
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_G3-IgGinternal.ab1	IGHV1-69*01	89.01	273	30	0	20	292	17	289	2e-93	 333
+V	reversed|3A_P94_LVH_G3-IgGinternal.ab1	IGHV1-69D*01	89.01	273	30	0	20	292	17	289	2e-93	 333
+V	reversed|3A_P94_LVH_G3-IgGinternal.ab1	IGHV1-69*12	89.01	273	30	0	20	292	17	289	2e-93	 333
+D	reversed|3A_P94_LVH_G3-IgGinternal.ab1	IGHD2-21*01	100.00	7	0	0	286	292	5	11	   14	14.4
+D	reversed|3A_P94_LVH_G3-IgGinternal.ab1	IGHD2-21*02	100.00	7	0	0	286	292	5	11	   14	14.4
+D	reversed|3A_P94_LVH_G3-IgGinternal.ab1	IGHD2/OR15-2b*01	100.00	5	0	0	298	302	1	5	  218	10.4
+J	reversed|3A_P94_LVH_G3-IgGinternal.ab1	IGHJ4*02	97.92	48	1	0	332	379	1	48	5e-21	86.3
+J	reversed|3A_P94_LVH_G3-IgGinternal.ab1	IGHJ4*01	95.83	48	2	0	332	379	1	48	6e-18	76.3
+J	reversed|3A_P94_LVH_G3-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	345	379	17	51	3e-16	70.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_B5-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-30-3*03	IGHD5-12*01	IGHJ6*03	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	TGGC	TATAGTGGCTTCGATTA	TCGAGCCGATTGG	TACTA	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	93	76	72	4	0	94.7
+CDR1	94	108	15	13	2	0	86.7
+FWR2	109	150	42	42	0	0	100
+CDR2	151	201	51	47	4	0	92.2
+FWR3	202	297	96	88	8	0	91.7
+CDR3 (V region only)	298	299	2	2	0	0	100
+Total	N/A	N/A	282	264	18	0	93.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P95_G123_B5-IgGinternal.ab1	IGHV3-30-3*03	93.62	282	18	0	18	299	15	296	8e-109	 385
+V	reversed|3A_P95_G123_B5-IgGinternal.ab1	IGHV3-30*04	93.62	282	18	0	18	299	15	296	8e-109	 385
+V	reversed|3A_P95_G123_B5-IgGinternal.ab1	IGHV3-30*09	93.26	282	19	0	18	299	15	296	7e-108	 382
+D	reversed|3A_P95_G123_B5-IgGinternal.ab1	IGHD5-12*01	94.12	17	1	0	304	320	6	22	0.014	24.4
+D	reversed|3A_P95_G123_B5-IgGinternal.ab1	IGHD5-24*01	100.00	11	0	0	295	305	3	13	0.056	22.4
+D	reversed|3A_P95_G123_B5-IgGinternal.ab1	IGHD1-26*01	100.00	8	0	0	304	311	3	10	3.5	16.4
+J	reversed|3A_P95_G123_B5-IgGinternal.ab1	IGHJ6*03	98.25	57	1	0	334	390	6	62	2e-26	 104
+J	reversed|3A_P95_G123_B5-IgGinternal.ab1	IGHJ6*04	93.33	60	1	1	334	390	3	62	9e-20	82.3
+J	reversed|3A_P95_G123_B5-IgGinternal.ab1	IGHJ6*02	91.67	60	2	1	334	390	3	62	9e-17	72.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_E3-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-69*01	IGHD2-21*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGTAT	(TATTGTG)	N/A	TCCAGAGAATGAAGTACTGCCATGTCGATCCCGACAGGG	ACTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	21	94	74	69	5	0	93.2
+CDR1	95	109	15	12	3	0	80
+FWR2	110	151	42	41	1	0	97.6
+CDR2	152	202	51	40	11	0	78.4
+FWR3	203	293	91	81	10	0	89
+Total	N/A	N/A	273	243	30	0	89
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_E3-IgGinternal.ab1	IGHV1-69*01	89.01	273	30	0	21	293	17	289	2e-93	 333
+V	reversed|3A_P94_LVH_E3-IgGinternal.ab1	IGHV1-69D*01	89.01	273	30	0	21	293	17	289	2e-93	 333
+V	reversed|3A_P94_LVH_E3-IgGinternal.ab1	IGHV1-69*12	89.01	273	30	0	21	293	17	289	2e-93	 333
+D	reversed|3A_P94_LVH_E3-IgGinternal.ab1	IGHD2-21*01	100.00	7	0	0	287	293	5	11	   14	14.4
+D	reversed|3A_P94_LVH_E3-IgGinternal.ab1	IGHD2-21*02	100.00	7	0	0	287	293	5	11	   14	14.4
+D	reversed|3A_P94_LVH_E3-IgGinternal.ab1	IGHD2-8*02	100.00	6	0	0	307	312	9	14	   55	12.4
+J	reversed|3A_P94_LVH_E3-IgGinternal.ab1	IGHJ4*02	95.83	48	2	0	333	380	1	48	6e-18	76.3
+J	reversed|3A_P94_LVH_E3-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	346	380	17	51	4e-16	70.3
+J	reversed|3A_P94_LVH_E3-IgGinternal.ab1	IGHJ4*01	93.75	48	3	0	333	380	1	48	6e-15	66.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_C1-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-64*04	IGHD5-24*01	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GTGTG	(AGAGA)	TG	TCCTCCCCTCTCAAGGAATTTGTAGCGGCGGTACATGCTACCGGGGGGGCCT	CTGGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	21	96	76	69	7	0	90.8
+CDR1	97	111	15	9	6	0	60
+FWR2	112	153	42	37	5	0	88.1
+CDR2	154	204	51	42	9	0	82.4
+FWR3	205	300	96	75	21	0	78.1
+CDR3 (V region only)	301	302	2	2	0	0	100
+Total	N/A	N/A	282	234	48	0	83
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_C1-IgGinternal.ab1	IGHV3-64*04	82.98	282	48	0	21	302	15	296	1e-80	 291
+V	reversed|3A_P94_LVH_C1-IgGinternal.ab1	IGHV3-64*05	82.62	282	49	0	21	302	15	296	1e-79	 288
+V	reversed|3A_P94_LVH_C1-IgGinternal.ab1	IGHV3-64*03	82.62	282	49	0	21	302	15	296	1e-79	 288
+D	reversed|3A_P94_LVH_C1-IgGinternal.ab1	IGHD5-24*01	100.00	7	0	0	298	304	3	9	   14	14.4
+D	reversed|3A_P94_LVH_C1-IgGinternal.ab1	IGHD2-2*02	100.00	6	0	0	324	329	7	12	   56	12.4
+D	reversed|3A_P94_LVH_C1-IgGinternal.ab1	IGHD2-15*01	100.00	6	0	0	324	329	7	12	   56	12.4
+J	reversed|3A_P94_LVH_C1-IgGinternal.ab1	IGHJ5*02	91.43	35	3	0	357	391	17	51	4e-07	40.4
+J	reversed|3A_P94_LVH_C1-IgGinternal.ab1	IGHJ4*02	91.43	35	3	0	357	391	14	48	4e-07	40.4
+J	reversed|3A_P94_LVH_C1-IgGinternal.ab1	IGHJ5*01	88.57	35	4	0	357	391	17	51	4e-04	30.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_E1-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1/OR15-1*04	IGHD3-10*02	IGHJ6*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAGA	TAACTTCGGGACTCGCCCAGTGCCTGG	TCGGGGA	TATTAT	TACGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	24	97	74	58	16	0	78.4
+CDR1	98	112	15	12	3	0	80
+FWR2	113	154	42	34	8	0	81
+CDR2	155	208	54	33	18	3	61.1
+FWR3	209	304	96	66	30	0	68.8
+CDR3 (V region only)	305	306	2	2	0	0	100
+Total	N/A	N/A	283	205	75	3	72.4
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_E1-IgGinternal.ab1	IGHV1/OR15-1*04	72.44	283	75	1	24	306	17	296	4e-51	 193
+V	reversed|3A_P94_LVH_E1-IgGinternal.ab1	IGHV1-2*02	71.73	283	77	1	24	306	17	296	3e-49	 187
+V	reversed|3A_P94_LVH_E1-IgGinternal.ab1	IGHV1-2*05	71.73	283	77	1	24	306	17	296	3e-49	 187
+D	reversed|3A_P94_LVH_E1-IgGinternal.ab1	IGHD3-10*02	100.00	7	0	0	334	340	13	19	   14	14.4
+D	reversed|3A_P94_LVH_E1-IgGinternal.ab1	IGHD3-10*01	100.00	7	0	0	334	340	14	20	   14	14.4
+D	reversed|3A_P94_LVH_E1-IgGinternal.ab1	IGHD1-7*01	100.00	6	0	0	306	311	4	9	   57	12.4
+J	reversed|3A_P94_LVH_E1-IgGinternal.ab1	IGHJ6*02	100.00	29	0	0	347	375	15	43	1e-12	58.3
+J	reversed|3A_P94_LVH_E1-IgGinternal.ab1	IGHJ6*04	96.55	29	1	0	347	375	15	43	1e-09	48.3
+J	reversed|3A_P94_LVH_E1-IgGinternal.ab1	IGHJ6*01	96.55	29	1	0	347	375	15	43	1e-09	48.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_C12-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-33*01	IGHD3-3*02	IGHJ6*03	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	GGCGGCAGC	TTGGAGTGG	GATATTATA	ACTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	20	94	75	71	4	0	94.7
+CDR1	95	109	15	14	1	0	93.3
+FWR2	110	151	42	42	0	0	100
+CDR2	152	202	51	44	7	0	86.3
+FWR3	203	298	96	87	9	0	90.6
+CDR3 (V region only)	299	299	1	1	0	0	100
+Total	N/A	N/A	280	259	21	0	92.5
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_C12-IgGinternal.ab1	IGHV3-33*01	92.50	280	21	0	20	299	16	295	4e-105	 372
+V	reversed|3A_P94_LVH_C12-IgGinternal.ab1	IGHV3-33*06	92.14	280	22	0	20	299	16	295	4e-104	 369
+V	reversed|3A_P94_LVH_C12-IgGinternal.ab1	IGHV3-33*03	91.79	280	23	0	20	299	16	295	3e-103	 366
+D	reversed|3A_P94_LVH_C12-IgGinternal.ab1	IGHD3-3*02	100.00	9	0	0	309	317	13	21	0.86	18.4
+D	reversed|3A_P94_LVH_C12-IgGinternal.ab1	IGHD3-10*02	100.00	9	0	0	320	328	22	30	0.86	18.4
+D	reversed|3A_P94_LVH_C12-IgGinternal.ab1	IGHD3-3*01	100.00	9	0	0	309	317	13	21	0.86	18.4
+J	reversed|3A_P94_LVH_C12-IgGinternal.ab1	IGHJ6*03	96.00	50	2	0	327	376	13	62	3e-19	80.3
+J	reversed|3A_P94_LVH_C12-IgGinternal.ab1	IGHJ6*02	97.62	42	1	0	335	376	21	62	2e-17	74.3
+J	reversed|3A_P94_LVH_C12-IgGinternal.ab1	IGHJ6*04	95.35	43	2	0	335	377	21	63	6e-15	66.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_B4-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-46*01	IGHD6-13*01	IGHJ1*01	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	GTGTGGGGGGAATG	GCAGCAGCTGGT	CTC	TACTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	21	94	74	71	3	0	95.9
+CDR1	95	109	15	9	6	0	60
+FWR2	110	151	42	36	6	0	85.7
+CDR2	152	202	51	46	5	0	90.2
+FWR3	203	298	96	89	7	0	92.7
+CDR3 (V region only)	299	299	1	1	0	0	100
+Total	N/A	N/A	279	252	27	0	90.3
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_B4-IgGinternal.ab1	IGHV1-46*01	90.32	279	27	0	21	299	17	295	6e-99	 352
+V	reversed|3A_P94_LVH_B4-IgGinternal.ab1	IGHV1-46*02	89.96	279	28	0	21	299	17	295	5e-98	 349
+V	reversed|3A_P94_LVH_B4-IgGinternal.ab1	IGHV1-46*03	89.96	279	28	0	21	299	17	295	5e-98	 349
+D	reversed|3A_P94_LVH_B4-IgGinternal.ab1	IGHD6-13*01	100.00	12	0	0	314	325	8	19	0.013	24.4
+D	reversed|3A_P94_LVH_B4-IgGinternal.ab1	IGHD6-6*01	100.00	7	0	0	316	322	7	13	   14	14.4
+D	reversed|3A_P94_LVH_B4-IgGinternal.ab1	IGHD3-16*02	100.00	6	0	0	303	308	17	22	   54	12.4
+J	reversed|3A_P94_LVH_B4-IgGinternal.ab1	IGHJ1*01	93.48	46	3	0	329	374	7	52	9e-14	62.3
+J	reversed|3A_P94_LVH_B4-IgGinternal.ab1	IGHJ5*02	91.18	34	3	0	341	374	18	51	1e-06	38.4
+J	reversed|3A_P94_LVH_B4-IgGinternal.ab1	IGHJ4*02	91.18	34	3	0	341	374	15	48	1e-06	38.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_F3-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-69*01	IGHD2-21*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGTAT	(TATTGTG)	N/A	TCCAGAGAATGAAGTACCGCCATGTCGATCCCGACAGGG	ACTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	22	95	74	69	5	0	93.2
+CDR1	96	110	15	12	3	0	80
+FWR2	111	152	42	41	1	0	97.6
+CDR2	153	203	51	40	11	0	78.4
+FWR3	204	294	91	81	10	0	89
+Total	N/A	N/A	273	243	30	0	89
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_F3-IgGinternal.ab1	IGHV1-69*01	89.01	273	30	0	22	294	17	289	2e-93	 333
+V	reversed|3A_P94_LVH_F3-IgGinternal.ab1	IGHV1-69D*01	89.01	273	30	0	22	294	17	289	2e-93	 333
+V	reversed|3A_P94_LVH_F3-IgGinternal.ab1	IGHV1-69*12	89.01	273	30	0	22	294	17	289	2e-93	 333
+D	reversed|3A_P94_LVH_F3-IgGinternal.ab1	IGHD2-21*01	100.00	7	0	0	288	294	5	11	   14	14.4
+D	reversed|3A_P94_LVH_F3-IgGinternal.ab1	IGHD2-21*02	100.00	7	0	0	288	294	5	11	   14	14.4
+D	reversed|3A_P94_LVH_F3-IgGinternal.ab1	IGHD2/OR15-2b*01	100.00	5	0	0	300	304	1	5	  220	10.4
+J	reversed|3A_P94_LVH_F3-IgGinternal.ab1	IGHJ4*02	97.92	48	1	0	334	381	1	48	6e-21	86.3
+J	reversed|3A_P94_LVH_F3-IgGinternal.ab1	IGHJ4*01	95.83	48	2	0	334	381	1	48	6e-18	76.3
+J	reversed|3A_P94_LVH_F3-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	347	381	17	51	4e-16	70.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_D4-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-69*01	IGHD2-21*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGTAT	(TATTGTG)	N/A	TCCAGAGAATGAAGTACTGCCATGTCGATCCCGACAGGG	ACTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	21	94	74	69	5	0	93.2
+CDR1	95	109	15	12	3	0	80
+FWR2	110	151	42	41	1	0	97.6
+CDR2	152	202	51	40	11	0	78.4
+FWR3	203	293	91	81	10	0	89
+Total	N/A	N/A	273	243	30	0	89
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P95_G123_D4-IgGinternal.ab1	IGHV1-69*01	89.01	273	30	0	21	293	17	289	2e-93	 333
+V	reversed|3A_P95_G123_D4-IgGinternal.ab1	IGHV1-69D*01	89.01	273	30	0	21	293	17	289	2e-93	 333
+V	reversed|3A_P95_G123_D4-IgGinternal.ab1	IGHV1-69*12	89.01	273	30	0	21	293	17	289	2e-93	 333
+D	reversed|3A_P95_G123_D4-IgGinternal.ab1	IGHD2-21*01	100.00	7	0	0	287	293	5	11	   14	14.4
+D	reversed|3A_P95_G123_D4-IgGinternal.ab1	IGHD2-21*02	100.00	7	0	0	287	293	5	11	   14	14.4
+D	reversed|3A_P95_G123_D4-IgGinternal.ab1	IGHD2-8*02	100.00	6	0	0	307	312	9	14	   55	12.4
+J	reversed|3A_P95_G123_D4-IgGinternal.ab1	IGHJ4*02	95.83	48	2	0	333	380	1	48	6e-18	76.3
+J	reversed|3A_P95_G123_D4-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	346	380	17	51	4e-16	70.3
+J	reversed|3A_P95_G123_D4-IgGinternal.ab1	IGHJ4*01	93.75	48	3	0	333	380	1	48	6e-15	66.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_D1-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-48*03	IGHD2-21*01	IGHJ1*01	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+ATTAC	(TGTG)	GTGG	GGATGGCCATTCTTGGCC	CTGGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	19	94	76	72	4	0	94.7
+CDR1	95	109	15	14	1	0	93.3
+FWR2	110	151	42	40	2	0	95.2
+CDR2	152	202	51	49	2	0	96.1
+FWR3	203	293	91	88	3	0	96.7
+Total	N/A	N/A	275	263	12	0	95.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P95_G123_D1-IgGinternal.ab1	IGHV3-48*03	95.64	275	12	0	19	293	15	289	3e-111	 392
+V	reversed|3A_P95_G123_D1-IgGinternal.ab1	IGHV3-48*04	93.09	275	19	0	19	293	15	289	1e-104	 371
+V	reversed|3A_P95_G123_D1-IgGinternal.ab1	IGHV3-48*01	92.73	275	20	0	19	293	15	289	1e-103	 367
+D	reversed|3A_P95_G123_D1-IgGinternal.ab1	IGHD2-21*01	100.00	8	0	0	290	297	8	15	3.5	16.4
+D	reversed|3A_P95_G123_D1-IgGinternal.ab1	IGHD2-21*02	100.00	8	0	0	290	297	8	15	3.5	16.4
+D	reversed|3A_P95_G123_D1-IgGinternal.ab1	IGHD2-15*01	100.00	7	0	0	291	297	12	18	   14	14.4
+J	reversed|3A_P95_G123_D1-IgGinternal.ab1	IGHJ1*01	100.00	35	0	0	316	350	18	52	3e-16	70.3
+J	reversed|3A_P95_G123_D1-IgGinternal.ab1	IGHJ5*02	97.30	37	1	0	314	350	15	51	2e-14	64.3
+J	reversed|3A_P95_G123_D1-IgGinternal.ab1	IGHJ4*02	97.14	35	1	0	316	350	14	48	3e-13	60.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P96_JS9_D3-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-69*05	IGHD3-10*02	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAGA	GATAATCGTGATGATGCTCTCCC	TCGGGGA	TCGGG	CTGGT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	71	155	85	79	6	0	92.9
+CDR1	156	170	15	11	4	0	73.3
+FWR2	171	212	42	42	0	0	100
+CDR2	213	263	51	43	8	0	84.3
+FWR3	264	359	96	79	17	0	82.3
+Total	N/A	N/A	289	254	35	0	87.9
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P96_JS9_D3-IgGinternal.ab1	IGHV1-69*05	87.89	289	35	0	71	359	6	294	4e-96	 343
+V	reversed|3A_P96_JS9_D3-IgGinternal.ab1	IGHV1-69*12	87.63	291	36	0	71	361	6	296	4e-96	 343
+V	reversed|3A_P96_JS9_D3-IgGinternal.ab1	IGHV1-69*01	88.11	286	34	0	76	361	11	296	1e-95	 341
+D	reversed|3A_P96_JS9_D3-IgGinternal.ab1	IGHD3-10*02	100.00	7	0	0	383	389	13	19	   16	14.4
+D	reversed|3A_P96_JS9_D3-IgGinternal.ab1	IGHD3-10*01	100.00	7	0	0	383	389	14	20	   16	14.4
+D	reversed|3A_P96_JS9_D3-IgGinternal.ab1	IGHD5-24*01	100.00	6	0	0	357	362	3	8	   63	12.4
+J	reversed|3A_P96_JS9_D3-IgGinternal.ab1	IGHJ5*02	93.62	47	3	0	395	441	5	51	3e-14	64.3
+J	reversed|3A_P96_JS9_D3-IgGinternal.ab1	IGHJ4*02	94.29	35	2	0	407	441	14	48	4e-10	50.3
+J	reversed|3A_P96_JS9_D3-IgGinternal.ab1	IGHJ5*01	89.36	47	5	0	395	441	5	51	3e-08	44.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_C8-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-30-3*01	IGHD2/OR15-2b*01	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGCGA	CAGGACGCCGAGAA	TACTACTTT	GAAAAT	TGGGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	80	155	76	73	3	0	96.1
+CDR1	156	170	15	10	5	0	66.7
+FWR2	171	212	42	41	1	0	97.6
+CDR2	213	263	51	46	5	0	90.2
+FWR3	264	357	94	84	10	0	89.4
+Total	N/A	N/A	278	254	24	0	91.4
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_C8-IgGinternal.ab1	IGHV3-30-3*01	91.37	278	24	0	80	357	15	292	3e-101	 360
+V	reversed|3A_P94_LVH_C8-IgGinternal.ab1	IGHV3-30-3*03	90.75	281	26	0	80	360	15	295	8e-101	 358
+V	reversed|3A_P94_LVH_C8-IgGinternal.ab1	IGHV3-30-3*02	90.75	281	26	0	80	360	15	295	8e-101	 358
+D	reversed|3A_P94_LVH_C8-IgGinternal.ab1	IGHD2/OR15-2b*01	100.00	9	0	0	372	380	16	24	0.94	18.4
+D	reversed|3A_P94_LVH_C8-IgGinternal.ab1	IGHD2/OR15-2a*01	100.00	9	0	0	372	380	16	24	0.94	18.4
+D	reversed|3A_P94_LVH_C8-IgGinternal.ab1	IGHD1-26*01	100.00	6	0	0	372	377	15	20	   60	12.4
+J	reversed|3A_P94_LVH_C8-IgGinternal.ab1	IGHJ5*02	100.00	34	0	0	387	420	18	51	2e-15	68.3
+J	reversed|3A_P94_LVH_C8-IgGinternal.ab1	IGHJ4*02	93.75	48	3	0	373	420	1	48	6e-15	66.3
+J	reversed|3A_P94_LVH_C8-IgGinternal.ab1	IGHJ5*01	97.06	34	1	0	387	420	18	51	2e-12	58.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_E4-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-7*01	IGHD6-13*01	IGHJ6*03	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	TCTCGG	GCAGCAGGTGGTAC	GGGC	ATTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	93	76	74	2	0	97.4
+CDR1	94	108	15	11	4	0	73.3
+FWR2	109	150	42	42	0	0	100
+CDR2	151	201	51	43	8	0	84.3
+FWR3	202	297	96	92	4	0	95.8
+CDR3 (V region only)	298	298	1	1	0	0	100
+Total	N/A	N/A	281	263	18	0	93.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_E4-IgGinternal.ab1	IGHV3-7*01	93.59	281	18	0	18	298	15	295	2e-108	 383
+V	reversed|3A_P94_LVH_E4-IgGinternal.ab1	IGHV3-7*03	93.24	281	19	0	18	298	15	295	2e-107	 380
+V	reversed|3A_P94_LVH_E4-IgGinternal.ab1	IGHV3-7*02	93.21	280	19	0	18	297	15	294	6e-107	 378
+D	reversed|3A_P94_LVH_E4-IgGinternal.ab1	IGHD6-13*01	92.86	14	1	0	305	318	8	21	0.88	18.4
+D	reversed|3A_P94_LVH_E4-IgGinternal.ab1	IGHD4-23*01	100.00	7	0	0	311	317	8	14	   14	14.4
+D	reversed|3A_P94_LVH_E4-IgGinternal.ab1	IGHD2-15*01	100.00	7	0	0	311	317	14	20	   14	14.4
+J	reversed|3A_P94_LVH_E4-IgGinternal.ab1	IGHJ6*03	96.55	58	2	0	323	380	1	58	6e-24	96.2
+J	reversed|3A_P94_LVH_E4-IgGinternal.ab1	IGHJ6*04	100.00	38	0	0	343	380	21	58	6e-18	76.3
+J	reversed|3A_P94_LVH_E4-IgGinternal.ab1	IGHJ6*02	97.37	38	1	0	343	380	21	58	6e-15	66.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_F9-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-30-3*01	IGHD3-3*01	IGHJ2*01	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGAGA	GTCGGCTT	TTACGATTTTT	C	CTTCG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	86	160	75	69	6	0	92
+CDR1	161	175	15	11	4	0	73.3
+FWR2	176	217	42	42	0	0	100
+CDR2	218	268	51	44	7	0	86.3
+FWR3	269	364	96	83	13	0	86.5
+Total	N/A	N/A	279	249	30	0	89.2
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_F9-IgGinternal.ab1	IGHV3-30-3*01	89.25	279	30	0	86	364	16	294	4e-96	 343
+V	reversed|3A_P94_LVH_F9-IgGinternal.ab1	IGHV3-30-3*03	88.93	280	31	0	86	365	16	295	1e-95	 341
+V	reversed|3A_P94_LVH_F9-IgGinternal.ab1	IGHV3-30*04	88.93	280	31	0	86	365	16	295	1e-95	 341
+D	reversed|3A_P94_LVH_F9-IgGinternal.ab1	IGHD3-3*01	100.00	11	0	0	373	383	4	14	0.060	22.4
+D	reversed|3A_P94_LVH_F9-IgGinternal.ab1	IGHD5-12*01	100.00	7	0	0	374	380	15	21	   15	14.4
+D	reversed|3A_P94_LVH_F9-IgGinternal.ab1	IGHD3-9*01	100.00	7	0	0	373	379	4	10	   15	14.4
+J	reversed|3A_P94_LVH_F9-IgGinternal.ab1	IGHJ2*01	100.00	44	0	0	385	428	10	53	2e-21	88.2
+J	reversed|3A_P94_LVH_F9-IgGinternal.ab1	IGHJ1*01	91.43	35	3	0	394	428	18	52	4e-07	40.4
+J	reversed|3A_P94_LVH_F9-IgGinternal.ab1	IGHJ5*01	88.57	35	4	0	394	428	17	51	4e-04	30.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_D5-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-30*18	IGHD2-2*02	IGHJ6*04	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AAAGA	CCGATCCTACTGTACTGGTGAT	AGCTGCTATAC	TG	TGGAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	99	175	77	73	4	0	94.8
+CDR1	176	190	15	14	1	0	93.3
+FWR2	191	232	42	39	3	0	92.9
+CDR2	233	283	51	42	9	0	82.4
+FWR3	284	379	96	89	7	0	92.7
+CDR3 (V region only)	380	381	2	2	0	0	100
+Total	N/A	N/A	283	259	24	0	91.5
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_D5-IgGinternal.ab1	IGHV3-30*18	91.52	283	24	0	99	381	14	296	1e-103	 367
+V	reversed|3A_P94_LVH_D5-IgGinternal.ab1	IGHV3-30*03	91.17	283	25	0	99	381	14	296	1e-102	 364
+V	reversed|3A_P94_LVH_D5-IgGinternal.ab1	IGHV3-30*02	90.81	283	26	0	99	381	14	296	1e-101	 361
+D	reversed|3A_P94_LVH_D5-IgGinternal.ab1	IGHD2-2*02	100.00	11	0	0	404	414	20	30	0.064	22.4
+D	reversed|3A_P94_LVH_D5-IgGinternal.ab1	IGHD2-8*02	100.00	10	0	0	392	401	8	17	0.26	20.4
+D	reversed|3A_P94_LVH_D5-IgGinternal.ab1	IGHD2-15*01	93.33	15	1	0	397	411	13	27	0.26	20.4
+J	reversed|3A_P94_LVH_D5-IgGinternal.ab1	IGHJ6*04	95.24	42	2	0	417	458	22	63	3e-14	64.3
+J	reversed|3A_P94_LVH_D5-IgGinternal.ab1	IGHJ6*03	95.12	41	2	0	417	457	22	62	1e-13	62.3
+J	reversed|3A_P94_LVH_D5-IgGinternal.ab1	IGHJ6*02	92.68	41	3	0	417	457	22	62	1e-10	52.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_A9-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-30*02	IGHD5-12*01	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAAA	(GA)	TAT	CAACGAAAGATCGGTTTCAGGTCTGGTTCAT	TGGGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	9	92	85	82	2	1	96.5
+CDR1	93	107	15	11	4	0	73.3
+FWR2	108	149	42	40	2	0	95.2
+CDR2	150	200	51	45	6	0	88.2
+FWR3	201	296	96	89	7	0	92.7
+CDR3 (V region only)	297	298	2	2	0	0	100
+Total	N/A	N/A	291	269	21	1	92.4
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_A9-IgGinternal.ab1	IGHV3-30*02	92.44	291	21	1	9	298	6	296	2e-107	 380
+V	reversed|3A_P94_LVH_A9-IgGinternal.ab1	IGHV3-33*06	91.41	291	24	1	9	298	6	296	1e-104	 371
+V	reversed|3A_P94_LVH_A9-IgGinternal.ab1	IGHV3-33*03	91.07	291	25	1	9	298	6	296	1e-103	 367
+D	reversed|3A_P94_LVH_A9-IgGinternal.ab1	IGHD5-12*01	100.00	5	0	0	297	301	4	8	  214	10.4
+D	reversed|3A_P94_LVH_A9-IgGinternal.ab1	IGHD3-9*01	100.00	5	0	0	297	301	8	12	  214	10.4
+D	reversed|3A_P94_LVH_A9-IgGinternal.ab1	IGHD1-20*01	100.00	5	0	0	303	307	12	16	  214	10.4
+J	reversed|3A_P94_LVH_A9-IgGinternal.ab1	IGHJ5*02	100.00	34	0	0	333	366	18	51	1e-15	68.3
+J	reversed|3A_P94_LVH_A9-IgGinternal.ab1	IGHJ4*02	100.00	34	0	0	333	366	15	48	1e-15	68.3
+J	reversed|3A_P94_LVH_A9-IgGinternal.ab1	IGHJ5*01	97.06	34	1	0	333	366	18	51	1e-12	58.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_H9-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-30*18	IGHD3-16*02	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AAAGA	TATCCTCCGA	TTGGGG	CCCTTTGGG	TACTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	93	169	77	75	2	0	97.4
+CDR1	170	184	15	13	2	0	86.7
+FWR2	185	226	42	40	2	0	95.2
+CDR2	227	277	51	48	3	0	94.1
+FWR3	278	373	96	91	5	0	94.8
+CDR3 (V region only)	374	375	2	2	0	0	100
+Total	N/A	N/A	283	269	14	0	95.1
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_H9-IgGinternal.ab1	IGHV3-30*18	95.05	283	14	0	93	375	14	296	6e-113	 399
+V	reversed|3A_P94_LVH_H9-IgGinternal.ab1	IGHV3-30*03	94.70	283	15	0	93	375	14	296	5e-112	 396
+V	reversed|3A_P94_LVH_H9-IgGinternal.ab1	IGHV3-30*19	94.70	283	15	0	93	375	14	296	5e-112	 396
+D	reversed|3A_P94_LVH_H9-IgGinternal.ab1	IGHD3-16*02	100.00	6	0	0	386	391	16	21	   63	12.4
+D	reversed|3A_P94_LVH_H9-IgGinternal.ab1	IGHD3-16*02	100.00	6	0	0	395	400	15	20	   63	12.4
+D	reversed|3A_P94_LVH_H9-IgGinternal.ab1	IGHD3-16*01	100.00	6	0	0	386	391	16	21	   63	12.4
+J	reversed|3A_P94_LVH_H9-IgGinternal.ab1	IGHJ4*02	97.83	46	1	0	401	446	3	48	1e-19	82.3
+J	reversed|3A_P94_LVH_H9-IgGinternal.ab1	IGHJ4*01	95.65	46	2	0	401	446	3	48	1e-16	72.3
+J	reversed|3A_P94_LVH_H9-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	412	446	17	51	4e-16	70.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_F7-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-64*05	IGHD2-21*01	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GACAG	GTCCTCTCCTCCGACACT	GTGATT	AT	TGGGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	107	182	76	73	3	0	96.1
+CDR1	183	197	15	13	2	0	86.7
+FWR2	198	239	42	42	0	0	100
+CDR2	240	290	51	44	7	0	86.3
+FWR3	291	386	96	87	9	0	90.6
+CDR3 (V region only)	387	387	1	1	0	0	100
+Total	N/A	N/A	281	260	21	0	92.5
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_F7-IgGinternal.ab1	IGHV3-64*05	92.53	281	21	0	107	387	15	295	2e-105	 374
+V	reversed|3A_P94_LVH_F7-IgGinternal.ab1	IGHV3-64D*06	92.53	281	21	0	107	387	15	295	2e-105	 374
+V	reversed|3A_P94_LVH_F7-IgGinternal.ab1	IGHV3-64*03	92.17	281	22	0	107	387	15	295	2e-104	 371
+D	reversed|3A_P94_LVH_F7-IgGinternal.ab1	IGHD2-21*01	100.00	6	0	0	406	411	15	20	   63	12.4
+D	reversed|3A_P94_LVH_F7-IgGinternal.ab1	IGHD3-16*02	100.00	6	0	0	407	412	7	12	   63	12.4
+D	reversed|3A_P94_LVH_F7-IgGinternal.ab1	IGHD3-16*01	100.00	6	0	0	407	412	7	12	   63	12.4
+J	reversed|3A_P94_LVH_F7-IgGinternal.ab1	IGHJ5*02	94.12	34	2	0	414	447	18	51	2e-09	48.3
+J	reversed|3A_P94_LVH_F7-IgGinternal.ab1	IGHJ4*02	94.12	34	2	0	414	447	15	48	2e-09	48.3
+J	reversed|3A_P94_LVH_F7-IgGinternal.ab1	IGHJ5*01	91.18	34	3	0	414	447	18	51	2e-06	38.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P96_JS9_E7-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-2*02	IGHD3-3*02	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAGA	TAGGGCAGGAGGATCTGCAATACCCGGGC	TTTTGGA	T	TACTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	79	165	87	81	6	0	93.1
+CDR1	166	180	15	14	1	0	93.3
+FWR2	181	222	42	40	2	0	95.2
+CDR2	223	273	51	48	3	0	94.1
+FWR3	274	369	96	87	9	0	90.6
+CDR3 (V region only)	370	371	2	2	0	0	100
+Total	N/A	N/A	293	272	21	0	92.8
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P96_JS9_E7-IgGinternal.ab1	IGHV1-2*02	92.83	293	21	0	79	371	4	296	4e-111	 392
+V	reversed|3A_P96_JS9_E7-IgGinternal.ab1	IGHV1-2*05	92.15	293	23	0	79	371	4	296	3e-109	 386
+V	reversed|3A_P96_JS9_E7-IgGinternal.ab1	IGHV1-2*03	92.15	293	23	0	79	371	4	296	3e-109	 386
+D	reversed|3A_P96_JS9_E7-IgGinternal.ab1	IGHD3-3*02	100.00	7	0	0	401	407	11	17	   16	14.4
+D	reversed|3A_P96_JS9_E7-IgGinternal.ab1	IGHD3-3*01	100.00	7	0	0	401	407	11	17	   16	14.4
+D	reversed|3A_P96_JS9_E7-IgGinternal.ab1	IGHD3/OR15-3b*01	100.00	7	0	0	401	407	11	17	   16	14.4
+J	reversed|3A_P96_JS9_E7-IgGinternal.ab1	IGHJ4*02	100.00	37	0	0	409	445	12	48	3e-17	74.3
+J	reversed|3A_P96_JS9_E7-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	411	445	17	51	4e-16	70.3
+J	reversed|3A_P96_JS9_E7-IgGinternal.ab1	IGHJ4*01	97.30	37	1	0	409	445	12	48	3e-14	64.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_E2-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-69*01	IGHD2-21*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGTAT	(TATTGTG)	N/A	TCCAGAGAATGAAGTACCGCCATGTCGATCCCGACAGGG	ACTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	21	94	74	69	5	0	93.2
+CDR1	95	109	15	12	3	0	80
+FWR2	110	151	42	41	1	0	97.6
+CDR2	152	202	51	40	11	0	78.4
+FWR3	203	293	91	81	10	0	89
+Total	N/A	N/A	273	243	30	0	89
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_E2-IgGinternal.ab1	IGHV1-69*01	89.01	273	30	0	21	293	17	289	2e-93	 333
+V	reversed|3A_P94_LVH_E2-IgGinternal.ab1	IGHV1-69D*01	89.01	273	30	0	21	293	17	289	2e-93	 333
+V	reversed|3A_P94_LVH_E2-IgGinternal.ab1	IGHV1-69*12	89.01	273	30	0	21	293	17	289	2e-93	 333
+D	reversed|3A_P94_LVH_E2-IgGinternal.ab1	IGHD2-21*01	100.00	7	0	0	287	293	5	11	   14	14.4
+D	reversed|3A_P94_LVH_E2-IgGinternal.ab1	IGHD2-21*02	100.00	7	0	0	287	293	5	11	   14	14.4
+D	reversed|3A_P94_LVH_E2-IgGinternal.ab1	IGHD2/OR15-2b*01	100.00	5	0	0	299	303	1	5	  219	10.4
+J	reversed|3A_P94_LVH_E2-IgGinternal.ab1	IGHJ4*02	97.92	48	1	0	333	380	1	48	5e-21	86.3
+J	reversed|3A_P94_LVH_E2-IgGinternal.ab1	IGHJ4*01	95.83	48	2	0	333	380	1	48	6e-18	76.3
+J	reversed|3A_P94_LVH_E2-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	346	380	17	51	4e-16	70.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_G5-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-9*01	IGHD1-26*01	IGHJ5*01	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AAGGA	CGCCTTC	AGTGGGAGCTACTA	TAAATACGG	CTGGT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	119	194	76	67	9	0	88.2
+CDR1	195	209	15	15	0	0	100
+FWR2	210	251	42	40	2	0	95.2
+CDR2	252	302	51	41	10	0	80.4
+FWR3	303	398	96	83	13	0	86.5
+CDR3 (V region only)	399	400	2	2	0	0	100
+Total	N/A	N/A	282	248	34	0	87.9
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_G5-IgGinternal.ab1	IGHV3-9*01	87.94	282	34	0	119	400	15	296	1e-93	 335
+V	reversed|3A_P94_LVH_G5-IgGinternal.ab1	IGHV3-9*03	87.59	282	35	0	119	400	15	296	9e-93	 332
+V	reversed|3A_P94_LVH_G5-IgGinternal.ab1	IGHV3-9*02	87.59	282	35	0	119	400	15	296	9e-93	 332
+D	reversed|3A_P94_LVH_G5-IgGinternal.ab1	IGHD1-26*01	100.00	14	0	0	408	421	6	19	0.001	28.4
+D	reversed|3A_P94_LVH_G5-IgGinternal.ab1	IGHD2-15*01	100.00	6	0	0	415	420	24	29	   67	12.4
+D	reversed|3A_P94_LVH_G5-IgGinternal.ab1	IGHD3-10*02	100.00	6	0	0	417	422	5	10	   67	12.4
+J	reversed|3A_P94_LVH_G5-IgGinternal.ab1	IGHJ5*01	97.87	47	1	0	431	477	5	51	3e-20	84.3
+J	reversed|3A_P94_LVH_G5-IgGinternal.ab1	IGHJ5*02	97.87	47	1	0	431	477	5	51	3e-20	84.3
+J	reversed|3A_P94_LVH_G5-IgGinternal.ab1	IGHJ4*02	100.00	35	0	0	443	477	14	48	4e-16	70.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_F10-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-30*14	IGHD3-3*02	IGHJ6*03	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	GACCCGCTTC	TTGGAGTGGTTA	CGGAGGGGGTTTCGTCTATTCTTATG	TGGAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	188	264	77	75	2	0	97.4
+CDR1	265	279	15	12	3	0	80
+FWR2	280	321	42	40	2	0	95.2
+CDR2	322	372	51	42	9	0	82.4
+FWR3	373	468	96	80	16	0	83.3
+CDR3 (V region only)	469	469	1	1	0	0	100
+Total	N/A	N/A	282	250	32	0	88.7
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_F10-IgGinternal.ab1	IGHV3-30*14	88.65	282	32	0	188	469	14	295	2e-95	 341
+V	reversed|3A_P94_LVH_F10-IgGinternal.ab1	IGHV3-30-3*03	88.65	282	32	0	188	469	14	295	2e-95	 341
+V	reversed|3A_P94_LVH_F10-IgGinternal.ab1	IGHV3-30*04	88.65	282	32	0	188	469	14	295	2e-95	 341
+D	reversed|3A_P94_LVH_F10-IgGinternal.ab1	IGHD3-3*02	100.00	12	0	0	480	491	13	24	0.019	24.4
+D	reversed|3A_P94_LVH_F10-IgGinternal.ab1	IGHD3-3*01	100.00	12	0	0	480	491	13	24	0.019	24.4
+D	reversed|3A_P94_LVH_F10-IgGinternal.ab1	IGHD3-22*01	100.00	8	0	0	484	491	17	24	4.9	16.4
+J	reversed|3A_P94_LVH_F10-IgGinternal.ab1	IGHJ6*03	97.56	41	1	0	518	558	22	62	1e-16	72.3
+J	reversed|3A_P94_LVH_F10-IgGinternal.ab1	IGHJ6*04	97.56	41	1	0	518	558	22	62	1e-16	72.3
+J	reversed|3A_P94_LVH_F10-IgGinternal.ab1	IGHJ6*02	95.12	41	2	0	518	558	22	62	1e-13	62.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_D10-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-59*02	IGHD3-3*02	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCGAG	GGGTCCTTGAAATATTGGGT	TTTTTGGAGTGGT	CATTGAGA	TTTGA	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	211	286	76	68	8	0	89.5
+CDR1	287	301	15	11	4	0	73.3
+FWR2	302	343	42	37	5	0	88.1
+CDR2	344	391	48	37	11	0	77.1
+FWR3	392	487	96	80	16	0	83.3
+CDR3 (V region only)	488	488	1	1	0	0	100
+Total	N/A	N/A	278	234	44	0	84.2
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P95_G123_D10-IgGinternal.ab1	IGHV4-59*02	84.17	278	44	0	211	488	15	292	2e-82	 297
+V	reversed|3A_P95_G123_D10-IgGinternal.ab1	IGHV4-59*01	83.81	278	45	0	211	488	15	292	2e-81	 294
+V	reversed|3A_P95_G123_D10-IgGinternal.ab1	IGHV4-59*07	83.39	277	46	0	211	487	15	291	5e-80	 290
+D	reversed|3A_P95_G123_D10-IgGinternal.ab1	IGHD3-3*02	100.00	13	0	0	509	521	10	22	0.005	26.4
+D	reversed|3A_P95_G123_D10-IgGinternal.ab1	IGHD3-3*01	100.00	13	0	0	509	521	10	22	0.005	26.4
+D	reversed|3A_P95_G123_D10-IgGinternal.ab1	IGHD3/OR15-3b*01	100.00	8	0	0	509	516	10	17	5.0	16.4
+J	reversed|3A_P95_G123_D10-IgGinternal.ab1	IGHJ4*02	93.02	43	3	0	530	572	6	48	8e-12	56.3
+J	reversed|3A_P95_G123_D10-IgGinternal.ab1	IGHJ5*02	94.44	36	2	0	537	572	16	51	1e-10	52.3
+J	reversed|3A_P95_G123_D10-IgGinternal.ab1	IGHJ5*01	92.50	40	3	0	533	572	12	51	5e-10	50.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_G4-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-59*01	IGHD6-13*01	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GGGAG	GTTTGTATC	GCAGCAGCTGGTAC	GGTCCCCTCCAT	TGGTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	266	354	89	79	10	0	88.8
+CDR1	355	369	15	14	1	0	93.3
+FWR2	370	411	42	39	3	0	92.9
+CDR2	412	459	48	41	7	0	85.4
+FWR3	460	555	96	82	14	0	85.4
+CDR3 (V region only)	556	556	1	1	0	0	100
+Total	N/A	N/A	291	256	35	0	88
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_G4-IgGinternal.ab1	IGHV4-59*01	87.97	291	35	0	266	556	2	292	7e-97	 346
+V	reversed|3A_P94_LVH_G4-IgGinternal.ab1	IGHV4-59*02	87.63	291	36	0	266	556	2	292	6e-96	 343
+V	reversed|3A_P94_LVH_G4-IgGinternal.ab1	IGHV4-59*07	87.59	290	36	0	266	555	2	291	2e-95	 341
+D	reversed|3A_P94_LVH_G4-IgGinternal.ab1	IGHD6-13*01	100.00	14	0	0	566	579	8	21	0.001	28.4
+D	reversed|3A_P94_LVH_G4-IgGinternal.ab1	IGHD6-19*01	100.00	8	0	0	572	579	14	21	5.4	16.4
+D	reversed|3A_P94_LVH_G4-IgGinternal.ab1	IGHD6-6*01	100.00	7	0	0	568	574	7	13	   22	14.4
+J	reversed|3A_P94_LVH_G4-IgGinternal.ab1	IGHJ5*02	93.48	46	3	0	592	637	6	51	1e-13	62.3
+J	reversed|3A_P94_LVH_G4-IgGinternal.ab1	IGHJ5*01	89.13	46	5	0	592	637	6	51	1e-07	42.3
+J	reversed|3A_P94_LVH_G4-IgGinternal.ab1	IGHJ4*02	91.43	35	3	0	603	637	14	48	6e-07	40.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_D11-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-46*01	N/A	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	N/A	N/A	GTCCCTATCGCTCCTATCAA	TACTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	271	344	74	68	6	0	91.9
+CDR1	345	359	15	14	1	0	93.3
+FWR2	360	401	42	41	1	0	97.6
+CDR2	402	452	51	46	5	0	90.2
+FWR3	453	548	96	91	5	0	94.8
+CDR3 (V region only)	549	549	1	1	0	0	100
+Total	N/A	N/A	279	261	18	0	93.5
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	reversed|3A_P94_LVH_D11-IgGinternal.ab1	IGHV1-46*01	93.55	279	18	0	271	549	17	295	3e-107	 380
+V	reversed|3A_P94_LVH_D11-IgGinternal.ab1	IGHV1-46*02	93.19	279	19	0	271	549	17	295	3e-106	 377
+V	reversed|3A_P94_LVH_D11-IgGinternal.ab1	IGHV1-46*03	93.19	279	19	0	271	549	17	295	3e-106	 377
+J	reversed|3A_P94_LVH_D11-IgGinternal.ab1	IGHJ4*02	100.00	37	0	0	570	606	12	48	3e-17	74.3
+J	reversed|3A_P94_LVH_D11-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	572	606	17	51	5e-16	70.3
+J	reversed|3A_P94_LVH_D11-IgGinternal.ab1	IGHJ4*01	97.30	37	1	0	570	606	12	48	3e-14	64.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_B12-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-31*03	IGHD1-14*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	GGGCC	CCGGAA	GGGTCTACTTCATGGGATCCCTTGGGGGAGTTCTCCTT	CTTTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	335	410	76	75	1	0	98.7
+CDR1	411	431	21	19	2	0	90.5
+FWR2	432	473	42	42	0	0	100
+CDR2	474	521	48	46	2	0	95.8
+FWR3	522	617	96	88	8	0	91.7
+CDR3 (V region only)	618	618	1	1	0	0	100
+Total	N/A	N/A	284	271	13	0	95.4
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_B12-IgGinternal.ab1	IGHV4-31*03	95.42	284	13	0	335	618	15	298	3e-114	 403
+V	reversed|3A_P94_LVH_B12-IgGinternal.ab1	IGHV4-31*02	95.07	284	14	0	335	618	15	298	3e-113	 400
+V	reversed|3A_P94_LVH_B12-IgGinternal.ab1	IGHV4-30-4*01	95.07	284	14	0	335	618	15	298	3e-113	 400
+D	reversed|3A_P94_LVH_B12-IgGinternal.ab1	IGHD1-14*01	100.00	6	0	0	624	629	8	13	   96	12.4
+D	reversed|3A_P94_LVH_B12-IgGinternal.ab1	IGHD5/OR15-5b*01	100.00	6	0	0	632	637	12	17	   96	12.4
+D	reversed|3A_P94_LVH_B12-IgGinternal.ab1	IGHD5/OR15-5a*01	100.00	6	0	0	632	637	12	17	   96	12.4
+J	reversed|3A_P94_LVH_B12-IgGinternal.ab1	IGHJ4*02	97.50	40	1	0	668	707	5	44	6e-16	70.3
+J	reversed|3A_P94_LVH_B12-IgGinternal.ab1	IGHJ5*02	100.00	32	0	0	676	707	16	47	4e-14	64.3
+J	reversed|3A_P94_LVH_B12-IgGinternal.ab1	IGHJ5*01	97.22	36	1	0	672	707	12	47	2e-13	62.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_A1-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-39*02	IGHD6-19*01	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TCGAG	GTACTT	GTATAGCAG	ACCTCTAGACTT	CTGGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	307	382	76	73	3	0	96.1
+CDR1	383	403	21	18	3	0	85.7
+FWR2	404	445	42	39	3	0	92.9
+CDR2	446	493	48	45	3	0	93.8
+FWR3	494	588	95	91	4	0	95.8
+Total	N/A	N/A	282	266	16	0	94.3
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_A1-IgGinternal.ab1	IGHV4-39*02	94.33	282	16	0	307	588	15	296	2e-110	 391
+V	reversed|3A_P94_LVH_A1-IgGinternal.ab1	IGHV4-39*01	93.97	282	17	0	307	588	15	296	2e-109	 388
+V	reversed|3A_P94_LVH_A1-IgGinternal.ab1	IGHV4-39*05	93.57	280	18	0	307	586	15	294	1e-107	 382
+D	reversed|3A_P94_LVH_A1-IgGinternal.ab1	IGHD6-19*01	100.00	9	0	0	595	603	3	11	1.4	18.4
+D	reversed|3A_P94_LVH_A1-IgGinternal.ab1	IGHD6-6*01	100.00	9	0	0	595	603	3	11	1.4	18.4
+D	reversed|3A_P94_LVH_A1-IgGinternal.ab1	IGHD6-25*01	100.00	9	0	0	595	603	3	11	1.4	18.4
+J	reversed|3A_P94_LVH_A1-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	616	650	17	51	6e-16	70.3
+J	reversed|3A_P94_LVH_A1-IgGinternal.ab1	IGHJ4*02	100.00	35	0	0	616	650	14	48	6e-16	70.3
+J	reversed|3A_P94_LVH_A1-IgGinternal.ab1	IGHJ5*01	97.14	35	1	0	616	650	17	51	6e-13	60.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_D12-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-31*03	IGHD3-10*02	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	GTTACAGTGG	ATGTTCG	TCG	TCGAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	312	387	76	72	4	0	94.7
+CDR1	388	408	21	17	4	0	81
+FWR2	409	450	42	36	6	0	85.7
+CDR2	451	498	48	38	10	0	79.2
+FWR3	499	594	96	80	16	0	83.3
+CDR3 (V region only)	595	596	2	2	0	0	100
+Total	N/A	N/A	285	245	40	0	86
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_D12-IgGinternal.ab1	IGHV4-31*03	85.96	285	40	0	312	596	15	299	2e-89	 321
+V	reversed|3A_P94_LVH_D12-IgGinternal.ab1	IGHV4-31*02	85.61	285	41	0	312	596	15	299	2e-88	 318
+V	reversed|3A_P94_LVH_D12-IgGinternal.ab1	IGHV4-30-4*01	85.61	285	41	0	312	596	15	299	2e-88	 318
+D	reversed|3A_P94_LVH_D12-IgGinternal.ab1	IGHD3-10*02	100.00	7	0	0	607	613	9	15	   22	14.4
+D	reversed|3A_P94_LVH_D12-IgGinternal.ab1	IGHD4-11*01	100.00	6	0	0	599	604	5	10	   90	12.4
+D	reversed|3A_P94_LVH_D12-IgGinternal.ab1	IGHD6-19*01	100.00	6	0	0	601	606	9	14	   90	12.4
+J	reversed|3A_P94_LVH_D12-IgGinternal.ab1	IGHJ5*02	100.00	42	0	0	617	658	10	51	4e-20	84.3
+J	reversed|3A_P94_LVH_D12-IgGinternal.ab1	IGHJ4*02	100.00	35	0	0	624	658	14	48	6e-16	70.3
+J	reversed|3A_P94_LVH_D12-IgGinternal.ab1	IGHJ5*01	95.24	42	2	0	617	658	10	51	4e-14	64.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_B7-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-11*04	IGHD1-1*01	IGHJ2*01	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	TCGGCCCGAA	TACAAGTGGAACG	TACGG	TACTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	334	409	76	75	1	0	98.7
+CDR1	410	424	15	15	0	0	100
+FWR2	425	466	42	42	0	0	100
+CDR2	467	517	51	49	2	0	96.1
+FWR3	518	613	96	93	3	0	96.9
+CDR3 (V region only)	614	615	2	2	0	0	100
+Total	N/A	N/A	282	276	6	0	97.9
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_B7-IgGinternal.ab1	IGHV3-11*04	97.87	282	6	0	334	615	15	296	8e-120	 422
+V	reversed|3A_P94_LVH_B7-IgGinternal.ab1	IGHV3-11*01	97.52	282	7	0	334	615	15	296	7e-119	 419
+V	reversed|3A_P94_LVH_B7-IgGinternal.ab1	IGHV3-11*06	96.10	282	11	0	334	615	15	296	4e-115	 406
+D	reversed|3A_P94_LVH_B7-IgGinternal.ab1	IGHD1-1*01	92.31	13	1	0	626	638	3	15	5.9	16.4
+D	reversed|3A_P94_LVH_B7-IgGinternal.ab1	IGHD1-20*01	100.00	7	0	0	632	638	9	15	   24	14.4
+D	reversed|3A_P94_LVH_B7-IgGinternal.ab1	IGHD4-17*01	100.00	6	0	0	639	644	5	10	   94	12.4
+J	reversed|3A_P94_LVH_B7-IgGinternal.ab1	IGHJ2*01	100.00	52	0	0	644	695	2	53	4e-26	 104
+J	reversed|3A_P94_LVH_B7-IgGinternal.ab1	IGHJ1*01	91.43	35	3	0	661	695	18	52	6e-07	40.4
+J	reversed|3A_P94_LVH_B7-IgGinternal.ab1	IGHJ5*01	88.57	35	4	0	661	695	17	51	6e-04	30.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_A10-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-30*03	IGHD7-27*01	IGHJ6*03	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	ACGTCTC	AACTGGGGA	TACTATTACC	ACATG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	327	402	76	75	1	0	98.7
+CDR1	403	417	15	12	3	0	80
+FWR2	418	459	42	42	0	0	100
+CDR2	460	510	51	47	4	0	92.2
+FWR3	511	606	96	93	3	0	96.9
+CDR3 (V region only)	607	608	2	2	0	0	100
+Total	N/A	N/A	282	271	11	0	96.1
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_A10-IgGinternal.ab1	IGHV3-30*03	96.10	282	11	0	327	608	15	296	4e-115	 406
+V	reversed|3A_P94_LVH_A10-IgGinternal.ab1	IGHV3-30*18	95.74	282	12	0	327	608	15	296	3e-114	 403
+V	reversed|3A_P94_LVH_A10-IgGinternal.ab1	IGHV3-30*10	95.39	282	13	0	327	608	15	296	3e-113	 400
+D	reversed|3A_P94_LVH_A10-IgGinternal.ab1	IGHD7-27*01	100.00	9	0	0	616	624	3	11	1.5	18.4
+D	reversed|3A_P94_LVH_A10-IgGinternal.ab1	IGHD1-1*01	100.00	7	0	0	615	621	5	11	   23	14.4
+D	reversed|3A_P94_LVH_A10-IgGinternal.ab1	IGHD3-10*02	100.00	6	0	0	625	630	5	10	   92	12.4
+J	reversed|3A_P94_LVH_A10-IgGinternal.ab1	IGHJ6*03	100.00	44	0	0	635	678	19	62	2e-21	88.2
+J	reversed|3A_P94_LVH_A10-IgGinternal.ab1	IGHJ6*04	100.00	43	0	0	637	679	21	63	9e-21	86.3
+J	reversed|3A_P94_LVH_A10-IgGinternal.ab1	IGHJ6*02	97.62	42	1	0	637	678	21	62	4e-17	74.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P96_JS9_B8-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-23*01	IGHD1-26*01	IGHJ1*01	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CAAGA	TAGGCCGTTC	TATAGTGGGA	ACTACCT	TGAAT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	344	420	77	71	6	0	92.2
+CDR1	421	435	15	14	1	0	93.3
+FWR2	436	477	42	42	0	0	100
+CDR2	478	528	51	44	7	0	86.3
+FWR3	529	624	96	89	7	0	92.7
+CDR3 (V region only)	625	626	2	2	0	0	100
+Total	N/A	N/A	283	262	21	0	92.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P96_JS9_B8-IgGinternal.ab1	IGHV3-23*01	92.58	283	21	0	344	626	14	296	3e-106	 377
+V	reversed|3A_P96_JS9_B8-IgGinternal.ab1	IGHV3-23*04	92.58	283	21	0	344	626	14	296	3e-106	 377
+V	reversed|3A_P96_JS9_B8-IgGinternal.ab1	IGHV3-23*02	91.87	283	23	0	344	626	14	296	2e-104	 371
+D	reversed|3A_P96_JS9_B8-IgGinternal.ab1	IGHD1-26*01	100.00	10	0	0	637	646	3	12	0.38	20.4
+D	reversed|3A_P96_JS9_B8-IgGinternal.ab1	IGHD1-7*01	100.00	8	0	0	644	651	10	17	6.0	16.4
+D	reversed|3A_P96_JS9_B8-IgGinternal.ab1	IGHD5-12*01	100.00	8	0	0	637	644	6	13	6.0	16.4
+J	reversed|3A_P96_JS9_B8-IgGinternal.ab1	IGHJ1*01	92.00	50	4	0	654	703	3	52	6e-13	60.3
+J	reversed|3A_P96_JS9_B8-IgGinternal.ab1	IGHJ4*02	91.67	36	3	0	668	703	13	48	2e-07	42.3
+J	reversed|3A_P96_JS9_B8-IgGinternal.ab1	IGHJ5*02	91.43	35	3	0	669	703	17	51	6e-07	40.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P96_JS9_F8-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-3*01	IGHD5-5*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCGAG	CACCCGAGGACAA	AGCTATGGTTAC	GGTGATTGGGGAGAA	TACTT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	344	428	85	75	10	0	88.2
+CDR1	429	443	15	11	4	0	73.3
+FWR2	444	485	42	41	1	0	97.6
+CDR2	486	536	51	47	4	0	92.2
+FWR3	537	631	95	89	6	0	93.7
+Total	N/A	N/A	288	263	25	0	91.3
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P96_JS9_F8-IgGinternal.ab1	IGHV1-3*01	91.32	288	25	0	344	631	6	293	8e-105	 372
+V	reversed|3A_P96_JS9_F8-IgGinternal.ab1	IGHV1-3*02	90.71	280	26	0	352	631	14	293	4e-100	 357
+V	reversed|3A_P96_JS9_F8-IgGinternal.ab1	IGHV1/OR15-3*02	87.50	280	35	0	352	631	14	293	1e-91	 329
+D	reversed|3A_P96_JS9_F8-IgGinternal.ab1	IGHD5-5*01	100.00	12	0	0	645	656	9	20	0.024	24.4
+D	reversed|3A_P96_JS9_F8-IgGinternal.ab1	IGHD5-18*01	100.00	12	0	0	645	656	9	20	0.024	24.4
+D	reversed|3A_P96_JS9_F8-IgGinternal.ab1	IGHD4-17*01	100.00	8	0	0	654	661	5	12	6.1	16.4
+J	reversed|3A_P96_JS9_F8-IgGinternal.ab1	IGHJ4*02	100.00	46	0	0	672	717	3	48	2e-22	92.2
+J	reversed|3A_P96_JS9_F8-IgGinternal.ab1	IGHJ4*01	97.83	46	1	0	672	717	3	48	2e-19	82.3
+J	reversed|3A_P96_JS9_F8-IgGinternal.ab1	IGHJ4*03	95.65	46	2	0	672	717	3	48	2e-16	72.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_H11-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-21*01	IGHD6-13*01	IGHJ3*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	TCCGCGGCCTTAACCTTAA	CAGCTGG	CGGGCGACTCCTCGGGCCA	TTGAT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	349	425	77	73	4	0	94.8
+CDR1	426	440	15	10	5	0	66.7
+FWR2	441	482	42	41	1	0	97.6
+CDR2	483	533	51	39	12	0	76.5
+FWR3	534	629	96	88	8	0	91.7
+CDR3 (V region only)	630	630	1	1	0	0	100
+Total	N/A	N/A	282	252	30	0	89.4
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_H11-IgGinternal.ab1	IGHV3-21*01	89.36	282	30	0	349	630	14	295	3e-97	 347
+V	reversed|3A_P94_LVH_H11-IgGinternal.ab1	IGHV3-21*02	89.36	282	30	0	349	630	14	295	3e-97	 347
+V	reversed|3A_P94_LVH_H11-IgGinternal.ab1	IGHV3-21*04	89.01	282	31	0	349	630	14	295	2e-96	 344
+D	reversed|3A_P94_LVH_H11-IgGinternal.ab1	IGHD6-13*01	100.00	7	0	0	650	656	12	18	   24	14.4
+D	reversed|3A_P94_LVH_H11-IgGinternal.ab1	IGHD5-5*01	100.00	6	0	0	649	654	7	12	   97	12.4
+D	reversed|3A_P94_LVH_H11-IgGinternal.ab1	IGHD5-18*01	100.00	6	0	0	649	654	7	12	   97	12.4
+J	reversed|3A_P94_LVH_H11-IgGinternal.ab1	IGHJ3*02	95.24	42	2	0	676	717	9	50	4e-14	64.3
+J	reversed|3A_P94_LVH_H11-IgGinternal.ab1	IGHJ3*01	95.24	42	2	0	676	717	9	50	4e-14	64.3
+J	reversed|3A_P94_LVH_H11-IgGinternal.ab1	IGHJ6*02	93.55	31	2	0	682	712	28	58	2e-07	42.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_H7-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-31*03	IGHD6-6*01	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	TACTCGTAGTCAGG	GCAGCTCG	CCCTGGGGACAATT	CAACT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	353	440	91	84	4	3	92.3
+CDR1	441	458	18	17	1	0	94.4
+FWR2	459	500	42	42	0	0	100
+CDR2	501	548	48	47	1	0	97.9
+FWR3	549	644	96	94	2	0	97.9
+CDR3 (V region only)	645	646	2	2	0	0	100
+Total	N/A	N/A	297	286	8	3	96.3
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_H7-IgGinternal.ab1	IGHV4-31*03	96.30	297	8	1	353	646	3	299	3e-120	 424
+V	reversed|3A_P94_LVH_H7-IgGinternal.ab1	IGHV4-31*02	95.96	297	9	1	353	646	3	299	2e-119	 420
+V	reversed|3A_P94_LVH_H7-IgGinternal.ab1	IGHV4-31*01	95.96	297	9	1	353	646	3	299	2e-119	 420
+D	reversed|3A_P94_LVH_H7-IgGinternal.ab1	IGHD6-6*01	100.00	8	0	0	661	668	8	15	6.2	16.4
+D	reversed|3A_P94_LVH_H7-IgGinternal.ab1	IGHD7-27*01	100.00	7	0	0	671	677	5	11	   25	14.4
+D	reversed|3A_P94_LVH_H7-IgGinternal.ab1	IGHD5-24*01	100.00	6	0	0	642	647	3	8	   98	12.4
+J	reversed|3A_P94_LVH_H7-IgGinternal.ab1	IGHJ5*02	100.00	50	0	0	683	732	2	51	6e-25	 100
+J	reversed|3A_P94_LVH_H7-IgGinternal.ab1	IGHJ5*01	96.00	50	2	0	683	732	2	51	6e-19	80.3
+J	reversed|3A_P94_LVH_H7-IgGinternal.ab1	IGHJ4*02	100.00	35	0	0	698	732	14	48	6e-16	70.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_A4-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-23*01	IGHD6-13*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAAA	TTGCCCTATCCC	GGTATAGCAGCAGCTGGTA	TTA	TTGAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	354	430	77	75	2	0	97.4
+CDR1	431	445	15	14	1	0	93.3
+FWR2	446	487	42	42	0	0	100
+CDR2	488	538	51	46	5	0	90.2
+FWR3	539	634	96	95	1	0	99
+Total	N/A	N/A	281	272	9	0	96.8
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P95_G123_A4-IgGinternal.ab1	IGHV3-23*01	96.80	281	9	0	354	634	14	294	1e-116	 411
+V	reversed|3A_P95_G123_A4-IgGinternal.ab1	IGHV3-23*04	96.80	281	9	0	354	634	14	294	1e-116	 411
+V	reversed|3A_P95_G123_A4-IgGinternal.ab1	IGHV3-23*02	96.09	281	11	0	354	634	14	294	1e-114	 405
+D	reversed|3A_P95_G123_A4-IgGinternal.ab1	IGHD6-13*01	100.00	19	0	0	647	665	2	20	1e-06	38.4
+D	reversed|3A_P95_G123_A4-IgGinternal.ab1	IGHD6-25*01	100.00	11	0	0	647	657	2	12	0.095	22.4
+D	reversed|3A_P95_G123_A4-IgGinternal.ab1	IGHD6-19*01	100.00	10	0	0	647	656	2	11	0.38	20.4
+J	reversed|3A_P95_G123_A4-IgGinternal.ab1	IGHJ4*02	100.00	42	0	0	669	710	7	48	4e-20	84.3
+J	reversed|3A_P95_G123_A4-IgGinternal.ab1	IGHJ4*01	97.62	42	1	0	669	710	7	48	4e-17	74.3
+J	reversed|3A_P95_G123_A4-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	676	710	17	51	6e-16	70.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_E6-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-21*01	IGHD6-19*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGCGA	AGTCGA	ATAGCAGTGGCAGGTAC	CATCC	CTTTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	355	431	77	74	3	0	96.1
+CDR1	432	446	15	14	1	0	93.3
+FWR2	447	488	42	41	1	0	97.6
+CDR2	489	539	51	47	4	0	92.2
+FWR3	540	633	94	92	2	0	97.9
+Total	N/A	N/A	279	268	11	0	96.1
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_E6-IgGinternal.ab1	IGHV3-21*01	96.06	279	11	0	355	633	14	292	1e-113	 402
+V	reversed|3A_P94_LVH_E6-IgGinternal.ab1	IGHV3-21*02	96.06	279	11	0	355	633	14	292	1e-113	 402
+V	reversed|3A_P94_LVH_E6-IgGinternal.ab1	IGHV3-21*04	95.70	279	12	0	355	633	14	292	8e-113	 399
+D	reversed|3A_P94_LVH_E6-IgGinternal.ab1	IGHD6-19*01	94.12	17	1	0	640	656	5	21	0.024	24.4
+D	reversed|3A_P94_LVH_E6-IgGinternal.ab1	IGHD6-6*01	100.00	7	0	0	640	646	5	11	   24	14.4
+D	reversed|3A_P94_LVH_E6-IgGinternal.ab1	IGHD6-25*01	100.00	7	0	0	640	646	5	11	   24	14.4
+J	reversed|3A_P94_LVH_E6-IgGinternal.ab1	IGHJ4*02	97.73	44	1	0	662	705	5	48	2e-18	78.3
+J	reversed|3A_P94_LVH_E6-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	671	705	17	51	6e-16	70.3
+J	reversed|3A_P94_LVH_E6-IgGinternal.ab1	IGHJ4*01	95.45	44	2	0	662	705	5	48	2e-15	68.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_F1-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-31*03	IGHD3-10*02	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	GTTACAGTGG	ATGTTCG	TCG	TCGAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	345	420	76	72	4	0	94.7
+CDR1	421	441	21	17	4	0	81
+FWR2	442	483	42	36	6	0	85.7
+CDR2	484	531	48	38	10	0	79.2
+FWR3	532	627	96	80	16	0	83.3
+CDR3 (V region only)	628	629	2	2	0	0	100
+Total	N/A	N/A	285	245	40	0	86
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_F1-IgGinternal.ab1	IGHV4-31*03	85.96	285	40	0	345	629	15	299	2e-89	 321
+V	reversed|3A_P94_LVH_F1-IgGinternal.ab1	IGHV4-31*02	85.61	285	41	0	345	629	15	299	2e-88	 318
+V	reversed|3A_P94_LVH_F1-IgGinternal.ab1	IGHV4-30-4*01	85.61	285	41	0	345	629	15	299	2e-88	 318
+D	reversed|3A_P94_LVH_F1-IgGinternal.ab1	IGHD3-10*02	100.00	7	0	0	640	646	9	15	   24	14.4
+D	reversed|3A_P94_LVH_F1-IgGinternal.ab1	IGHD4-11*01	100.00	6	0	0	632	637	5	10	   94	12.4
+D	reversed|3A_P94_LVH_F1-IgGinternal.ab1	IGHD6-19*01	100.00	6	0	0	634	639	9	14	   94	12.4
+J	reversed|3A_P94_LVH_F1-IgGinternal.ab1	IGHJ5*02	100.00	42	0	0	650	691	10	51	4e-20	84.3
+J	reversed|3A_P94_LVH_F1-IgGinternal.ab1	IGHJ4*02	100.00	35	0	0	657	691	14	48	6e-16	70.3
+J	reversed|3A_P94_LVH_F1-IgGinternal.ab1	IGHJ5*01	95.24	42	2	0	650	691	10	51	4e-14	64.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_G8-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-30-3*03	IGHD1-7*01	IGHJ3*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	GGGC	AACTGGAACT	CGGAGTATCA	TGATG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	355	442	88	77	11	0	87.5
+CDR1	443	457	15	13	2	0	86.7
+FWR2	458	499	42	38	4	0	90.5
+CDR2	500	550	51	45	6	0	88.2
+FWR3	551	646	96	91	5	0	94.8
+CDR3 (V region only)	647	648	2	2	0	0	100
+Total	N/A	N/A	294	266	28	0	90.5
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_G8-IgGinternal.ab1	IGHV3-30-3*03	90.48	294	28	0	355	648	3	296	8e-105	 372
+V	reversed|3A_P94_LVH_G8-IgGinternal.ab1	IGHV3-30*04	90.48	294	28	0	355	648	3	296	8e-105	 372
+V	reversed|3A_P94_LVH_G8-IgGinternal.ab1	IGHV3-30*09	90.14	294	29	0	355	648	3	296	7e-104	 369
+D	reversed|3A_P94_LVH_G8-IgGinternal.ab1	IGHD1-7*01	100.00	10	0	0	653	662	6	15	0.38	20.4
+D	reversed|3A_P94_LVH_G8-IgGinternal.ab1	IGHD1-1*01	100.00	10	0	0	652	661	5	14	0.38	20.4
+D	reversed|3A_P94_LVH_G8-IgGinternal.ab1	IGHD1-20*01	100.00	9	0	0	653	661	6	14	1.5	18.4
+J	reversed|3A_P94_LVH_G8-IgGinternal.ab1	IGHJ3*02	98.00	50	1	0	673	722	1	50	6e-22	90.2
+J	reversed|3A_P94_LVH_G8-IgGinternal.ab1	IGHJ3*01	96.00	50	2	0	673	722	1	50	6e-19	80.3
+J	reversed|3A_P94_LVH_G8-IgGinternal.ab1	IGHJ6*02	93.10	29	2	0	689	717	30	58	3e-06	38.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P96_JS9_H4-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-69*01	IGHD3-3*02	IGHJ6*03	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGCGA	C	TATTAGC	GGCGGCTGGCCCC	ACTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	343	430	88	78	10	0	88.6
+CDR1	431	445	15	13	2	0	86.7
+FWR2	446	487	42	40	2	0	95.2
+CDR2	488	538	51	41	10	0	80.4
+FWR3	539	632	94	82	12	0	87.2
+Total	N/A	N/A	290	254	36	0	87.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P96_JS9_H4-IgGinternal.ab1	IGHV1-69*01	87.59	290	36	0	343	632	3	292	2e-95	 341
+V	reversed|3A_P96_JS9_H4-IgGinternal.ab1	IGHV1-69D*01	87.59	290	36	0	343	632	3	292	2e-95	 341
+V	reversed|3A_P96_JS9_H4-IgGinternal.ab1	IGHV1-69*06	87.24	290	37	0	343	632	3	292	2e-94	 338
+D	reversed|3A_P96_JS9_H4-IgGinternal.ab1	IGHD3-3*02	100.00	7	0	0	634	640	2	8	   24	14.4
+D	reversed|3A_P96_JS9_H4-IgGinternal.ab1	IGHD6-19*01	100.00	6	0	0	644	649	13	18	   96	12.4
+D	reversed|3A_P96_JS9_H4-IgGinternal.ab1	IGHD6-25*01	100.00	6	0	0	642	647	11	16	   96	12.4
+J	reversed|3A_P96_JS9_H4-IgGinternal.ab1	IGHJ6*03	98.31	59	1	0	654	712	4	62	2e-27	 108
+J	reversed|3A_P96_JS9_H4-IgGinternal.ab1	IGHJ6*04	93.44	61	1	1	656	713	3	63	4e-20	84.3
+J	reversed|3A_P96_JS9_H4-IgGinternal.ab1	IGHJ6*02	91.67	60	2	1	656	712	3	62	2e-16	72.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_H10-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-30*03	IGHD7-27*01	IGHJ6*03	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	ACGTCTC	AACTGGGGA	TACTATTACC	ACATG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	372	447	76	75	1	0	98.7
+CDR1	448	462	15	12	3	0	80
+FWR2	463	504	42	42	0	0	100
+CDR2	505	555	51	47	4	0	92.2
+FWR3	556	651	96	93	3	0	96.9
+CDR3 (V region only)	652	653	2	2	0	0	100
+Total	N/A	N/A	282	271	11	0	96.1
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_H10-IgGinternal.ab1	IGHV3-30*03	96.10	282	11	0	372	653	15	296	4e-115	 406
+V	reversed|3A_P94_LVH_H10-IgGinternal.ab1	IGHV3-30*18	95.74	282	12	0	372	653	15	296	3e-114	 403
+V	reversed|3A_P94_LVH_H10-IgGinternal.ab1	IGHV3-30*10	95.39	282	13	0	372	653	15	296	3e-113	 400
+D	reversed|3A_P94_LVH_H10-IgGinternal.ab1	IGHD7-27*01	100.00	9	0	0	661	669	3	11	1.5	18.4
+D	reversed|3A_P94_LVH_H10-IgGinternal.ab1	IGHD1-1*01	100.00	7	0	0	660	666	5	11	   24	14.4
+D	reversed|3A_P94_LVH_H10-IgGinternal.ab1	IGHD3-10*02	100.00	6	0	0	670	675	5	10	   97	12.4
+J	reversed|3A_P94_LVH_H10-IgGinternal.ab1	IGHJ6*03	100.00	44	0	0	680	723	19	62	2e-21	88.2
+J	reversed|3A_P94_LVH_H10-IgGinternal.ab1	IGHJ6*04	100.00	43	0	0	682	724	21	63	1e-20	86.3
+J	reversed|3A_P94_LVH_H10-IgGinternal.ab1	IGHJ6*02	97.62	42	1	0	682	723	21	62	4e-17	74.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_E7-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-2*02	IGHD3-3*02	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAGA	TAGGGCAGGAGGATCTGCAATACCCGGGC	TTTTGGA	T	TACTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	368	441	74	71	3	0	95.9
+CDR1	442	456	15	14	1	0	93.3
+FWR2	457	498	42	40	2	0	95.2
+CDR2	499	549	51	48	3	0	94.1
+FWR3	550	645	96	87	9	0	90.6
+CDR3 (V region only)	646	647	2	2	0	0	100
+Total	N/A	N/A	280	262	18	0	93.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P95_G123_E7-IgGinternal.ab1	IGHV1-2*02	93.57	280	18	0	368	647	17	296	1e-107	 382
+V	reversed|3A_P95_G123_E7-IgGinternal.ab1	IGHV1-2*05	92.86	280	20	0	368	647	17	296	9e-106	 375
+V	reversed|3A_P95_G123_E7-IgGinternal.ab1	IGHV1-2*03	92.86	280	20	0	368	647	17	296	9e-106	 375
+D	reversed|3A_P95_G123_E7-IgGinternal.ab1	IGHD3-3*02	100.00	7	0	0	677	683	11	17	   24	14.4
+D	reversed|3A_P95_G123_E7-IgGinternal.ab1	IGHD3-3*01	100.00	7	0	0	677	683	11	17	   24	14.4
+D	reversed|3A_P95_G123_E7-IgGinternal.ab1	IGHD3/OR15-3b*01	100.00	7	0	0	677	683	11	17	   24	14.4
+J	reversed|3A_P95_G123_E7-IgGinternal.ab1	IGHJ4*02	100.00	37	0	0	685	721	12	48	4e-17	74.3
+J	reversed|3A_P95_G123_E7-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	687	721	17	51	6e-16	70.3
+J	reversed|3A_P95_G123_E7-IgGinternal.ab1	IGHJ4*01	97.30	37	1	0	685	721	12	48	4e-14	64.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_B1-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-11*06	IGHD5-5*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGAGA	TCTCCTCCCACC	GGTTAC	TC	CTTTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	361	436	76	74	2	0	97.4
+CDR1	437	451	15	13	2	0	86.7
+FWR2	452	493	42	38	4	0	90.5
+CDR2	494	544	51	47	4	0	92.2
+FWR3	545	640	96	93	3	0	96.9
+Total	N/A	N/A	280	265	15	0	94.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_B1-IgGinternal.ab1	IGHV3-11*06	94.64	280	15	0	361	640	15	294	2e-110	 391
+V	reversed|3A_P94_LVH_B1-IgGinternal.ab1	IGHV3-11*05	94.29	280	16	0	361	640	15	294	2e-109	 388
+V	reversed|3A_P94_LVH_B1-IgGinternal.ab1	IGHV3-11*03	94.29	280	16	0	361	640	15	294	2e-109	 388
+D	reversed|3A_P94_LVH_B1-IgGinternal.ab1	IGHD5-5*01	100.00	6	0	0	653	658	15	20	   95	12.4
+D	reversed|3A_P94_LVH_B1-IgGinternal.ab1	IGHD5-18*01	100.00	6	0	0	653	658	15	20	   95	12.4
+D	reversed|3A_P94_LVH_B1-IgGinternal.ab1	IGHD3-10*02	100.00	5	0	0	655	659	4	8	  379	10.4
+J	reversed|3A_P94_LVH_B1-IgGinternal.ab1	IGHJ4*02	97.73	44	1	0	661	704	5	48	2e-18	78.3
+J	reversed|3A_P94_LVH_B1-IgGinternal.ab1	IGHJ5*02	100.00	36	0	0	669	704	16	51	2e-16	72.3
+J	reversed|3A_P94_LVH_B1-IgGinternal.ab1	IGHJ5*01	97.50	40	1	0	665	704	12	51	6e-16	70.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_A7-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-59*01	IGHD6-13*01	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	GTCTCTATGT	CAGCAGTTGGTAC	GGTCCCCTCC	ACTGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	385	460	76	72	4	0	94.7
+CDR1	461	475	15	14	1	0	93.3
+FWR2	476	517	42	38	4	0	90.5
+CDR2	518	565	48	40	8	0	83.3
+FWR3	566	661	96	88	8	0	91.7
+CDR3 (V region only)	662	662	1	1	0	0	100
+Total	N/A	N/A	278	253	25	0	91
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P95_G123_A7-IgGinternal.ab1	IGHV4-59*01	91.01	278	25	0	385	662	15	292	4e-100	 357
+V	reversed|3A_P95_G123_A7-IgGinternal.ab1	IGHV4-59*02	90.65	278	26	0	385	662	15	292	4e-99	 353
+V	reversed|3A_P95_G123_A7-IgGinternal.ab1	IGHV4-59*08	90.61	277	26	0	385	661	15	291	1e-98	 352
+D	reversed|3A_P95_G123_A7-IgGinternal.ab1	IGHD6-13*01	92.31	13	1	0	673	685	9	21	6.3	16.4
+D	reversed|3A_P95_G123_A7-IgGinternal.ab1	IGHD6-19*01	100.00	6	0	0	680	685	16	21	  100	12.4
+D	reversed|3A_P95_G123_A7-IgGinternal.ab1	IGHD6-19*01	100.00	6	0	0	674	679	7	12	  100	12.4
+J	reversed|3A_P95_G123_A7-IgGinternal.ab1	IGHJ5*02	95.83	48	2	0	696	743	4	51	1e-17	76.3
+J	reversed|3A_P95_G123_A7-IgGinternal.ab1	IGHJ5*01	91.67	48	4	0	696	743	4	51	1e-11	56.3
+J	reversed|3A_P95_G123_A7-IgGinternal.ab1	IGHJ4*02	94.29	35	2	0	709	743	14	48	6e-10	50.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_G11-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-21*01	IGHD2-15*01	IGHJ5*01	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	(A)	TTGTAGTGGTGGTAGCTGC	CAGGGGTTT	TGGGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	357	432	76	74	2	0	97.4
+CDR1	433	447	15	10	5	0	66.7
+FWR2	448	489	42	42	0	0	100
+CDR2	490	540	51	45	6	0	88.2
+FWR3	541	636	96	92	4	0	95.8
+CDR3 (V region only)	637	638	2	2	0	0	100
+Total	N/A	N/A	282	265	17	0	94
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_G11-IgGinternal.ab1	IGHV3-21*01	93.97	282	17	0	357	638	15	296	2e-109	 388
+V	reversed|3A_P94_LVH_G11-IgGinternal.ab1	IGHV3-21*02	93.97	282	17	0	357	638	15	296	2e-109	 388
+V	reversed|3A_P94_LVH_G11-IgGinternal.ab1	IGHV3-21*04	93.62	282	18	0	357	638	15	296	1e-108	 385
+D	reversed|3A_P94_LVH_G11-IgGinternal.ab1	IGHD2-15*01	100.00	20	0	0	638	657	6	25	4e-07	40.4
+D	reversed|3A_P94_LVH_G11-IgGinternal.ab1	IGHD2-8*02	92.86	14	1	0	638	651	6	19	1.5	18.4
+D	reversed|3A_P94_LVH_G11-IgGinternal.ab1	IGHD2-2*02	100.00	8	0	0	638	645	6	13	5.9	16.4
+J	reversed|3A_P94_LVH_G11-IgGinternal.ab1	IGHJ5*01	97.06	34	1	0	667	700	18	51	2e-12	58.3
+J	reversed|3A_P94_LVH_G11-IgGinternal.ab1	IGHJ5*02	97.06	34	1	0	667	700	18	51	2e-12	58.3
+J	reversed|3A_P94_LVH_G11-IgGinternal.ab1	IGHJ4*01	97.06	34	1	0	667	700	15	48	2e-12	58.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P96_JS9_E8-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-46*02	IGHD3-3*02	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TGCGA	AGGGCGAAGAC	TGGAGTGG	ATACTATGAA	TACTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	351	427	77	72	5	0	93.5
+CDR1	428	442	15	11	4	0	73.3
+FWR2	443	484	42	40	2	0	95.2
+CDR2	485	535	51	41	10	0	80.4
+FWR3	536	629	94	82	12	0	87.2
+Total	N/A	N/A	279	246	33	0	88.2
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P96_JS9_E8-IgGinternal.ab1	IGHV1-46*02	88.17	279	33	0	351	629	14	292	4e-93	 333
+V	reversed|3A_P96_JS9_E8-IgGinternal.ab1	IGHV1-46*01	87.81	279	34	0	351	629	14	292	4e-92	 330
+V	reversed|3A_P96_JS9_E8-IgGinternal.ab1	IGHV1-46*03	87.73	277	34	0	351	627	14	290	3e-91	 327
+D	reversed|3A_P96_JS9_E8-IgGinternal.ab1	IGHD3-3*02	100.00	8	0	0	641	648	14	21	5.9	16.4
+D	reversed|3A_P96_JS9_E8-IgGinternal.ab1	IGHD3-3*01	100.00	8	0	0	641	648	14	21	5.9	16.4
+D	reversed|3A_P96_JS9_E8-IgGinternal.ab1	IGHD5-5*01	100.00	8	0	0	645	652	1	8	5.9	16.4
+J	reversed|3A_P96_JS9_E8-IgGinternal.ab1	IGHJ4*02	97.30	37	1	0	659	695	12	48	4e-14	64.3
+J	reversed|3A_P96_JS9_E8-IgGinternal.ab1	IGHJ5*02	97.14	35	1	0	661	695	17	51	6e-13	60.3
+J	reversed|3A_P96_JS9_E8-IgGinternal.ab1	IGHJ4*01	94.59	37	2	0	659	695	12	48	4e-11	54.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_F4-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-b*01	IGHD3-3*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCGAG	GTCA	TATTACGATTTTTGGAGCGGTTATT	TTCG	CTACT	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	395	470	76	74	2	0	97.4
+CDR1	471	488	18	18	0	0	100
+FWR2	489	530	42	42	0	0	100
+CDR2	531	578	48	46	2	0	95.8
+FWR3	579	673	95	89	6	0	93.7
+Total	N/A	N/A	279	269	10	0	96.4
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_F4-IgGinternal.ab1	IGHV4-b*01	96.42	279	10	0	395	673	15	293	1e-114	 405
+V	reversed|3A_P94_LVH_F4-IgGinternal.ab1	IGHV4-b*02	96.06	279	11	0	395	673	15	293	1e-113	 402
+V	reversed|3A_P94_LVH_F4-IgGinternal.ab1	IGHV4-39*02	92.91	282	17	1	395	673	15	296	8e-105	 372
+D	reversed|3A_P94_LVH_F4-IgGinternal.ab1	IGHD3-3*01	96.00	25	1	0	678	702	2	26	4e-07	40.4
+D	reversed|3A_P94_LVH_F4-IgGinternal.ab1	IGHD3/OR15-3b*01	93.75	16	1	0	678	693	2	17	0.10	22.4
+D	reversed|3A_P94_LVH_F4-IgGinternal.ab1	IGHD3/OR15-3a*01	93.75	16	1	0	678	693	2	17	0.10	22.4
+J	reversed|3A_P94_LVH_F4-IgGinternal.ab1	IGHJ4*02	100.00	47	0	0	707	753	2	48	4e-23	94.2
+J	reversed|3A_P94_LVH_F4-IgGinternal.ab1	IGHJ4*01	97.87	47	1	0	707	753	2	48	4e-20	84.3
+J	reversed|3A_P94_LVH_F4-IgGinternal.ab1	IGHJ4*03	95.83	48	2	0	706	753	1	48	1e-17	76.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_D2-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-31*03	IGHD3-10*02	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	GTTACAGTGG	ATGTTCG	TCG	TCGAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	368	443	76	72	4	0	94.7
+CDR1	444	464	21	17	4	0	81
+FWR2	465	506	42	36	6	0	85.7
+CDR2	507	554	48	38	10	0	79.2
+FWR3	555	650	96	79	17	0	82.3
+CDR3 (V region only)	651	652	2	2	0	0	100
+Total	N/A	N/A	285	244	41	0	85.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_D2-IgGinternal.ab1	IGHV4-31*03	85.61	285	41	0	368	652	15	299	2e-88	 318
+V	reversed|3A_P94_LVH_D2-IgGinternal.ab1	IGHV4-31*02	85.26	285	42	0	368	652	15	299	2e-87	 315
+V	reversed|3A_P94_LVH_D2-IgGinternal.ab1	IGHV4-30-4*01	85.26	285	42	0	368	652	15	299	2e-87	 315
+D	reversed|3A_P94_LVH_D2-IgGinternal.ab1	IGHD3-10*02	100.00	7	0	0	663	669	9	15	   24	14.4
+D	reversed|3A_P94_LVH_D2-IgGinternal.ab1	IGHD4-11*01	100.00	6	0	0	655	660	5	10	   96	12.4
+D	reversed|3A_P94_LVH_D2-IgGinternal.ab1	IGHD6-19*01	100.00	6	0	0	657	662	9	14	   96	12.4
+J	reversed|3A_P94_LVH_D2-IgGinternal.ab1	IGHJ5*02	100.00	42	0	0	673	714	10	51	4e-20	84.3
+J	reversed|3A_P94_LVH_D2-IgGinternal.ab1	IGHJ4*02	100.00	35	0	0	680	714	14	48	6e-16	70.3
+J	reversed|3A_P94_LVH_D2-IgGinternal.ab1	IGHJ5*01	95.24	42	2	0	673	714	10	51	4e-14	64.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_B10-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-31*03	IGHD3-10*02	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	GTTACAGTGG	ATGTTCG	TCG	TCGAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	386	460	75	71	4	0	94.7
+CDR1	461	481	21	17	4	0	81
+FWR2	482	523	42	36	6	0	85.7
+CDR2	524	571	48	38	10	0	79.2
+FWR3	572	667	96	80	16	0	83.3
+CDR3 (V region only)	668	669	2	2	0	0	100
+Total	N/A	N/A	284	244	40	0	85.9
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_B10-IgGinternal.ab1	IGHV4-31*03	85.92	284	40	0	386	669	16	299	7e-89	 319
+V	reversed|3A_P94_LVH_B10-IgGinternal.ab1	IGHV4-31*02	85.56	284	41	0	386	669	16	299	6e-88	 316
+V	reversed|3A_P94_LVH_B10-IgGinternal.ab1	IGHV4-30-4*01	85.56	284	41	0	386	669	16	299	6e-88	 316
+D	reversed|3A_P94_LVH_B10-IgGinternal.ab1	IGHD3-10*02	100.00	7	0	0	680	686	9	15	   25	14.4
+D	reversed|3A_P94_LVH_B10-IgGinternal.ab1	IGHD4-11*01	100.00	6	0	0	672	677	5	10	   99	12.4
+D	reversed|3A_P94_LVH_B10-IgGinternal.ab1	IGHD6-19*01	100.00	6	0	0	674	679	9	14	   99	12.4
+J	reversed|3A_P94_LVH_B10-IgGinternal.ab1	IGHJ5*02	100.00	42	0	0	690	731	10	51	4e-20	84.3
+J	reversed|3A_P94_LVH_B10-IgGinternal.ab1	IGHJ4*02	100.00	35	0	0	697	731	14	48	6e-16	70.3
+J	reversed|3A_P94_LVH_B10-IgGinternal.ab1	IGHJ5*01	95.24	42	2	0	690	731	10	51	4e-14	64.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_G6-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-31*03	IGHD4-11*01	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	C	CTACAGT	GGATTTTCGTCG	TCGAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	384	459	76	72	4	0	94.7
+CDR1	460	480	21	17	4	0	81
+FWR2	481	522	42	37	5	0	88.1
+CDR2	523	570	48	37	11	0	77.1
+FWR3	571	666	96	80	16	0	83.3
+CDR3 (V region only)	667	668	2	2	0	0	100
+Total	N/A	N/A	285	245	40	0	86
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_G6-IgGinternal.ab1	IGHV4-31*03	85.96	285	40	0	384	668	15	299	2e-89	 321
+V	reversed|3A_P94_LVH_G6-IgGinternal.ab1	IGHV4-31*02	85.61	285	41	0	384	668	15	299	2e-88	 318
+V	reversed|3A_P94_LVH_G6-IgGinternal.ab1	IGHV4-30-4*01	85.61	285	41	0	384	668	15	299	2e-88	 318
+D	reversed|3A_P94_LVH_G6-IgGinternal.ab1	IGHD4-11*01	100.00	7	0	0	670	676	4	10	   25	14.4
+D	reversed|3A_P94_LVH_G6-IgGinternal.ab1	IGHD4-4*01	100.00	7	0	0	670	676	4	10	   25	14.4
+D	reversed|3A_P94_LVH_G6-IgGinternal.ab1	IGHD6-19*01	100.00	6	0	0	673	678	9	14	   98	12.4
+J	reversed|3A_P94_LVH_G6-IgGinternal.ab1	IGHJ5*02	100.00	42	0	0	689	730	10	51	4e-20	84.3
+J	reversed|3A_P94_LVH_G6-IgGinternal.ab1	IGHJ4*02	100.00	35	0	0	696	730	14	48	6e-16	70.3
+J	reversed|3A_P94_LVH_G6-IgGinternal.ab1	IGHJ5*01	95.24	42	2	0	689	730	10	51	4e-14	64.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_G7-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-b*02	IGHD1-26*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CGAGA	GGAGAGTATC	AGCTACTA	TATGGGGCT	TTTGA	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	388	463	76	73	3	0	96.1
+CDR1	464	481	18	17	1	0	94.4
+FWR2	482	523	42	38	4	0	90.5
+CDR2	524	571	48	46	2	0	95.8
+FWR3	572	667	96	91	5	0	94.8
+Total	N/A	N/A	280	265	15	0	94.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_G7-IgGinternal.ab1	IGHV4-b*02	94.64	280	15	0	388	667	15	294	2e-110	 391
+V	reversed|3A_P94_LVH_G7-IgGinternal.ab1	IGHV4-b*01	94.29	280	16	0	388	667	15	294	2e-109	 388
+V	reversed|3A_P94_LVH_G7-IgGinternal.ab1	IGHV4-39*07	91.55	284	21	1	388	668	15	298	5e-102	 363
+D	reversed|3A_P94_LVH_G7-IgGinternal.ab1	IGHD1-26*01	100.00	8	0	0	678	685	12	19	6.2	16.4
+D	reversed|3A_P94_LVH_G7-IgGinternal.ab1	IGHD3-10*02	100.00	6	0	0	681	686	5	10	   99	12.4
+D	reversed|3A_P94_LVH_G7-IgGinternal.ab1	IGHD6-6*01	100.00	6	0	0	671	676	1	6	   99	12.4
+J	reversed|3A_P94_LVH_G7-IgGinternal.ab1	IGHJ4*02	97.67	43	1	0	695	737	6	48	1e-17	76.3
+J	reversed|3A_P94_LVH_G7-IgGinternal.ab1	IGHJ5*02	100.00	35	0	0	703	737	17	51	6e-16	70.3
+J	reversed|3A_P94_LVH_G7-IgGinternal.ab1	IGHJ4*01	95.35	43	2	0	695	737	6	48	1e-14	66.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_A5-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV4-31*03	IGHD3-10*02	IGHJ5*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGAGA	GTTACAGTGG	ATGTTCG	TCG	TCGAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	389	463	75	71	4	0	94.7
+CDR1	464	484	21	17	4	0	81
+FWR2	485	526	42	36	6	0	85.7
+CDR2	527	574	48	38	10	0	79.2
+FWR3	575	670	96	80	16	0	83.3
+CDR3 (V region only)	671	672	2	2	0	0	100
+Total	N/A	N/A	284	244	40	0	85.9
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_A5-IgGinternal.ab1	IGHV4-31*03	85.92	284	40	0	389	672	16	299	7e-89	 319
+V	reversed|3A_P94_LVH_A5-IgGinternal.ab1	IGHV4-31*02	85.56	284	41	0	389	672	16	299	6e-88	 316
+V	reversed|3A_P94_LVH_A5-IgGinternal.ab1	IGHV4-30-4*01	85.56	284	41	0	389	672	16	299	6e-88	 316
+D	reversed|3A_P94_LVH_A5-IgGinternal.ab1	IGHD3-10*02	100.00	7	0	0	683	689	9	15	   25	14.4
+D	reversed|3A_P94_LVH_A5-IgGinternal.ab1	IGHD4-11*01	100.00	6	0	0	675	680	5	10	   99	12.4
+D	reversed|3A_P94_LVH_A5-IgGinternal.ab1	IGHD6-19*01	100.00	6	0	0	677	682	9	14	   99	12.4
+J	reversed|3A_P94_LVH_A5-IgGinternal.ab1	IGHJ5*02	100.00	42	0	0	693	734	10	51	4e-20	84.3
+J	reversed|3A_P94_LVH_A5-IgGinternal.ab1	IGHJ4*02	100.00	35	0	0	700	734	14	48	6e-16	70.3
+J	reversed|3A_P94_LVH_A5-IgGinternal.ab1	IGHJ5*01	95.24	42	2	0	693	734	10	51	4e-14	64.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_D7-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-66*01	IGHD4-17*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCGAG	GTCA	ACGGTGAC	CGACC	ACTAC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	380	455	76	72	4	0	94.7
+CDR1	456	470	15	14	1	0	93.3
+FWR2	471	512	42	41	1	0	97.6
+CDR2	513	560	48	40	8	0	83.3
+FWR3	561	655	95	90	5	0	94.7
+Total	N/A	N/A	276	257	19	0	93.1
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 8 hits found
+V	reversed|3A_P94_LVH_D7-IgGinternal.ab1	IGHV3-66*01	93.12	276	19	0	380	655	15	290	8e-105	 372
+V	reversed|3A_P94_LVH_D7-IgGinternal.ab1	IGHV3-66*04	93.12	276	19	0	380	655	15	290	8e-105	 372
+V	reversed|3A_P94_LVH_D7-IgGinternal.ab1	IGHV3-66*02	92.39	276	21	0	380	655	15	290	6e-103	 366
+D	reversed|3A_P94_LVH_D7-IgGinternal.ab1	IGHD4-17*01	100.00	8	0	0	660	667	6	13	6.1	16.4
+D	reversed|3A_P94_LVH_D7-IgGinternal.ab1	IGHD1-14*01	100.00	5	0	0	670	674	13	17	  388	10.4
+J	reversed|3A_P94_LVH_D7-IgGinternal.ab1	IGHJ4*02	95.83	48	2	0	673	720	1	48	1e-17	76.3
+J	reversed|3A_P94_LVH_D7-IgGinternal.ab1	IGHJ4*01	93.75	48	3	0	673	720	1	48	1e-14	66.3
+J	reversed|3A_P94_LVH_D7-IgGinternal.ab1	IGHJ5*02	97.14	35	1	0	686	720	17	51	6e-13	60.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_H3-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-7*01	IGHD3-3*01	IGHJ4*02	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GAGAG	CGGGGAGGGGATAN	GATTTTTGGAGTNGTTATTA	CCC	CTTTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	161	236	76	58	18	0	76.3
+CDR1	237	251	15	13	2	0	86.7
+FWR2	252	293	42	34	8	0	81
+CDR2	294	344	51	37	14	0	72.5
+FWR3	345	440	96	78	18	0	81.2
+CDR3 (V region only)	441	441	1	1	0	0	100
+Total	N/A	N/A	281	221	60	0	78.6
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_H3-IgGinternal.ab1	IGHV3-7*01	78.65	281	60	0	161	441	15	295	8e-69	 252
+V	reversed|3A_P94_LVH_H3-IgGinternal.ab1	IGHV3-7*03	78.29	281	61	0	161	441	15	295	7e-68	 249
+V	reversed|3A_P94_LVH_H3-IgGinternal.ab1	IGHV3-7*02	78.21	280	61	0	161	440	15	294	2e-67	 248
+D	reversed|3A_P94_LVH_H3-IgGinternal.ab1	IGHD3-3*01	95.00	20	1	0	456	475	8	27	7e-05	32.4
+D	reversed|3A_P94_LVH_H3-IgGinternal.ab1	IGHD3-3*02	94.74	19	1	0	457	475	9	27	3e-04	30.4
+D	reversed|3A_P94_LVH_H3-IgGinternal.ab1	IGHD3/OR15-3b*01	90.00	20	2	0	456	475	8	27	0.072	22.4
+J	reversed|3A_P94_LVH_H3-IgGinternal.ab1	IGHJ4*02	97.44	39	1	0	479	517	5	43	2e-15	68.3
+J	reversed|3A_P94_LVH_H3-IgGinternal.ab1	IGHJ5*02	100.00	30	0	0	488	517	17	46	5e-13	60.3
+J	reversed|3A_P94_LVH_H3-IgGinternal.ab1	IGHJ4*01	94.87	39	2	0	479	517	5	43	2e-12	58.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_H5-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-21*01	IGHD6-6*01	IGHJ6*04	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCGAG	CCCACCG	GAGTATAGCAG	TAGTTGGGCCAGGAAGCATGGGACGCCCTACTACATGAGA	GTCTG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	361	435	75	67	2	6	89.3
+CDR1	436	450	15	11	4	0	73.3
+FWR2	451	492	42	38	4	0	90.5
+CDR2	493	543	51	42	9	0	82.4
+FWR3	544	638	95	82	13	0	86.3
+Total	N/A	N/A	278	240	32	6	86.3
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P94_LVH_H5-IgGinternal.ab1	IGHV3-21*01	86.33	278	32	1	361	638	22	293	5e-86	 310
+V	reversed|3A_P94_LVH_H5-IgGinternal.ab1	IGHV3-21*02	86.33	278	32	1	361	638	22	293	5e-86	 310
+V	reversed|3A_P94_LVH_H5-IgGinternal.ab1	IGHV3-21*04	85.97	278	33	1	361	638	22	293	4e-85	 307
+D	reversed|3A_P94_LVH_H5-IgGinternal.ab1	IGHD6-6*01	100.00	11	0	0	646	656	1	11	0.098	22.4
+D	reversed|3A_P94_LVH_H5-IgGinternal.ab1	IGHD6-19*01	100.00	10	0	0	648	657	3	12	0.39	20.4
+D	reversed|3A_P94_LVH_H5-IgGinternal.ab1	IGHD6-25*01	100.00	9	0	0	648	656	3	11	1.6	18.4
+J	reversed|3A_P94_LVH_H5-IgGinternal.ab1	IGHJ6*04	94.59	37	2	0	697	733	27	63	1e-11	56.3
+J	reversed|3A_P94_LVH_H5-IgGinternal.ab1	IGHJ6*03	94.44	36	2	0	697	732	27	62	4e-11	54.3
+J	reversed|3A_P94_LVH_H5-IgGinternal.ab1	IGHJ6*02	91.67	36	3	0	697	732	27	62	4e-08	44.3
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_H2-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGKV4-1*01	N/A	VK	N/A	-
+
+# V(D)J junction details (V end, V-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+TCAGT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR3	514	529	16	15	1	0	93.8
+Total	N/A	N/A	16	15	1	0	93.8
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+V	reversed|3A_P95_G123_H2-IgGinternal.ab1	IGKV4-1*01	93.75	16	1	0	514	529	192	207	9.2	23.7
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_E5-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-2*02	IGHD4-11*01	N/A	VH	N/A	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+NCATC	NAACANNCAGAAATNGAAGTA	AGTAA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	24	100	77	48	29	0	62.3
+CDR1	101	115	15	9	6	0	60
+FWR2	116	157	42	26	16	0	61.9
+CDR2	158	207	51	28	22	1	54.9
+FWR3	208	237	30	19	11	0	63.3
+Total	N/A	N/A	215	130	84	1	60.5
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	reversed|3A_P95_G123_E5-IgGinternal.ab1	IGHV1-2*02	60.47	215	84	1	24	237	14	228	1e-12	65.7
+V	reversed|3A_P95_G123_E5-IgGinternal.ab1	IGHV1-2*05	60.00	215	85	1	24	237	14	228	9e-12	62.6
+V	reversed|3A_P95_G123_E5-IgGinternal.ab1	IGHV1-2*01	60.00	215	85	1	24	237	14	228	9e-12	62.6
+D	reversed|3A_P95_G123_E5-IgGinternal.ab1	IGHD4-11*01	100.00	5	0	0	259	263	8	12	  220	10.4
+D	reversed|3A_P95_G123_E5-IgGinternal.ab1	IGHD4-11*01	100.00	5	0	0	255	259	8	12	  220	10.4
+D	reversed|3A_P95_G123_E5-IgGinternal.ab1	IGHD4-4*01	100.00	5	0	0	259	263	8	12	  220	10.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_H4-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+# 0 hits found
+# IGBLASTN 2.2.27+
+# Query: 3A_P94_LVH_B3-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-33*05	IGHD3-3*02	IGHJ2*01	VH	In-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+GCTGT	(GTATT)	N/A	TCNCNNGCAAGNC	CGATC	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+CDR2	195	203	9	6	3	0	66.7
+FWR3	204	288	85	54	31	0	63.5
+Total	N/A	N/A	94	60	34	0	63.8
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 7 hits found
+V	reversed|3A_P94_LVH_B3-IgGinternal.ab1	IGHV3-33*05	63.83	94	34	0	195	288	190	283	1e-05	42.3
+V	reversed|3A_P94_LVH_B3-IgGinternal.ab1	IGHV3-33*06	63.83	94	34	0	195	288	190	283	1e-05	42.3
+V	reversed|3A_P94_LVH_B3-IgGinternal.ab1	IGHV3-33*04	63.83	94	34	0	195	288	190	283	1e-05	42.3
+D	reversed|3A_P94_LVH_B3-IgGinternal.ab1	IGHD3-3*02	100.00	5	0	0	284	288	1	5	  217	10.4
+D	reversed|3A_P94_LVH_B3-IgGinternal.ab1	IGHD3-3*01	100.00	5	0	0	284	288	1	5	  217	10.4
+D	reversed|3A_P94_LVH_B3-IgGinternal.ab1	IGHD3-9*01	100.00	5	0	0	285	289	10	14	  217	10.4
+J	reversed|3A_P94_LVH_B3-IgGinternal.ab1	IGHJ2*01	100.00	7	0	0	302	308	13	19	   23	14.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_F12-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1/OR15-2*02	IGHD2-2*02	N/A	VH	N/A	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+AGCCT	CCCNGCANCAATGCCACTG	AGGAT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+CDR2	431	431	1	1	0	0	100
+FWR3	432	471	40	31	9	0	77.5
+Total	N/A	N/A	41	32	9	0	78
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	reversed|3A_P95_G123_F12-IgGinternal.ab1	IGHV1/OR15-2*02	78.05	41	9	0	431	471	198	238	5e-04	37.7
+V	reversed|3A_P95_G123_F12-IgGinternal.ab1	IGHV1/OR15-2*03	78.05	41	9	0	431	471	198	238	5e-04	37.7
+V	reversed|3A_P95_G123_F12-IgGinternal.ab1	IGHV1/OR15-2*01	78.05	41	9	0	431	471	198	238	5e-04	37.7
+D	reversed|3A_P95_G123_F12-IgGinternal.ab1	IGHD2-2*02	100.00	5	0	0	491	495	1	5	  325	10.4
+D	reversed|3A_P95_G123_F12-IgGinternal.ab1	IGHD2-15*01	100.00	5	0	0	491	495	1	5	  325	10.4
+D	reversed|3A_P95_G123_F12-IgGinternal.ab1	IGHD2-2*01	100.00	5	0	0	482	486	27	31	  325	10.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_H1-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV3-66*01	N/A	IGHJ6*02	VH	Out-of-frame	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+ATGAC	N/A	N/A	NNCTAAGGTCAACGGTGNCCGAGCANANCACGNCT	TCTGG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+CDR2	555	559	5	5	0	0	100
+FWR3	560	646	87	65	22	0	74.7
+Total	N/A	N/A	92	70	22	0	76.1
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+V	reversed|3A_P95_G123_H1-IgGinternal.ab1	IGHV3-66*01	76.09	92	22	0	555	646	191	282	1e-15	76.6
+V	reversed|3A_P95_G123_H1-IgGinternal.ab1	IGHV3-66*04	76.09	92	22	0	555	646	191	282	1e-15	76.6
+V	reversed|3A_P95_G123_H1-IgGinternal.ab1	IGHV3-33*03	75.00	92	23	0	555	646	194	285	9e-15	73.5
+J	reversed|3A_P95_G123_H1-IgGinternal.ab1	IGHJ6*02	100.00	9	0	0	682	690	28	36	2.6	18.4
+J	reversed|3A_P95_G123_H1-IgGinternal.ab1	IGHJ2*01	100.00	9	0	0	682	690	18	26	2.6	18.4
+J	reversed|3A_P95_G123_H1-IgGinternal.ab1	IGHJ3*02	100.00	9	0	0	682	690	15	23	2.6	18.4
+# IGBLASTN 2.2.27+
+# Query: 3A_P95_G123_F5-IgGinternal.ab1
+# Database: database/human_gl_V database/human_gl_D database/human_gl_J
+# Domain classification requested: kabat
+
+# Note that your query represents the minus strand of a V gene and has been converted to the plus strand. The sequence positions refer to the converted sequence. 
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top D gene match, Top J gene match, Chain type, V-J Frame, Strand):
+IGHV1-3*01	IGHD6-13*01	IGHJ5*02	VH	In-frame with stop codon	-
+
+# V(D)J junction details (V end, V-D junction, D region, D-J junction, J start).  Note that possible overlapping nucleotides at VDJ junction (i.e, nucleotides that could be assigned to either joining gene segment) are indicated in parentheses (i.e., (TACT)) but are not included under V, D, or J gene itself
+CCTNC	(CAGCAGC)	N/A	AATGACACTTAGTATCNGGAAATAAGNGATTCACTCTNTNGAGCATCCGAGGACAAA	GCCAG	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	32	95	64	45	19	0	70.3
+CDR1	96	110	15	7	8	0	46.7
+FWR2	111	152	42	17	25	0	40.5
+CDR2	153	200	51	33	15	3	64.7
+FWR3	201	249	49	38	11	0	77.6
+Total	N/A	N/A	221	140	78	3	63.3
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 9 hits found
+V	reversed|3A_P95_G123_F5-IgGinternal.ab1	IGHV1-3*01	63.35	221	78	2	32	249	27	247	2e-17	81.3
+V	reversed|3A_P95_G123_F5-IgGinternal.ab1	IGHV1-3*02	62.44	221	80	2	32	249	27	247	2e-15	75.1
+V	reversed|3A_P95_G123_F5-IgGinternal.ab1	IGHV1/OR15-3*01	63.71	237	79	5	18	249	13	247	1e-14	72.0
+D	reversed|3A_P95_G123_F5-IgGinternal.ab1	IGHD6-13*01	100.00	7	0	0	243	249	9	15	   14	14.4
+D	reversed|3A_P95_G123_F5-IgGinternal.ab1	IGHD6-13*01	100.00	7	0	0	244	250	7	13	   14	14.4
+D	reversed|3A_P95_G123_F5-IgGinternal.ab1	IGHD6-6*01	100.00	6	0	0	244	249	7	12	   56	12.4
+J	reversed|3A_P95_G123_F5-IgGinternal.ab1	IGHJ5*02	100.00	7	0	0	307	313	22	28	   22	14.4
+J	reversed|3A_P95_G123_F5-IgGinternal.ab1	IGHJ4*02	100.00	7	0	0	307	313	19	25	   22	14.4
+J	reversed|3A_P95_G123_F5-IgGinternal.ab1	IGHJ1*01	100.00	7	0	0	307	313	23	29	   22	14.4
+# BLAST processed 61 queries

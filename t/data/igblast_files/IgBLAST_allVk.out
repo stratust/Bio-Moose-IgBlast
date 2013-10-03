@@ -1,0 +1,3359 @@
+# IGBLASTN 2.2.26+
+# Query: 12-38:69893180:69893477:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+12-38:69893180:69893477:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	12-38:69893180:69893477:-1	12-38:69893180:69893477:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 12-40:69829344:69829641:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+12-40:69829344:69829641:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	12-40:69829344:69829641:-1	12-40:69829344:69829641:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 12-41:69808414:69808711:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+12-41:69808414:69808711:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	12-41:69808414:69808711:-1	12-41:69808414:69808711:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 12-42:69784786:69785067:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+12-42:69784786:69785067:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTTC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	174	16	16	0	0	100
+FWR3	175	259	85	85	0	0	100
+CDR3 (V region only)	260	282	23	23	0	0	100
+Total	N/A	N/A	271	271	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	12-42:69784786:69785067:-1	12-42:69784786:69785067:-1	100.00	282	0	0	1	282	1	282	4e-126	 441
+# IGBLASTN 2.2.26+
+# Query: 12-44:69764625:69764922:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+12-44:69764625:69764922:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	12-44:69764625:69764922:-1	12-44:69764625:69764922:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 12-46:69714517:69714814:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+12-46:69714517:69714814:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	12-46:69714517:69714814:-1	12-46:69714517:69714814:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 12-47:69700849:69701133:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+12-47:69700849:69701133:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+GAGTT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	285	10	10	0	0	100
+Total	N/A	N/A	274	274	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	12-47:69700849:69701133:-1	12-47:69700849:69701133:-1	100.00	285	0	0	1	285	1	285	1e-127	 445
+# IGBLASTN 2.2.26+
+# Query: 12-49:69666655:69666994:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+12-49:69666655:69666994:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CGTGT	N/A	N/A	
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	12-49:69666655:69666994:1	12-49:69666655:69666994:1	100.00	340	0	0	1	340	1	340	3e-153	 531
+# IGBLASTN 2.2.26+
+# Query: 19-13:70407495:70407792:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+19-13:70407495:70407792:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	19-13:70407495:70407792:-1	19-13:70407495:70407792:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 19-14:70384946:70385243:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+19-14:70384946:70385243:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	19-14:70384946:70385243:-1	19-14:70384946:70385243:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 19-15:70356463:70356760:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+19-15:70356463:70356760:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	19-15:70356463:70356760:-1	19-15:70356463:70356760:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 19-17:70321690:70321987:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+19-17:70321690:70321987:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	19-17:70321690:70321987:1	19-17:70321690:70321987:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 19-20:70285835:70286132:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+19-20:70285835:70286132:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	68	68	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	19-20:70285835:70286132:-1	19-20:70285835:70286132:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 19-23:70210403:70210700:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+19-23:70210403:70210700:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	19-23:70210403:70210700:-1	19-23:70210403:70210700:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 19-25:70165654:70165951:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+19-25:70165654:70165951:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	19-25:70165654:70165951:1	19-25:70165654:70165951:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 19-29:70088456:70088753:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+19-29:70088456:70088753:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CTTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	19-29:70088456:70088753:-1	19-29:70088456:70088753:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 19-32:70024018:70024315:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+19-32:70024018:70024315:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	19-32:70024018:70024315:-1	19-32:70024018:70024315:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 2-35:69960943:69961255:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+2-35:69960943:69961255:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	2-35:69960943:69961255:-1	2-35:69960943:69961255:-1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: 21-1:70653862:70654171:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-1:70653862:70654171:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTTC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	125	45	45	0	0	100
+FWR2	126	170	45	45	0	0	100
+CDR2	171	191	21	21	0	0	100
+FWR3	192	287	96	96	0	0	100
+CDR3 (V region only)	288	310	23	23	0	0	100
+Total	N/A	N/A	299	299	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	21-1:70653862:70654171:1	21-1:70653862:70654171:1	100.00	310	0	0	1	310	1	310	3e-139	 484
+# IGBLASTN 2.2.26+
+# Query: 21-10:70522915:70523224:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-10:70522915:70523224:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	125	45	45	0	0	100
+FWR2	126	170	45	45	0	0	100
+CDR2	171	191	21	21	0	0	100
+FWR3	192	287	96	96	0	0	100
+CDR3 (V region only)	288	310	23	23	0	0	100
+Total	N/A	N/A	299	299	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	21-10:70522915:70523224:1	21-10:70522915:70523224:1	100.00	310	0	0	1	310	1	310	3e-139	 484
+# IGBLASTN 2.2.26+
+# Query: 21-11:70503556:70503851:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-11:70503556:70503851:1	JK3:70673218:70673256:1	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+TACTG	(TCAGTGA)	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	296	6	6	0	0	100
+Total	N/A	N/A	285	285	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+VK	21-11:70503556:70503851:1	21-11:70503556:70503851:1	100.00	296	0	0	1	296	1	296	1e-132	 463
+JK	21-11:70503556:70503851:1	JK3:70673218:70673256:1	100.00	7	0	0	290	296	8	14	6.3	14.4
+# IGBLASTN 2.2.26+
+# Query: 21-12:70468534:70468843:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-12:70468534:70468843:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	125	45	45	0	0	100
+FWR2	126	170	45	45	0	0	100
+CDR2	171	191	21	21	0	0	100
+FWR3	192	287	96	96	0	0	100
+CDR3 (V region only)	288	310	23	23	0	0	100
+Total	N/A	N/A	299	299	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	21-12:70468534:70468843:1	21-12:70468534:70468843:1	100.00	310	0	0	1	310	1	310	3e-139	 484
+# IGBLASTN 2.2.26+
+# Query: 21-2:70648752:70649061:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-2:70648752:70649061:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	125	45	45	0	0	100
+FWR2	126	170	45	45	0	0	100
+CDR2	171	191	21	21	0	0	100
+FWR3	192	287	96	96	0	0	100
+CDR3 (V region only)	288	310	23	23	0	0	100
+Total	N/A	N/A	299	299	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	21-2:70648752:70649061:1	21-2:70648752:70649061:1	100.00	310	0	0	1	310	1	310	3e-139	 484
+# IGBLASTN 2.2.26+
+# Query: 21-3:70637219:70637528:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-3:70637219:70637528:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	125	45	45	0	0	100
+FWR2	126	170	45	45	0	0	100
+CDR2	171	191	21	21	0	0	100
+FWR3	192	287	96	96	0	0	100
+CDR3 (V region only)	288	310	23	23	0	0	100
+Total	N/A	N/A	299	299	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	21-3:70637219:70637528:1	21-3:70637219:70637528:1	100.00	310	0	0	1	310	1	310	3e-139	 484
+# IGBLASTN 2.2.26+
+# Query: 21-4:70622062:70622371:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-4:70622062:70622371:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	125	45	45	0	0	100
+FWR2	126	170	45	45	0	0	100
+CDR2	171	191	21	21	0	0	100
+FWR3	192	287	96	96	0	0	100
+CDR3 (V region only)	288	310	23	23	0	0	100
+Total	N/A	N/A	299	299	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	21-4:70622062:70622371:1	21-4:70622062:70622371:1	100.00	310	0	0	1	310	1	310	3e-139	 484
+# IGBLASTN 2.2.26+
+# Query: 21-5:70613580:70613889:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-5:70613580:70613889:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	125	45	45	0	0	100
+FWR2	126	170	45	45	0	0	100
+CDR2	171	191	21	21	0	0	100
+FWR3	192	287	96	96	0	0	100
+CDR3 (V region only)	288	310	23	23	0	0	100
+Total	N/A	N/A	299	299	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	21-5:70613580:70613889:1	21-5:70613580:70613889:1	100.00	310	0	0	1	310	1	310	3e-139	 484
+# IGBLASTN 2.2.26+
+# Query: 21-6:70592681:70592976:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-6:70592681:70592976:1	JK3:70673218:70673256:1	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+TACTG	(TCAGTGA)	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	296	6	6	0	0	100
+Total	N/A	N/A	285	285	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+VK	21-6:70592681:70592976:1	21-6:70592681:70592976:1	100.00	296	0	0	1	296	1	296	1e-132	 463
+JK	21-6:70592681:70592976:1	JK3:70673218:70673256:1	100.00	7	0	0	290	296	8	14	6.3	14.4
+# IGBLASTN 2.2.26+
+# Query: 21-7:70557721:70558030:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-7:70557721:70558030:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	125	45	45	0	0	100
+FWR2	126	170	45	45	0	0	100
+CDR2	171	191	21	21	0	0	100
+FWR3	192	287	96	96	0	0	100
+CDR3 (V region only)	288	310	23	23	0	0	100
+Total	N/A	N/A	299	299	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	21-7:70557721:70558030:1	21-7:70557721:70558030:1	100.00	310	0	0	1	310	1	310	3e-139	 484
+# IGBLASTN 2.2.26+
+# Query: 21-8:70539137:70539446:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-8:70539137:70539446:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	125	45	45	0	0	100
+FWR2	126	171	46	46	0	0	100
+CDR2	172	191	20	20	0	0	100
+FWR3	192	287	96	96	0	0	100
+CDR3 (V region only)	288	310	23	23	0	0	100
+Total	N/A	N/A	299	299	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	21-8:70539137:70539446:1	21-8:70539137:70539446:1	100.00	310	0	0	1	310	1	310	3e-139	 484
+# IGBLASTN 2.2.26+
+# Query: 21-9:70538462:70538771:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+21-9:70538462:70538771:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	125	45	45	0	0	100
+FWR2	126	170	45	45	0	0	100
+CDR2	171	191	21	21	0	0	100
+FWR3	192	287	96	96	0	0	100
+CDR3 (V region only)	288	310	23	23	0	0	100
+Total	N/A	N/A	299	299	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	21-9:70538462:70538771:1	21-9:70538462:70538771:1	100.00	310	0	0	1	310	1	310	3e-139	 484
+# IGBLASTN 2.2.26+
+# Query: 22-33:70008626:70008941:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+22-33:70008626:70008941:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	316	23	23	0	0	100
+Total	N/A	N/A	305	305	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	22-33:70008626:70008941:-1	22-33:70008626:70008941:-1	100.00	316	0	0	1	316	1	316	5e-142	 494
+# IGBLASTN 2.2.26+
+# Query: 23-37:69913306:69913603:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+23-37:69913306:69913603:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTTC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	23-37:69913306:69913603:-1	23-37:69913306:69913603:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 23-39:69850418:69850715:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+23-39:69850418:69850715:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	23-39:69850418:69850715:-1	23-39:69850418:69850715:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 23-43:69773349:69773646:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+23-43:69773349:69773646:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	23-43:69773349:69773646:-1	23-43:69773349:69773646:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 23-45:69725744:69726041:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+23-45:69725744:69726041:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	23-45:69725744:69726041:-1	23-45:69725744:69726041:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 23-48:69676567:69676864:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+23-48:69676567:69676864:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCAAC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	23-48:69676567:69676864:-1	23-48:69676567:69676864:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: 4-50:69650761:69651063:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+4-50:69650761:69651063:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ATCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	4-50:69650761:69651063:-1	4-50:69650761:69651063:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: 4-51:69631400:69631708:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+4-51:69631400:69631708:-1	JK3:70673218:70673256:1	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+TTACC	(CATTCA)	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+VK	4-51:69631400:69631708:-1	4-51:69631400:69631708:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+JK	4-51:69631400:69631708:-1	JK3:70673218:70673256:1	100.00	6	0	0	304	309	5	10	   26	12.4
+# IGBLASTN 2.2.26+
+# Query: 4-57:69494353:69494661:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+4-57:69494353:69494661:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACTCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	4-57:69494353:69494661:-1	4-57:69494353:69494661:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: 8-16:70336666:70336981:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-16:70336666:70336981:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	316	23	23	0	0	100
+Total	N/A	N/A	305	305	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-16:70336666:70336981:-1	8-16:70336666:70336981:-1	100.00	316	0	0	1	316	1	316	5e-142	 494
+# IGBLASTN 2.2.26+
+# Query: 8-18:70306119:70306439:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-18:70306119:70306439:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCCCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	321	28	28	0	0	100
+Total	N/A	N/A	310	310	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-18:70306119:70306439:1	8-18:70306119:70306439:1	100.00	321	0	0	1	321	1	321	2e-144	 501
+# IGBLASTN 2.2.26+
+# Query: 8-19:70290870:70291185:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-19:70290870:70291185:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	316	23	23	0	0	100
+Total	N/A	N/A	305	305	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-19:70290870:70291185:-1	8-19:70290870:70291185:-1	100.00	316	0	0	1	316	1	316	5e-142	 494
+# IGBLASTN 2.2.26+
+# Query: 8-21:70264889:70265201:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-21:70264889:70265201:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CTTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	313	20	20	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-21:70264889:70265201:-1	8-21:70264889:70265201:-1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: 8-22:70247548:70247865:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-22:70247548:70247865:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTAC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	202	26	26	0	0	100
+FWR3	203	298	96	96	0	0	100
+CDR3 (V region only)	299	318	20	20	0	0	100
+Total	N/A	N/A	307	307	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-22:70247548:70247865:-1	8-22:70247548:70247865:-1	100.00	318	0	0	1	318	1	318	5e-143	 497
+# IGBLASTN 2.2.26+
+# Query: 8-23b:70190421:70190715:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-23b:70190421:70190715:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	59	39	39	0	0	100
+CDR1	60	110	51	51	0	0	100
+FWR2	111	155	45	45	0	0	100
+CDR2	156	176	21	21	0	0	100
+FWR3	177	272	96	96	0	0	100
+CDR3 (V region only)	273	295	23	23	0	0	100
+Total	N/A	N/A	275	275	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-23b:70190421:70190715:-1	8-23b:70190421:70190715:-1	100.00	295	0	0	1	295	1	295	3e-132	 461
+# IGBLASTN 2.2.26+
+# Query: 8-24:70166852:70167167:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-24:70166852:70167167:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	316	23	23	0	0	100
+Total	N/A	N/A	305	305	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-24:70166852:70167167:-1	8-24:70166852:70167167:-1	100.00	316	0	0	1	316	1	316	5e-142	 494
+# IGBLASTN 2.2.26+
+# Query: 8-26:70143470:70143791:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-26:70143470:70143791:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCCCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	322	29	29	0	0	100
+Total	N/A	N/A	311	311	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-26:70143470:70143791:1	8-26:70143470:70143791:1	100.00	322	0	0	1	322	1	322	7e-145	 503
+# IGBLASTN 2.2.26+
+# Query: 8-27:70121803:70122113:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-27:70121803:70122113:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCG	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	311	18	18	0	0	100
+Total	N/A	N/A	300	300	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-27:70121803:70122113:-1	8-27:70121803:70122113:-1	100.00	311	0	0	1	311	1	311	1e-139	 486
+# IGBLASTN 2.2.26+
+# Query: 8-28:70093587:70093902:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-28:70093587:70093902:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	316	23	23	0	0	100
+Total	N/A	N/A	305	305	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-28:70093587:70093902:-1	8-28:70093587:70093902:-1	100.00	316	0	0	1	316	1	316	5e-142	 494
+# IGBLASTN 2.2.26+
+# Query: 8-30:70067055:70067370:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-30:70067055:70067370:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	316	23	23	0	0	100
+Total	N/A	N/A	305	305	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-30:70067055:70067370:-1	8-30:70067055:70067370:-1	100.00	316	0	0	1	316	1	316	5e-142	 494
+# IGBLASTN 2.2.26+
+# Query: 8-31:70055854:70056173:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-31:70055854:70056173:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTAC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	130	50	50	0	0	100
+FWR2	131	175	45	45	0	0	100
+CDR2	176	201	26	26	0	0	100
+FWR3	202	297	96	96	0	0	100
+CDR3 (V region only)	298	320	23	23	0	0	100
+Total	N/A	N/A	309	309	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-31:70055854:70056173:-1	8-31:70055854:70056173:-1	100.00	320	0	0	1	320	1	320	6e-144	 500
+# IGBLASTN 2.2.26+
+# Query: 8-34:69994106:69994421:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+8-34:69994106:69994421:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTAC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	131	51	51	0	0	100
+FWR2	132	176	45	45	0	0	100
+CDR2	177	197	21	21	0	0	100
+FWR3	198	293	96	96	0	0	100
+CDR3 (V region only)	294	316	23	23	0	0	100
+Total	N/A	N/A	305	305	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	8-34:69994106:69994421:-1	8-34:69994106:69994421:-1	100.00	316	0	0	1	316	1	316	5e-142	 494
+# IGBLASTN 2.2.26+
+# Query: aa4:69366887:69367189:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+aa4:69366887:69367189:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	aa4:69366887:69367189:-1	aa4:69366887:69367189:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: ab4:69349806:69350108:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ab4:69349806:69350108:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ATCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ab4:69349806:69350108:-1	ab4:69349806:69350108:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: ac4:69327938:69328240:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ac4:69327938:69328240:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACTCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ac4:69327938:69328240:-1	ac4:69327938:69328240:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: ad4:69009684:69009992:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ad4:69009684:69009992:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ATCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ad4:69009684:69009992:-1	ad4:69009684:69009992:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: ae4:68992966:68993274:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ae4:68992966:68993274:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ae4:68992966:68993274:-1	ae4:68992966:68993274:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: af4:68966552:68966850:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+af4:68966552:68966850:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ATCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	299	21	21	0	0	100
+Total	N/A	N/A	282	282	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	af4:68966552:68966850:-1	af4:68966552:68966850:-1	100.00	299	0	0	1	299	1	299	4e-134	 467
+# IGBLASTN 2.2.26+
+# Query: ag4:68940752:68941060:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ag4:68940752:68941060:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ag4:68940752:68941060:-1	ag4:68940752:68941060:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: ah4:69147577:69147885:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ah4:69147577:69147885:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ah4:69147577:69147885:-1	ah4:69147577:69147885:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: ai4:69134820:69135128:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ai4:69134820:69135128:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ai4:69134820:69135128:-1	ai4:69134820:69135128:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: aj4:69060898:69061200:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+aj4:69060898:69061200:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	aj4:69060898:69061200:-1	aj4:69060898:69061200:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: al4:69193154:69193456:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+al4:69193154:69193456:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	al4:69193154:69193456:-1	al4:69193154:69193456:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: am4:69176848:69177150:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+am4:69176848:69177150:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	am4:69176848:69177150:-1	am4:69176848:69177150:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: an4:68757173:68757475:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+an4:68757173:68757475:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	an4:68757173:68757475:-1	an4:68757173:68757475:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: ao4:69537289:69537591:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ao4:69537289:69537591:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ao4:69537289:69537591:-1	ao4:69537289:69537591:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: ap4:69525969:69526271:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ap4:69525969:69526271:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ap4:69525969:69526271:-1	ap4:69525969:69526271:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: aq4:69254828:69255130:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+aq4:69254828:69255130:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	aq4:69254828:69255130:-1	aq4:69254828:69255130:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: ar4:69581642:69581944:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ar4:69581642:69581944:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ar4:69581642:69581944:-1	ar4:69581642:69581944:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: at4:69557269:69557571:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+at4:69557269:69557571:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	at4:69557269:69557571:-1	at4:69557269:69557571:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: ay4:68705032:68705333:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ay4:68705032:68705333:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CACCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	116	36	36	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	302	24	24	0	0	100
+Total	N/A	N/A	291	291	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ay4:68705032:68705333:-1	ay4:68705032:68705333:-1	100.00	302	0	0	1	302	1	302	2e-135	 472
+# IGBLASTN 2.2.26+
+# Query: ba9:68206566:68206863:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ba9:68206566:68206863:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ba9:68206566:68206863:1	ba9:68206566:68206863:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: bb1:68220949:68221261:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bb1:68220949:68221261:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bb1:68220949:68221261:1	bb1:68220949:68221261:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: bc1r:67543982:67544284:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bc1r:67543982:67544284:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+GCATG	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	25	91	67	67	0	0	100
+CDR1	92	138	47	47	0	0	100
+FWR2	139	183	45	45	0	0	100
+CDR2	184	204	21	21	0	0	100
+FWR3	205	300	96	96	0	0	100
+CDR3 (V region only)	296	303	8	8	0	0	100
+Total	N/A	N/A	284	284	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bc1r:67543982:67544284:1	bc1r:67543982:67544284:1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: bd2:67560190:67560502:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bd2:67560190:67560502:1	JL3p:19066464:19066500:-1	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACATT	(TTCCTCA)	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+VK	bd2:67560190:67560502:1	bd2:67560190:67560502:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+JL	bd2:67560190:67560502:1	JL3p:19066464:19066500:-1	100.00	7	0	0	307	313	9	15	6.7	14.4
+# IGBLASTN 2.2.26+
+# Query: bh2:67716030:67716342:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bh2:67716030:67716342:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bh2:67716030:67716342:-1	bh2:67716030:67716342:-1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: bi2:67710095:67710407:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bi2:67710095:67710407:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bi2:67710095:67710407:1	bi2:67710095:67710407:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: bj2:67675343:67675655:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bj2:67675343:67675655:1	JL3p:19066464:19066500:-1	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACATT	(TTCCTCA)	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+VK	bj2:67675343:67675655:1	bj2:67675343:67675655:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+JL	bj2:67675343:67675655:1	JL3p:19066464:19066500:-1	100.00	7	0	0	307	313	9	15	6.7	14.4
+# IGBLASTN 2.2.26+
+# Query: bk20:67670723:67671016:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bk20:67670723:67671016:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	109	29	29	0	0	100
+FWR2	110	154	45	45	0	0	100
+CDR2	155	175	21	21	0	0	100
+FWR3	176	271	96	96	0	0	100
+CDR3 (V region only)	272	294	23	23	0	0	100
+Total	N/A	N/A	283	283	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bk20:67670723:67671016:-1	bk20:67670723:67671016:-1	100.00	294	0	0	1	294	1	294	9e-132	 459
+# IGBLASTN 2.2.26+
+# Query: bl1:67967170:67967482:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bl1:67967170:67967482:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bl1:67967170:67967482:1	bl1:67967170:67967482:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: bp9:68006507:68006804:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bp9:68006507:68006804:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bp9:68006507:68006804:1	bp9:68006507:68006804:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: bq9:68016539:68016822:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bq9:68016539:68016822:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	6	74	50	50	0	0	100
+CDR1	75	107	33	33	0	0	100
+FWR2	108	152	45	45	0	0	100
+CDR2	153	165	13	13	0	0	100
+FWR3	166	261	96	96	0	0	100
+CDR3 (V region only)	258	284	27	27	0	0	100
+Total	N/A	N/A	264	264	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bq9:68016539:68016822:1	bq9:68016539:68016822:1	100.00	284	0	0	1	284	1	284	4e-127	 444
+# IGBLASTN 2.2.26+
+# Query: br9:67846339:67846636:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+br9:67846339:67846636:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	br9:67846339:67846636:1	br9:67846339:67846636:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: bt20:67987015:67987312:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bt20:67987015:67987312:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bt20:67987015:67987312:1	bt20:67987015:67987312:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: bv9:68000153:68000450:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bv9:68000153:68000450:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bv9:68000153:68000450:1	bv9:68000153:68000450:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: bw20:67811356:67811653:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+bw20:67811356:67811653:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	bw20:67811356:67811653:1	bw20:67811356:67811653:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: by9:68630545:68630842:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+by9:68630545:68630842:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	by9:68630545:68630842:1	by9:68630545:68630842:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: cb9:67741208:67741505:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cb9:67741208:67741505:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cb9:67741208:67741505:1	cb9:67741208:67741505:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: ce9:68581957:68582254:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ce9:68581957:68582254:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ce9:68581957:68582254:-1	ce9:68581957:68582254:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: cf9:68469174:68469471:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cf9:68469174:68469471:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cf9:68469174:68469471:1	cf9:68469174:68469471:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: ci12:68520932:68521229:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ci12:68520932:68521229:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ci12:68520932:68521229:1	ci12:68520932:68521229:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: cj9:67789963:67790260:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cj9:67789963:67790260:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cj9:67789963:67790260:1	cj9:67789963:67790260:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: cl9:67797571:67797868:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cl9:67797571:67797868:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cl9:67797571:67797868:1	cl9:67797571:67797868:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: co9:67826181:67826471:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+co9:67826181:67826471:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	6	74	50	50	0	0	100
+CDR1	75	107	33	33	0	0	100
+FWR2	108	152	45	45	0	0	100
+CDR2	153	173	21	21	0	0	100
+FWR3	174	268	95	95	0	0	100
+CDR3 (V region only)	265	291	27	27	0	0	100
+Total	N/A	N/A	271	271	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	co9:67826181:67826471:1	co9:67826181:67826471:1	100.00	291	0	0	1	291	1	291	2e-130	 455
+# IGBLASTN 2.2.26+
+# Query: cp9:68654502:68654799:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cp9:68654502:68654799:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cp9:68654502:68654799:-1	cp9:68654502:68654799:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: cq1:68262048:68262353:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cq1:68262048:68262353:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	5	73	2	2	0	0	100
+CDR1	74	121	48	48	0	0	100
+FWR2	122	166	45	45	0	0	100
+CDR2	167	187	21	21	0	0	100
+FWR3	188	283	96	96	0	0	100
+CDR3 (V region only)	284	306	23	23	0	0	100
+Total	N/A	N/A	235	235	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cq1:68262048:68262353:1	cq1:68262048:68262353:1	100.00	306	0	0	1	306	1	306	2e-137	 478
+# IGBLASTN 2.2.26+
+# Query: cr1:68071509:68071821:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cr1:68071509:68071821:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cr1:68071509:68071821:1	cr1:68071509:68071821:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: cs1:68812259:68812571:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cs1:68812259:68812571:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cs1:68812259:68812571:-1	cs1:68812259:68812571:-1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: cv1:68492104:68492416:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cv1:68492104:68492416:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cv1:68492104:68492416:1	cv1:68492104:68492416:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: cw9:67892068:67892365:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cw9:67892068:67892365:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cw9:67892068:67892365:-1	cw9:67892068:67892365:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: cx9:67661168:67661450:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cx9:67661168:67661450:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTTC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	1	65	44	44	0	0	100
+CDR1	66	98	33	33	0	0	100
+FWR2	99	143	45	45	0	0	100
+CDR2	144	164	21	21	0	0	100
+FWR3	165	260	96	96	0	0	100
+CDR3 (V region only)	257	283	27	27	0	0	100
+Total	N/A	N/A	266	266	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cx9:67661168:67661450:-1	cx9:67661168:67661450:-1	100.00	283	0	0	1	283	1	283	1e-126	 442
+# IGBLASTN 2.2.26+
+# Query: cy9:67904222:67904519:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cy9:67904222:67904519:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cy9:67904222:67904519:-1	cy9:67904222:67904519:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: cz1:68111398:68111710:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+cz1:68111398:68111710:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	cz1:68111398:68111710:1	cz1:68111398:68111710:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: dv-36:69942459:69942756:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+dv-36:69942459:69942756:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+TCATA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	dv-36:69942459:69942756:-1	dv-36:69942459:69942756:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: fg12:69274171:69274469:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+fg12:69274171:69274469:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	81	70	70	0	0	100
+CDR1	82	114	33	33	0	0	100
+FWR2	115	159	45	45	0	0	100
+CDR2	160	180	21	21	0	0	100
+FWR3	181	276	96	96	0	0	100
+CDR3 (V region only)	277	299	23	23	0	0	100
+Total	N/A	N/A	288	288	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	fg12:69274171:69274469:-1	fg12:69274171:69274469:-1	100.00	299	0	0	1	299	1	299	4e-134	 467
+# IGBLASTN 2.2.26+
+# Query: fl12:68784840:68785137:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+fl12:68784840:68785137:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	fl12:68784840:68785137:-1	fl12:68784840:68785137:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: fr12:69284598:69284896:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+fr12:69284598:69284896:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	81	69	69	0	0	100
+CDR1	82	114	33	33	0	0	100
+FWR2	115	159	45	45	0	0	100
+CDR2	160	180	21	21	0	0	100
+FWR3	181	276	96	96	0	0	100
+CDR3 (V region only)	277	299	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	fr12:69284598:69284896:-1	fr12:69284598:69284896:-1	100.00	299	0	0	1	299	1	299	4e-134	 467
+# IGBLASTN 2.2.26+
+# Query: ga33:69088029:69088326:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ga33:69088029:69088326:1	JL3p:19066464:19066500:-1	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+GTATA	(CCTAT)	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+VK	ga33:69088029:69088326:1	ga33:69088029:69088326:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+JL	ga33:69088029:69088326:1	JL3p:19066464:19066500:-1	100.00	5	0	0	294	298	21	25	  101	10.4
+# IGBLASTN 2.2.26+
+# Query: gj38c:68686291:68686588:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+gj38c:68686291:68686588:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CTACC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	gj38c:68686291:68686588:-1	gj38c:68686291:68686588:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: gk32:68541543:68541826:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+gk32:68541543:68541826:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+GTTGA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	263	84	84	0	0	100
+CDR3 (V region only)	264	284	21	21	0	0	100
+Total	N/A	N/A	273	273	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	gk32:68541543:68541826:1	gk32:68541543:68541826:1	100.00	284	0	0	1	284	1	284	4e-127	 444
+# IGBLASTN 2.2.26+
+# Query: gl32:68431415:68431712:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+gl32:68431415:68431712:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCCCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	64	64	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	282	282	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	gl32:68431415:68431712:-1	gl32:68431415:68431712:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: gm33:68889764:68890061:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+gm33:68889764:68890061:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	gm33:68889764:68890061:1	gm33:68889764:68890061:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: gn33:68880263:68880560:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+gn33:68880263:68880560:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	gn33:68880263:68880560:-1	gn33:68880263:68880560:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: gp33:68852964:68853260:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+gp33:68852964:68853260:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CATAT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	274	95	95	0	0	100
+CDR3 (V region only)	275	297	23	23	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	gp33:68852964:68853260:1	gp33:68852964:68853260:1	100.00	297	0	0	1	297	1	297	3e-133	 464
+# IGBLASTN 2.2.26+
+# Query: gq33:68929361:68929657:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+gq33:68929361:68929657:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTAC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	297	22	22	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	gq33:68929361:68929657:1	gq33:68929361:68929657:1	100.00	297	0	0	1	297	1	297	3e-133	 464
+# IGBLASTN 2.2.26+
+# Query: gr32:68387622:68387919:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+gr32:68387622:68387919:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	gr32:68387622:68387919:1	gr32:68387622:68387919:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: gs32:68416120:68416417:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+gs32:68416120:68416417:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+TCTCT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	62	62	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	280	280	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	gs32:68416120:68416417:-1	gs32:68416120:68416417:-1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: gu33:69312885:69313181:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+gu33:69312885:69313181:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACTAC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	79	68	68	0	0	100
+CDR1	80	112	33	33	0	0	100
+FWR2	113	157	45	45	0	0	100
+CDR2	158	178	21	21	0	0	100
+FWR3	179	274	96	96	0	0	100
+CDR3 (V region only)	275	297	23	23	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	gu33:69312885:69313181:1	gu33:69312885:69313181:1	100.00	297	0	0	1	297	1	297	3e-133	 464
+# IGBLASTN 2.2.26+
+# Query: ha24:68129246:68129558:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ha24:68129246:68129558:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+TATTC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	67	67	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	291	97	97	0	0	100
+CDR3 (V region only)	292	313	22	22	0	0	100
+Total	N/A	N/A	300	300	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ha24:68129246:68129558:1	ha24:68129246:68129558:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: hd24:68299122:68299435:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+hd24:68299122:68299435:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+TATTC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	67	67	0	0	100
+CDR1	81	129	49	49	0	0	100
+FWR2	130	174	45	45	0	0	100
+CDR2	175	195	21	21	0	0	100
+FWR3	196	292	97	97	0	0	100
+CDR3 (V region only)	293	314	22	22	0	0	100
+Total	N/A	N/A	301	301	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	hd24:68299122:68299435:1	hd24:68299122:68299435:1	100.00	314	0	0	1	314	1	314	4e-141	 491
+# IGBLASTN 2.2.26+
+# Query: he24:68252840:68253152:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+he24:68252840:68253152:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	he24:68252840:68253152:1	he24:68252840:68253152:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: hf24:67505898:67506210:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+hf24:67505898:67506210:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTTT	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	hf24:67505898:67506210:1	hf24:67505898:67506210:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: hg24:68170389:68170700:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+hg24:68170389:68170700:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+TCCTC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	312	22	22	0	0	100
+Total	N/A	N/A	301	301	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	hg24:68170389:68170700:1	hg24:68170389:68170700:1	100.00	312	0	0	1	312	1	312	3e-140	 487
+# IGBLASTN 2.2.26+
+# Query: hk24:68102299:68102611:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+hk24:68102299:68102611:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	128	48	48	0	0	100
+FWR2	129	173	45	45	0	0	100
+CDR2	174	194	21	21	0	0	100
+FWR3	195	290	96	96	0	0	100
+CDR3 (V region only)	291	313	23	23	0	0	100
+Total	N/A	N/A	302	302	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	hk24:68102299:68102611:1	hk24:68102299:68102611:1	100.00	313	0	0	1	313	1	313	1e-140	 489
+# IGBLASTN 2.2.26+
+# Query: ia11:68289692:68289989:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ia11:68289692:68289989:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ia11:68289692:68289989:1	ia11:68289692:68289989:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: ic11:68114623:68114917:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ic11:68114623:68114917:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCG	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	78	67	67	0	0	100
+CDR1	79	111	33	33	0	0	100
+FWR2	112	155	44	44	0	0	100
+CDR2	156	176	21	21	0	0	100
+FWR3	177	272	96	96	0	0	100
+CDR3 (V region only)	273	295	23	23	0	0	100
+Total	N/A	N/A	284	284	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ic11:68114623:68114917:1	ic11:68114623:68114917:1	100.00	295	0	0	1	295	1	295	3e-132	 461
+# IGBLASTN 2.2.26+
+# Query: ie11:68055578:68055874:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ie11:68055578:68055874:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	274	95	95	0	0	100
+CDR3 (V region only)	275	297	23	23	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ie11:68055578:68055874:1	ie11:68055578:68055874:1	100.00	297	0	0	1	297	1	297	3e-133	 464
+# IGBLASTN 2.2.26+
+# Query: if11:67863749:67864046:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+if11:67863749:67864046:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CCTCC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	298	23	23	0	0	100
+Total	N/A	N/A	287	287	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	if11:67863749:67864046:1	if11:67863749:67864046:1	100.00	298	0	0	1	298	1	298	1e-133	 466
+# IGBLASTN 2.2.26+
+# Query: ka4:69106112:69106420:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ka4:69106112:69106420:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	68	68	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	291	291	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ka4:69106112:69106420:-1	ka4:69106112:69106420:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: kb4:68860405:68860704:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+kb4:68860405:68860704:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+TCTTA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	300	22	22	0	0	100
+Total	N/A	N/A	283	283	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	kb4:68860405:68860704:-1	kb4:68860405:68860704:-1	100.00	300	0	0	1	300	1	300	1e-134	 469
+# IGBLASTN 2.2.26+
+# Query: kf4:68718549:68718857:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+kf4:68718549:68718857:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACGCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	kf4:68718549:68718857:-1	kf4:68718549:68718857:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: kg4:68911372:68911674:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+kg4:68911372:68911674:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	67	67	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	284	284	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	kg4:68911372:68911674:-1	kg4:68911372:68911674:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: kh4:69598818:69599126:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+kh4:69598818:69599126:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACTCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	kh4:69598818:69599126:-1	kh4:69598818:69599126:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: ki4:69292466:69292774:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+ki4:69292466:69292774:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	ki4:69292466:69292774:-1	ki4:69292466:69292774:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: kj4:69450248:69450556:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+kj4:69450248:69450556:-1	JK3:70673218:70673256:1	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+TTACC	(CATTCA)	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+VK	kj4:69450248:69450556:-1	kj4:69450248:69450556:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+JK	kj4:69450248:69450556:-1	JK3:70673218:70673256:1	100.00	6	0	0	304	309	5	10	   26	12.4
+# IGBLASTN 2.2.26+
+# Query: kk4:69388212:69388514:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+kk4:69388212:69388514:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	303	25	25	0	0	100
+Total	N/A	N/A	286	286	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	kk4:69388212:69388514:-1	kk4:69388212:69388514:-1	100.00	303	0	0	1	303	1	303	5e-136	 473
+# IGBLASTN 2.2.26+
+# Query: kl4:69413188:69413496:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+kl4:69413188:69413496:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	122	36	36	0	0	100
+FWR2	123	167	45	45	0	0	100
+CDR2	168	188	21	21	0	0	100
+FWR3	189	284	96	96	0	0	100
+CDR3 (V region only)	285	309	25	25	0	0	100
+Total	N/A	N/A	292	292	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	kl4:69413188:69413496:-1	kl4:69413188:69413496:-1	100.00	309	0	0	1	309	1	309	9e-139	 483
+# IGBLASTN 2.2.26+
+# Query: km4:69233788:69234086:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+km4:69233788:69234086:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	299	21	21	0	0	100
+Total	N/A	N/A	282	282	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	km4:69233788:69234086:-1	km4:69233788:69234086:-1	100.00	299	0	0	1	299	1	299	4e-134	 467
+# IGBLASTN 2.2.26+
+# Query: kn4:69217882:69218180:-1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+kn4:69217882:69218180:-1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+ACCCA	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	18	86	69	69	0	0	100
+CDR1	87	116	30	30	0	0	100
+FWR2	117	161	45	45	0	0	100
+CDR2	162	182	21	21	0	0	100
+FWR3	183	278	96	96	0	0	100
+CDR3 (V region only)	279	299	21	21	0	0	100
+Total	N/A	N/A	282	282	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	kn4:69217882:69218180:-1	kn4:69217882:69218180:-1	100.00	299	0	0	1	299	1	299	4e-134	 467
+# IGBLASTN 2.2.26+
+# Query: RF:68375768:68376066:1
+# Database: database/Ig-V_segments_position_corrected.fasta
+# Domain classification requested: kabat
+
+# V(D)J rearrangement summary for query sequence (Top V gene match, Top J gene match, Chain type, V-J Frame, Strand):
+RF:68375768:68376066:1	N/A	VK	N/A	+
+
+# V(D)J junction details (V end, V-J junction, J start.  Note that overlapping nucleotides at VDJ junction, if any, are shown in parentheses (i.e., (TACT)) and are not included under V, D, or J region itself)
+CGTAC	N/A	N/A	
+
+# Alignment summary between query and top germline V gene hit (from, to, length, matches, mismatches, gaps, percent identity)
+FWR1	12	80	69	69	0	0	100
+CDR1	81	113	33	33	0	0	100
+FWR2	114	158	45	45	0	0	100
+CDR2	159	179	21	21	0	0	100
+FWR3	180	275	96	96	0	0	100
+CDR3 (V region only)	276	299	24	24	0	0	100
+Total	N/A	N/A	288	288	0	0	100
+
+# Hit table (the first field indicates the chain type of the hit)
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+VK	RF:68375768:68376066:1	RF:68375768:68376066:1	100.00	299	0	0	1	299	1	299	4e-134	 467
+# BLAST processed 140 queries

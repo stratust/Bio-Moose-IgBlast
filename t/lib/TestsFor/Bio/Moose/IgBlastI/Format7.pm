@@ -1,0 +1,32 @@
+package TestsFor::Bio::Moose::IgBlastI::Format7;
+    use Test::Class::Moose;
+    use Bio::Moose::IgBlastI::Format7;
+
+    sub test_construction {
+        my ( $test, $report ) = @_;
+
+        can_ok 'Bio::Moose::IgBlastI::Format7', 'new';
+
+        my $obj = Bio::Moose::IgBlastI::Format7->new( 'file' => '', );
+
+        isa_ok $obj, 'Bio::Moose::IgBlastI::Format7';
+    }
+
+    sub test_parse_version_1_0 {
+        my ( $test, $report ) = @_;
+
+        my $obj = Bio::Moose::IgBlastI::Format7->new(
+            'file'  => 't/data/format7/input_files/1.0/IgBlast_heavy_lotta_1.0-7_all.out',
+        );
+
+        can_ok $obj,(qw/features next_feature/);
+        
+        isa_ok $obj->features, 'ARRAY';
+
+        my $first = $obj->next_feature;
+        
+        isa_ok $first, 'Bio::Moose::IgBlast';
+
+    }
+
+1
