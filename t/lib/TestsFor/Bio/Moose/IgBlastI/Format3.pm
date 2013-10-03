@@ -4,14 +4,6 @@ package TestsFor::Bio::Moose::IgBlastI::Format3;
 
     sub test_construction {
         my ( $test, $report ) = @_;
-        my $obj = Bio::Moose::IgBlastI::Format3->new(
-            'file'  => '',
-        );
-        isa_ok $obj, 'Bio::Moose::IgBlastI::Format3';
-    }
-
-    sub test_construction {
-        my ( $test, $report ) = @_;
         can_ok 'Bio::Moose::IgBlastI::Format3', 'new';
         my $obj = Bio::Moose::IgBlastI::Format3->new( 'file' => '', );
         isa_ok $obj, 'Bio::Moose::IgBlastI::Format3';
