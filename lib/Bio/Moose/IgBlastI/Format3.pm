@@ -39,6 +39,7 @@ class Bio::Moose::IgBlastI::Format3 {
         },
     );
 
+    our $query_id;
 
     method _build_features {
         my @objects;
@@ -69,7 +70,7 @@ class Bio::Moose::IgBlastI::Format3 {
             my %obj_params;
 
             # Each sub block has specific parser methods
-            my ( $info_param, $rearrangement_param, $junction_param, $aln_param, $hit_table_param );
+            my ( $info_param, $rearrangement_param, $junction_param, $aln_param, $rendered_aln_param );
 
             %obj_params = (%obj_params, %{$header_param});
 
@@ -90,6 +91,9 @@ class Bio::Moose::IgBlastI::Format3 {
                 %obj_params = (%obj_params, %{$aln_param});
             }
 
+            if ($rendered_aln_block) {
+                $rendered_aln_param = $self->_parse_rendered_aln_block($rendered_aln_block);
+            }
             my $obj =
                 Bio::Moose::IgBlast->new( %obj_params, init_pos => $init_pos );
 
@@ -205,6 +209,7 @@ class Bio::Moose::IgBlastI::Format3 {
         else{
             die "Problem with info_block :\n$info";
         }
+        $query_id = $hash{query_id};
         return \%hash;
     }
 
@@ -372,6 +377,62 @@ class Bio::Moose::IgBlastI::Format3 {
         close($in);
         my $aln_obj = Bio::Moose::IgBlast::Alignment->new(%hash);
         return {alignments => $aln_obj};
+    }
+
+
+    method _parse_rendered_aln_block ($rendered_aln) {
+        my %hash;
+        my @aln_blocks = split /\n\n/ms, $rendered_aln;
+        local $/ = "\n";
+        my %seq;
+        foreach my $aln_block (@aln_blocks) {
+
+            next if $aln_block =~ /Alignments/;
+            next if $aln_block =~ /Lambda/sm;
+            next if $aln_block =~ /Effective/;
+
+            open( my $in, '<', \$aln_block )
+              || die "Cannot open/read file " . $aln_block . "!";
+
+            # count block_row
+            my $i         = 0;
+            my $query_row = 'N/A';
+            my $germ_pos = 0;
+            while ( my $row = <$in> ) {
+                next if $row =~ /^$/;
+                chomp $row;
+                my @aux = split /\s+/, $row;
+
+                # First row in each block indicate regions;
+                if ( $i == 0 ) {
+                    push @{ $seq{region} }, \@aux;
+                }
+
+                # Query row
+                elsif (( !$aux[0] && $aux[2] )
+                    && ( $aux[0] =~ '' && $aux[2] =~ /\d+/ ) )
+                {
+                    push @{ $seq{query} }, \@aux;
+                }
+
+                # germline row
+                elsif ( $aux[0] =~ /[VDJ]/ && $aux[1] =~ /\%/ ) {
+                    push @{ $seq{germ}{$germ_pos} }, \@aux;
+                    $germ_pos++;
+                }
+
+                # Translation
+                else {
+                    push @{ $seq{translation} }, \@aux;
+                }
+
+                $i++;
+            }
+            close($in);
+
+        }
+        die "array:" . p %seq;
+        return \%hash;
     }
 
 
