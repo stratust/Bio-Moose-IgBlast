@@ -385,10 +385,13 @@ class Bio::Moose::IgBlastI::Format3 {
         my @aln_blocks = split /\n\n/ms, $rendered_aln;
         local $/ = "\n";
         my %seq;
-        foreach my $aln_block (@aln_blocks) {
+        my $b_count=0;
+        BLOCKS: foreach my $aln_block (@aln_blocks) {
 
             next if $aln_block =~ /Alignments/;
             next if $aln_block =~ /Lambda/sm;
+            next if $aln_block =~ /Matrix\:/sm;
+            next if $aln_block =~ /Database\:/sm;
             next if $aln_block =~ /Effective/;
 
             open( my $in, '<', \$aln_block )
@@ -398,40 +401,73 @@ class Bio::Moose::IgBlastI::Format3 {
             my $i         = 0;
             my $query_row = 'N/A';
             my $germ_pos = 0;
-            while ( my $row = <$in> ) {
+            my $second_translation = 0;
+            my $space;
+            ROWS: while ( my $row = <$in> ) {
                 next if $row =~ /^$/;
                 chomp $row;
                 my @aux = split /\s+/, $row;
 
                 # First row in each block indicate regions;
-                if ( $i == 0 ) {
-                    push @{ $seq{region} }, \@aux;
+                if ( $i == 0  && $row !~ /\d+/) {
+                    if ( $row =~ /^(\s+)(\S+)/ ) {
+                        my $region;
+
+                        ( $space, $region ) = ( $1, $2 );
+                        $seq{regions} .= $region;
+
+                    }
+                    elsif ($row =~ /no hits found/ims){
+                        last BLOCKS;
+                    }
+                    else {
+                        die "Problem with region: $row form $rendered_aln";
+                    }
                 }
 
                 # Query row
                 elsif (( !$aux[0] && $aux[2] )
                     && ( $aux[0] =~ '' && $aux[2] =~ /\d+/ ) )
                 {
-                    push @{ $seq{query} }, \@aux;
+                    $seq{query}{id} = $aux[1];
+                    push( @{ $seq{query}{starts} }, $aux[2] );
+                    push( @{ $seq{query}{ends} }, $aux[4] );
+                    $seq{query}{seq} .= $aux[3];
                 }
 
                 # germline row
                 elsif ( $aux[0] =~ /[VDJ]/ && $aux[1] =~ /\%/ ) {
-                    push @{ $seq{germ}{$germ_pos} }, \@aux;
-                    $germ_pos++;
+                    my $germ_id = $aux[3];
+                    $seq{germline}{$germ_id}{type} = $aux[0];
+                    $seq{germline}{$germ_id}{percent} = $aux[1];
+                    $seq{germline}{$germ_id}{identity} = $aux[2];
+                    $seq{germline}{$germ_id}{starts}{$b_count} = $aux[4];
+                    $seq{germline}{$germ_id}{ends}{$b_count} = $aux[6];
+                    $seq{germline}{$germ_id}{seq}{$b_count} = $aux[5];
+
                 }
 
                 # Translation
                 else {
-                    push @{ $seq{translation} }, \@aux;
+                    my $l_space = length($space);
+                    my $aa;
+                    $aa = $1 if $row =~ /^\s{$l_space}(.*)/;
+                    if ($second_translation ) {
+                        $seq{translation_germ} .= $aa;
+                    }
+                    else
+                    {
+                        $seq{translation_query} .= $aa;
+                    }
+                    $second_translation = 1;
                 }
 
                 $i++;
             }
             close($in);
-
+            $b_count++;
         }
-        die "array:" . p %seq;
+        #die "array:" . p %seq;
         return \%hash;
     }
 
