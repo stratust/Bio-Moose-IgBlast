@@ -403,13 +403,14 @@ class Bio::Moose::IgBlastI::Format3 {
             my $germ_pos = 0;
             my $second_translation = 0;
             my $space;
+
             ROWS: while ( my $row = <$in> ) {
                 next if $row =~ /^$/;
                 chomp $row;
                 my @aux = split /\s+/, $row;
 
                 # First row in each block indicate regions;
-                if ( $i == 0  && $row !~ /\d+/) {
+                if ( $i == 0 && $row !~ /\%/ ) {
                     if ( $row =~ /^(\s+)(\S+)/ ) {
                         my $region;
 
@@ -452,6 +453,7 @@ class Bio::Moose::IgBlastI::Format3 {
                     my $l_space = length($space);
                     my $aa;
                     $aa = $1 if $row =~ /^\s{$l_space}(.*)/;
+                    
                     if ($second_translation ) {
                         $seq{translation_germ} .= $aa;
                     }
