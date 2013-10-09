@@ -469,7 +469,7 @@ class Bio::Moose::IgBlastI::Format3 {
             close($in);
             $b_count++;
         }
-        #die "array:" . p %seq;
+        die "array:" . p %seq;
         return \%hash;
     }
 
