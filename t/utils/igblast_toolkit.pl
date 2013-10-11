@@ -51,8 +51,8 @@ class MyApp::Foo {
             #say $feature->query_id;
             #p $feature->CDR3 if $feature->CDR3;
             #say $feature->domain_classification;
+            #p $feature if $feature->query_id eq '3A_P95_G123_H1-IgGinternal.ab1';
             p $feature;
-            die;
         }
 
         $self->log->warn("==> END $cmd <==");

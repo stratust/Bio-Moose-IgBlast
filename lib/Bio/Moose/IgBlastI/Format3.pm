@@ -9,7 +9,11 @@ class Bio::Moose::IgBlastI::Format3 {
     use Bio::Moose::IgBlast::Alignment;
     use Bio::Moose::IgBlast::Alignment::Region;
     use Bio::Moose::IgBlast::HitTable;
+    use Bio::Moose::IgBlast::RenderedAlignment;
+    use Bio::Moose::IgBlast::RenderedAlignment::Feature;
+    use Bio::Moose::IgBlast::RenderedAlignment::Feature::Region;
     use Data::Printer;
+    use Carp::Always;
     
     has 'file' => (
         is            => 'ro',
@@ -93,6 +97,7 @@ class Bio::Moose::IgBlastI::Format3 {
 
             if ($rendered_aln_block) {
                 $rendered_aln_param = $self->_parse_rendered_aln_block($rendered_aln_block);
+                %obj_params = (%obj_params, %{$rendered_aln_param});
             }
             my $obj =
                 Bio::Moose::IgBlast->new( %obj_params, init_pos => $init_pos );
@@ -386,6 +391,8 @@ class Bio::Moose::IgBlastI::Format3 {
         local $/ = "\n";
         my %seq;
         my $b_count=0;
+        my $space;
+
         BLOCKS: foreach my $aln_block (@aln_blocks) {
 
             next if $aln_block =~ /Alignments/;
@@ -402,24 +409,20 @@ class Bio::Moose::IgBlastI::Format3 {
             my $query_row = 'N/A';
             my $germ_pos = 0;
             my $second_translation = 0;
-            my $space;
-
             ROWS: while ( my $row = <$in> ) {
                 next if $row =~ /^$/;
                 chomp $row;
                 my @aux = split /\s+/, $row;
+                if ( $row =~ /no hits found/ims ) {
+                    last BLOCKS;
+                }
 
                 # First row in each block indicate regions;
-                if ( $i == 0 && $row !~ /\%/ ) {
+                if ( $i == 0 && $row !~ /\%/ && $aux[1] =~ /[\-\<\>]/ ) {
                     if ( $row =~ /^(\s+)(\S+)/ ) {
                         my $region;
-
                         ( $space, $region ) = ( $1, $2 );
                         $seq{regions} .= $region;
-
-                    }
-                    elsif ($row =~ /no hits found/ims){
-                        last BLOCKS;
                     }
                     else {
                         die "Problem with region: $row form $rendered_aln";
@@ -427,41 +430,48 @@ class Bio::Moose::IgBlastI::Format3 {
                 }
 
                 # Query row
-                elsif (( !$aux[0] && $aux[2] )
-                    && ( $aux[0] =~ '' && $aux[2] =~ /\d+/ ) )
+                elsif ( $aux[2] && ($aux[0] eq '' && $aux[2] =~ /\d+/  ))
                 {
                     $seq{query}{id} = $aux[1];
                     push( @{ $seq{query}{starts} }, $aux[2] );
-                    push( @{ $seq{query}{ends} }, $aux[4] );
-                    $seq{query}{seq} .= $aux[3];
+                    push( @{ $seq{query}{ends} },   $aux[4] );
+                    push @{ $seq{query}{seq} }, $aux[3];
                 }
 
                 # germline row
                 elsif ( $aux[0] =~ /[VDJ]/ && $aux[1] =~ /\%/ ) {
-                    my $germ_id = $aux[3];
-                    $seq{germline}{$germ_id}{type} = $aux[0];
-                    $seq{germline}{$germ_id}{percent} = $aux[1];
-                    $seq{germline}{$germ_id}{identity} = $aux[2];
-                    $seq{germline}{$germ_id}{starts}{$b_count} = $aux[4];
-                    $seq{germline}{$germ_id}{ends}{$b_count} = $aux[6];
-                    $seq{germline}{$germ_id}{seq}{$b_count} = $aux[5];
+                     my $germ_id = $aux[3];
+                     my $germ_type = $aux[0];
+ 
+                    # keep ids of best V D and J germlines
+                    $seq{top_germline}{$germ_type} = $germ_id unless $seq{top_germline}{$germ_type};
 
+                    $seq{germline}{$germ_id}{type}             = $germ_type;
+                    $seq{germline}{$germ_id}{percent}          = $aux[1];
+                    $seq{germline}{$germ_id}{identity}         = $aux[2];
+                    $seq{germline}{$germ_id}{starts}{$b_count} = $aux[4];
+                    $seq{germline}{$germ_id}{ends}{$b_count}   = $aux[6];
+                    $seq{germline}{$germ_id}{seq}{$b_count}    = $aux[5];
                 }
 
                 # Translation
                 else {
-                    my $l_space = length($space);
+                    my $l_space = length $space;
                     my $aa;
-                    $aa = $1 if $row =~ /^\s{$l_space}(.*)/;
-                    
-                    if ($second_translation ) {
-                        $seq{translation_germ} .= $aa;
+                    if ($l_space) {
+                        $aa = $1 if $row =~ /^\s{$l_space}(.*)/;
+                        if ($second_translation) {
+                            $seq{germline}{translation} .= $aa if $aa;
+                        }
+                        else {
+                            $seq{query}{translation} .= $aa if $aa;
+                        }
+                        $second_translation = 1;
                     }
-                    else
-                    {
-                        $seq{translation_query} .= $aa;
+                    else {
+                        die "no space found before regions row:" . p @aux;
                     }
-                    $second_translation = 1;
+
                 }
 
                 $i++;
@@ -469,10 +479,138 @@ class Bio::Moose::IgBlastI::Format3 {
             close($in);
             $b_count++;
         }
-        die "array:" . p %seq;
+ 
+        my $best_V_id = $seq{top_germline}{V};
+        my %aux_hash;
+        if ($best_V_id) {
+
+            # For query
+            my $q_subregion_seq = $self->_get_region_sequences( $seq{regions}, $seq{query}{seq},
+                translation => $seq{query}{translation} );
+
+            $aux_hash{query} =
+                Bio::Moose::IgBlast::RenderedAlignment::Feature->new( %{$q_subregion_seq},
+                id => $seq{query}{id}, );
+
+            # For germline
+            # V region
+            my $germ_subregion_seq = $self->_get_region_sequences(
+                $seq{regions},
+                $seq{germline}{$best_V_id}{seq},
+                translation => $seq{germline}{translation}
+            );
+
+            $aux_hash{best_V} =
+                Bio::Moose::IgBlast::RenderedAlignment::Feature->new( %{$germ_subregion_seq},
+                id => $best_V_id, );
+             
+           
+            # D region
+            my $best_D_id = $seq{top_germline}{D};
+            if ($best_D_id) {
+                $aux_hash{best_D} =
+                    Bio::Moose::IgBlast::RenderedAlignment::Feature->new( 
+                    id => $best_D_id, );
+            }
+
+            # J region
+            my $best_J_id = $seq{top_germline}{J};
+            if ($best_J_id) {
+                $aux_hash{best_J} =
+                    Bio::Moose::IgBlast::RenderedAlignment::Feature->new( 
+                    id => $best_J_id, );
+            }
+
+        }
+        if (%aux_hash) {
+            %hash = (
+                rendered_alignment => Bio::Moose::IgBlast::RenderedAlignment->new( %aux_hash )
+            );
+        }
         return \%hash;
     }
 
+
+    method _get_region_sequences (Str $v_regions_str, ArrayRef | HashRef $seq_ref, Str : $translation) {
+        my $seq_str;
+        if ( ref $seq_ref eq 'ARRAY' ) {
+            $seq_str = join '', @{$seq_ref};
+        }
+        else {
+            foreach my $k ( sort { $a <=> $b } keys %{$seq_ref} ) {
+                $seq_str .= $seq_ref->{$k};
+            }
+        }
+
+        $v_regions_str =~ s/^\<//;
+        $v_regions_str =~ s/\>$//;
+
+        # Correct beginning based on translation
+        if ( $translation && $translation =~ /^(\s+)/ ) {
+            my $space_size = length $1;
+            if ( $space_size > 1 ) {
+                my $rm = $space_size - 1;
+                $v_regions_str = $1 if ( $v_regions_str =~ /^.{$rm}(.*)/ );
+                $translation   = $1 if ( $translation =~ /^.{$rm}(.*)/ );
+                $seq_str       = $1 if ( $seq_str =~ /^.{$rm}(.*)/ );
+            }
+        }
+        
+        my @regions = split '><', $v_regions_str;
+        my @r_name;
+        my $regex;
+       
+        my $regex_length = 0;
+        foreach my $r (@regions) {
+
+            # Getting region names and sizes;
+            if ( $r =~ /([^-]+)/ ) {
+                my $aux = $1;
+                $aux =~ s/FR/FWR/g;
+                if ( length($aux) == 4 ) {
+                    push @r_name, $aux;
+                    $regex .= '(.{' . ( length($r) + 2 ) . '})';
+                }
+                else {
+                    $regex .= '.{' . ( length($r) + 2 ) . '}';
+                }
+                $regex_length += length($r) + 2;
+            }
+        }
+        
+        # For germline sometimes we have less sequence than regions, so let's
+        # add spaces at the end before split
+        while (length($seq_str) < $regex_length){
+            $seq_str .= ' ';
+        }
+        my @parts_nt = $seq_str =~ /$regex/;
+        $seq_str =~ s/\s+//g;
+        $_ =~ s/\s+//g foreach @parts_nt;
+
+        # Sometimes translation has less space at the end than DNA, so lets add
+        # spaces at the end before split
+        while (length($translation) < $regex_length){
+            $translation .= ' ';
+        }
+        my @parts_aa = $translation =~ /$regex/;
+        $translation =~ s/\s+//g;
+        $_ =~ s/\s+//g foreach @parts_aa;
+
+        my %seq_nt;
+        my %seq_aa;
+        @seq_nt{@r_name} = @parts_nt;
+        @seq_aa{@r_name} = @parts_aa;
+
+        return {
+            sub_regions_translation =>
+                Bio::Moose::IgBlast::RenderedAlignment::Feature::Region->new(%seq_aa),
+            sub_regions_sequence =>
+                Bio::Moose::IgBlast::RenderedAlignment::Feature::Region->new(%seq_nt),
+            translation => $translation,
+            sequence    => $seq_str
+        };
+
+    }
 
     method _parse_hit_table_block (Str $hit_table) {
         my (%hash, @fields);

@@ -30,6 +30,12 @@ class Bio::Moose::IgBlast {
         required => 0
     );
 
+    has 'rendered_alignment' => (
+        is       => 'ro',
+        isa      => 'Bio::Moose::IgBlast::RenderedAlignment',
+        required => 0
+    );
+
     # store any information you want in this part
     has misc     => ( is => 'rw', isa => 'Any' );
     has init_pos => ( is => 'ro', isa => 'Int' );
