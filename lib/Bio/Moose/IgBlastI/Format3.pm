@@ -95,7 +95,7 @@ class Bio::Moose::IgBlastI::Format3 {
                 %obj_params = (%obj_params, %{$aln_param});
             }
 
-            if ($rendered_aln_block) {
+            if ($rendered_aln_block && $aln_block ) {
                 $rendered_aln_param = $self->_parse_rendered_aln_block($rendered_aln_block);
                 %obj_params = (%obj_params, %{$rendered_aln_param});
             }
@@ -469,7 +469,8 @@ class Bio::Moose::IgBlastI::Format3 {
                         $second_translation = 1;
                     }
                     else {
-                        die "no space found before regions row:" . p @aux;
+                        print "no space found before regions row:" . p @aux;
+                        die $rendered_aln;
                     }
 
                 }
