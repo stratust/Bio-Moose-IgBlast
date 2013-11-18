@@ -1,7 +1,0 @@
-3:	final indentation level: 5
-
-Final nesting depth of '{'s is 1
-The most recent un-matched '{' is on line 3
-3: foreach my $r (@regions) {
-                            ^
-3:	To save a full .LOG file rerun with -g
