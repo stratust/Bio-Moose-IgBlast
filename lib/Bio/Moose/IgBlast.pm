@@ -43,31 +43,34 @@ class Bio::Moose::IgBlast {
 
     method infer_CDR3_nt {
         my $cdr3_seq = "N/A";
+    
+        if ( $self->rendered_alignment ) {
+            my $query = $self->rendered_alignment->query;
 
-        my $query = $self->rendered_alignment->query;
+            if ( $query->sub_regions_sequence->has_FWR3 ) {
 
-        if ( $query->sub_regions_sequence->has_FWR3 ) {
+                my $r = quotemeta $query->sub_regions_sequence->FWR3;
 
-            my $r = quotemeta $query->sub_regions_sequence->FWR3;
-            
-            # If heavy chain
-            if ( $self->rearrangemet->top_V_match =~ /IGH/i ) {
-            
-                if ( $query->sequence =~ /($r)(\S+)TGGGGC/i ) {
-                    $cdr3_seq = $2 . "|";
+                # If heavy chain
+                if ( $self->rearrangement_summary->top_V_match =~ /IGH/i ) {
+
+                    if ( $query->sequence =~ /($r)(\S+)TGGGGC/i ) {
+                        $cdr3_seq = $2 . "|";
+                    }
+                    elsif ( $query->sequence =~ /($r)(\S+)/i ) {
+                        $cdr3_seq = $2;
+                    }
                 }
-                elsif ( $query->sequence =~ /($r)(\S+)/i ) {
-                    $cdr3_seq = $2;
-                }
-            }
-            # If light chain
-            elsif ( $self->rearrangemet->top_V_match =~ /IGL/i ) {
-            
-                if ( $query->sequence =~ /($r)(\S+)TCCTGT/i ) {
-                    $cdr3_seq = $2 . "|";
-                }
-                elsif ( $query->sequence =~ /($r)(\S+)/i ) {
-                    $cdr3_seq = $2;
+
+                # If light chain
+                elsif ( $self->rearrangement_summary->top_V_match =~ /IGL/i ) {
+
+                    if ( $query->sequence =~ /($r)(\S+)TCCTGT/i ) {
+                        $cdr3_seq = $2 . "|";
+                    }
+                    elsif ( $query->sequence =~ /($r)(\S+)/i ) {
+                        $cdr3_seq = $2;
+                    }
                 }
             }
         }
@@ -88,28 +91,31 @@ class Bio::Moose::IgBlast {
 
     method infer_CDR3_aa {
         my $cdr3_seq = "N/A";
-        my $query    = $self->rendered_alignment->query;
 
-        if ( $query->sub_regions_translation->has_FWR3 ) {
-      
-            my $r = quotemeta $query->sub_regions_translation->FWR3;
- 
-            if ( $self->rearrangemet->top_V_match =~ /IGH/i ) {
-               if ( $query->translation =~ /($r)(\S+)WG/i ) {
-                    $cdr3_seq = $2 . "|";
-                }
-                elsif ( $query->translation =~ /($r)(\S+)/i ) {
-                    $cdr3_seq = $2;
-                }
-            }
+        if ( $self->rendered_alignment ) {
+            my $query = $self->rendered_alignment->query;
 
-            # If light chain
-            elsif ( $self->rearrangemet->top_V_match =~ /IGL/i ) {
-                if ( $query->translation =~ /($r)(\S+)SC)/i ) {
-                    $cdr3_seq = $2 . "|";
+            if ( $query->sub_regions_translation->has_FWR3 ) {
+
+                my $r = quotemeta $query->sub_regions_translation->FWR3;
+
+                if ( $self->rearrangement_summary->top_V_match =~ /IGH/i ) {
+                    if ( $query->translation =~ /($r)(\S+)WG/i ) {
+                        $cdr3_seq = $2 . "|";
+                    }
+                    elsif ( $query->translation =~ /($r)(\S+)/i ) {
+                        $cdr3_seq = $2;
+                    }
                 }
-                elsif ( $query->translation =~ /($r)(\S+)/i ) {
-                    $cdr3_seq = $2;
+
+                # If light chain
+                elsif ( $self->rearrangement_summary->top_V_match =~ /IGL/i ) {
+                    if ( $query->translation =~ /($r)(\S+)SC)/i ) {
+                        $cdr3_seq = $2 . "|";
+                    }
+                    elsif ( $query->translation =~ /($r)(\S+)/i ) {
+                        $cdr3_seq = $2;
+                    }
                 }
             }
         }

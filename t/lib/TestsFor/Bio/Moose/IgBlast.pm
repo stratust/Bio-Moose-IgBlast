@@ -38,5 +38,9 @@ package TestsFor::Bio::Moose::IgBlast;
         is( $o->molecule,              'N',        "Read molecule" );
         is( $o->query_id,              'id1',      "Read query_id" );
         is( $o->version,               '2.26+',    "Read version" );
+        is( $o->infer_CDR3_nt,         'N/A',      "Infer CDR3 nt" );
+        is( $o->infer_CDR3_nt_length,  'N/A',      "Infer CDR3 nt lenght" );
+        is( $o->infer_CDR3_aa,         'N/A',      "Infer CDR3 aa" );
+        is( $o->infer_CDR3_aa_length,  'N/A',      "Infer CDR3 aa lenght" );
     }
 1
