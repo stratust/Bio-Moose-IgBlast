@@ -110,7 +110,7 @@ class Bio::Moose::IgBlast {
 
                 # If light chain
                 elsif ( $self->rearrangement_summary->top_V_match =~ /IG[LK]/i ) {
-                    if ( $query->translation =~ /($r)(\S+)SC)/i ) {
+                    if ( $query->translation =~ /($r)(\S+)SC/i ) {
                         $cdr3_seq = $2 . "|";
                     }
                     elsif ( $query->translation =~ /($r)(\S+)/i ) {
