@@ -534,6 +534,7 @@ class Bio::Moose::IgBlastI::Format3 {
 
     method _get_region_sequences (Str $v_regions_str, ArrayRef | HashRef $seq_ref, Str : $translation) {
         my $seq_str;
+        
         if ( ref $seq_ref eq 'ARRAY' ) {
             $seq_str = join '', @{$seq_ref};
         }
@@ -545,7 +546,7 @@ class Bio::Moose::IgBlastI::Format3 {
 
         $v_regions_str =~ s/^\<//;
         $v_regions_str =~ s/\>$//;
-
+        
         # Correct beginning based on translation
         if ( $translation && $translation =~ /^(\s+)/ ) {
             my $space_size = length $1;
@@ -584,7 +585,8 @@ class Bio::Moose::IgBlastI::Format3 {
         while (length($seq_str) < $regex_length){
             $seq_str .= ' ';
         }
-        my @parts_nt = $seq_str =~ /$regex/;
+        my @parts_nt;
+        @parts_nt = $seq_str =~ /$regex/ if $regex;
         $seq_str =~ s/\s+//g;
         $_ =~ s/\s+//g foreach @parts_nt;
 
@@ -593,7 +595,8 @@ class Bio::Moose::IgBlastI::Format3 {
         while (length($translation) < $regex_length){
             $translation .= ' ';
         }
-        my @parts_aa = $translation =~ /$regex/;
+        my @parts_aa;
+        @parts_aa = $translation =~ /$regex/ if $regex;
         $translation =~ s/\s+//g;
         $_ =~ s/\s+//g foreach @parts_aa;
 
