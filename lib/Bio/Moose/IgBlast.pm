@@ -65,7 +65,7 @@ class Bio::Moose::IgBlast {
                 # If light chain
                 elsif ( $self->rearrangement_summary->top_V_match =~ /IG[LK]/i ) {
 
-                    if ( $query->sequence =~ /($r)(\S+)TCCTGT/i ) {
+                    if ( $query->sequence =~ /($r)(\S+)TTCGGC/i ) {
                         $cdr3_seq = $2 . "|";
                     }
                     elsif ( $query->sequence =~ /($r)(\S+)/i ) {
@@ -110,7 +110,7 @@ class Bio::Moose::IgBlast {
 
                 # If light chain
                 elsif ( $self->rearrangement_summary->top_V_match =~ /IG[LK]/i ) {
-                    if ( $query->translation =~ /($r)(\S+)SC/i ) {
+                    if ( $query->translation =~ /($r)(\S+)FG/i ) {
                         $cdr3_seq = $2 . "|";
                     }
                     elsif ( $query->translation =~ /($r)(\S+)/i ) {
