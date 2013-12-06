@@ -52,7 +52,7 @@ class Bio::Moose::IgBlast {
                 my $r = quotemeta $query->sub_regions_sequence->FWR3;
 
                 # If heavy chain
-                if ( $self->rearrangement_summary->top_V_match =~ /IGH/i ) {
+                if ( $self->rearrangement_summary->chain_type =~ /VH/i ) {
 
                     if ( $query->sequence =~ /($r)(\S+)TGGGG[ATCG]/i ) {
                         $cdr3_seq = $2 . "|";
@@ -63,7 +63,7 @@ class Bio::Moose::IgBlast {
                 }
 
                 # If light chain
-                elsif ( $self->rearrangement_summary->top_V_match =~ /IG[LK]/i ) {
+                elsif ( $self->rearrangement_summary->chain_type =~ /V[LK]/i ) {
 
                     if ( $query->sequence =~ /($r)(\S+)TT[CT]GG[TC]/i ) {
                         $cdr3_seq = $2 . "|";
@@ -99,7 +99,7 @@ class Bio::Moose::IgBlast {
 
                 my $r = quotemeta $query->sub_regions_translation->FWR3;
 
-                if ( $self->rearrangement_summary->top_V_match =~ /IGH/i ) {
+                if ( $self->rearrangement_summary->chain_type =~ /VH/i ) {
                     if ( $query->translation =~ /($r)(\S+)WG/i ) {
                         $cdr3_seq = $2 . "|";
                     }
@@ -109,7 +109,7 @@ class Bio::Moose::IgBlast {
                 }
 
                 # If light chain
-                elsif ( $self->rearrangement_summary->top_V_match =~ /IG[LK]/i ) {
+                elsif ( $self->rearrangement_summary->chain_type =~ /V[LK]/i ) {
                     if ( $query->translation =~ /($r)(\S+)FG/i ) {
                         $cdr3_seq = $2 . "|";
                     }
