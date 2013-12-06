@@ -54,7 +54,7 @@ class Bio::Moose::IgBlast {
                 # If heavy chain
                 if ( $self->rearrangement_summary->top_V_match =~ /IGH/i ) {
 
-                    if ( $query->sequence =~ /($r)(\S+)TGGGGC/i ) {
+                    if ( $query->sequence =~ /($r)(\S+)TGGGG[ATCG]/i ) {
                         $cdr3_seq = $2 . "|";
                     }
                     elsif ( $query->sequence =~ /($r)(\S+)/i ) {
@@ -65,7 +65,7 @@ class Bio::Moose::IgBlast {
                 # If light chain
                 elsif ( $self->rearrangement_summary->top_V_match =~ /IG[LK]/i ) {
 
-                    if ( $query->sequence =~ /($r)(\S+)TTCGGC/i ) {
+                    if ( $query->sequence =~ /($r)(\S+)TT[CT]GG[TC]/i ) {
                         $cdr3_seq = $2 . "|";
                     }
                     elsif ( $query->sequence =~ /($r)(\S+)/i ) {
