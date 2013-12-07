@@ -3,6 +3,8 @@ use Method::Signatures::Modifiers;
 
 class Bio::Moose::IgBlast {
     use MooseX::StrictConstructor;
+    use Text::Brew qw(distance);
+
     has 'molecule'              => ( is => 'ro', isa => 'Str',  required => 1 );
     has 'version'               => ( is => 'ro', isa => 'Str',  required => 1 );
     has 'query_id'              => ( is => 'ro', isa => 'Str',  required => 1 );
@@ -133,6 +135,38 @@ class Bio::Moose::IgBlast {
         return $length;
     }
 
+    method infer_aa_diff (Str $region where [qr/FWR[123]/,qr/CDR[12]/]) {
+        my ( $mismatches, $insertions, $deletions ) = 'N/A' x 4;
+
+        if ( $self->rendered_alignment ) {
+
+            if ( $self->rearrangement_summary->stop_codon =~ /no/i ) {
+
+                my $query  = $self->rendered_alignment->query;
+                my $best_V = $self->rendered_alignment->best_V;
+                my $r      = "has_$region";
+
+                if ( $query->sub_regions_translation->$r && $best_V->sub_regions_translation->$r ) {
+
+                    my ( $distance, $arrayref_edits ) = distance(
+                        $best_V->sub_regions_translation->$region,
+                        $query->sub_regions_translation->$region
+                    );
+                    my @subs    = grep( /SUBST/, @{$arrayref_edits} );
+                    my @inserts = grep( /DEL/,   @{$arrayref_edits} );
+                    my @dels    = grep( /INS/,   @{$arrayref_edits} );
+
+                    $mismatches = scalar @subs;
+                    $insertions = scalar @inserts;
+                    $deletions  = scalar @dels;
+                }
+            }
+        }
+        return ( $mismatches, $insertions, $deletions );
+    }
+
 }
+
+
 
  # ABSTRACT: turns baubles into trinkets
