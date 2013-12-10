@@ -136,7 +136,7 @@ class Bio::Moose::IgBlast {
     }
 
     method infer_aa_diff (Str $region where [qr/FWR[123]/,qr/CDR[12]/]) {
-        my ( $mismatches, $insertions, $deletions ) = 'N/A' x 4;
+        my ( $mismatches, $insertions, $deletions ) = ('N/A') x 3;
 
         if ( $self->rendered_alignment ) {
 
