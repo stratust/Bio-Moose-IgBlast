@@ -8,6 +8,7 @@ class Bio::Moose::IgBlast {
     has 'molecule'              => ( is => 'ro', isa => 'Str',  required => 1 );
     has 'version'               => ( is => 'ro', isa => 'Str',  required => 1 );
     has 'query_id'              => ( is => 'ro', isa => 'Str',  required => 1 );
+    has 'query_length'          => ( is => 'ro', isa => 'Int',  required => 0 );
     has 'database'              => ( is => 'ro', isa => 'Str',  required => 1 );
     has 'domain_classification' => ( is => 'ro', isa => 'Str',  required => 0 );
     has 'converted_sequence'    => ( is => 'rw', isa => 'Bool', required => 1, default => 0 );
@@ -16,6 +17,21 @@ class Bio::Moose::IgBlast {
         isa      => 'Bio::Moose::IgBlast::Rearrangement',
         required => 0
     );
+    
+    has 'germline_score' => (
+        is            => 'ro',
+        isa           => 'ArrayRef[Bio::Moose::IgBlast::GermlineScore]',
+        required      => 0,
+        traits        => ['Array'],
+        documentation => 'ArrayRef of germline scores',
+        handles       => {
+            all_scores   => 'elements',
+            add_score    => 'push',
+            next_score   => 'shift',
+            count_scores => 'count',
+        },
+    );
+
     has 'junction_details' => (
         is       => 'ro',
         isa      => 'Bio::Moose::IgBlast::Junction',
@@ -36,6 +52,34 @@ class Bio::Moose::IgBlast {
         is       => 'ro',
         isa      => 'Bio::Moose::IgBlast::RenderedAlignment',
         required => 0
+    );
+
+    has 'chain_type' => (
+        is      => 'ro',
+        isa     => 'Str',
+        lazy    => 1,
+        builder => '_infer_chain_type',
+    );
+ 
+    has 'best_V' => (
+        is      => 'ro',
+        isa     => 'Str',
+        lazy    => 1,
+        builder => '_infer_best_V',
+    );
+   
+    has 'best_D' => (
+        is      => 'ro',
+        isa     => 'Str',
+        lazy    => 1,
+        builder => '_infer_best_D',
+    );
+
+    has 'best_J' => (
+        is      => 'ro',
+        isa     => 'Str',
+        lazy    => 1,
+        builder => '_infer_best_J',
     );
 
     # store any information you want in this part
@@ -135,6 +179,7 @@ class Bio::Moose::IgBlast {
         return $length;
     }
 
+
     method infer_aa_diff (Str $region where [qr/FWR[123]/,qr/CDR[12]/]) {
         my ( $mismatches, $insertions, $deletions ) = ('N/A') x 3;
 
@@ -165,8 +210,89 @@ class Bio::Moose::IgBlast {
         return ( $mismatches, $insertions, $deletions );
     }
 
+    
+    method _infer_chain_type {
+        my $type = "N/A";
+        if ( $self->rearrangement_summary ) {
+            my $r = $self->rearrangement_summary;
+            if ( $r->top_V_match ) {
+                if ( $r->top_V_match =~ /IGH/i ) {
+                    $type = 'gamma';
+                }
+                elsif ($r->top_V_match =~ /IGL/i){
+                    $type = 'lambda';
+                }
+                elsif ($r->top_V_match =~ /IGK/i){
+                    $type = 'kappa';
+                } 
+
+            }
+        }
+        return $type;
+    }
+
+
+    # Reliable means E value less than 1
+    method is_reliable {
+        my $answer = 0;
+        if ($self->germline_score){
+            my $germ = $self->germline_score->[0];
+            $answer = 1 if $germ->evalue < 1;
+        } 
+        return $answer;
+    }
+
+
+    # complete means all V[D]J regions
+    method is_complete {
+        my $answer = 0;
+        if ( $self->rearrangement_summary ) {
+            my $r = $self->rearrangement_summary;
+            if ( $r->top_V_match && $r->top_J_match ) {
+                if ( $r->top_V_match ne 'N/A' && $r->top_J_match ne 'N/A' ) {
+                    if ( $self->chain_type =~ /kappa|lambda/i ) {
+                        $answer = 1;
+                    }
+                    elsif ( $self->chain_type =~ /gamma/i ) {
+                        $answer = 1 if $r->top_D_match && $r->top_D_match ne 'N/A';
+                    }
+                }
+            }
+        }
+
+        return $answer;
+    }
+
+
+    method _infer_best_V {
+        my $chain = 'N/A';
+        if ($self->is_reliable){
+             my $r = $self->rearrangement_summary;
+             $chain = $r->top_V_match;
+        }
+        return $chain;
+    }
+
+
+    method _infer_best_D {
+        my $chain = 'N/A';
+        if ($self->chain_type =~ /gamma/i){
+             my $r = $self->rearrangement_summary;
+             $chain = $r->top_D_match if $r->top_D_match;
+        }
+        return $chain;
+    }
+
+
+    method _infer_best_J {
+        my $chain = 'N/A';
+        if ( $self->rearrangement_summary ) {
+            my $r = $self->rearrangement_summary;
+            $chain = $r->top_J_match if $r->top_J_match;
+        }
+        return $chain;
+    }
+
 }
-
-
 
  # ABSTRACT: turns baubles into trinkets

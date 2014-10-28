@@ -5,6 +5,7 @@ class Bio::Moose::IgBlastI::Format3 {
     use MooseX::StrictConstructor;
     use Bio::Moose::IgBlast;
     use Bio::Moose::IgBlast::Rearrangement;
+    use Bio::Moose::IgBlast::GermlineScore;
     use Bio::Moose::IgBlast::Junction;
     use Bio::Moose::IgBlast::Alignment;
     use Bio::Moose::IgBlast::Alignment::Region;
@@ -66,21 +67,26 @@ class Bio::Moose::IgBlastI::Format3 {
             # Remove "Query"
             chomp $block;
 
-            # Each IgBLAST aligment (block) can be divide em sub_blocks:
+            # Each IgBLAST aligment (block) can be divide in sub_blocks:
             #
             my ( $info_block, $germline_block, $rearrangement_block, $junction_block, $aln_block, $rendered_aln_block , $converted_block)
                 = $self->_guess_sub_blocks($block);
 
             my %obj_params;
 
+
             # Each sub block has specific parser methods
-            my ( $info_param, $rearrangement_param, $junction_param, $aln_param, $rendered_aln_param );
+            my ( $info_param, $germline_param, $rearrangement_param, $junction_param, $aln_param, $rendered_aln_param );
 
             %obj_params = (%obj_params, %{$header_param});
 
             if ($info_block) {
                 $info_param = $self->_parse_info_block($info_block);
                 %obj_params = (%obj_params, %{$info_param});
+            }
+            if ($germline_block) {
+                $germline_param = $self->_parse_germline_block($germline_block);
+                %obj_params = (%obj_params, %{$germline_param});
             }
             if ($rearrangement_block) {
                 $rearrangement_param = $self->_parse_rearrangement_block($rearrangement_block);
@@ -126,6 +132,13 @@ class Bio::Moose::IgBlastI::Format3 {
             );
             $self->blast_version($2);
         }
+        elsif ( $header =~ /^Database\:\s*(.*)\n\s*.*sequences/s ) {
+            %hash = (
+                database => $1,
+                version => '1.4.0', # hard coded because there isnt info anymore
+                molecule => 'N', # hardcoded to N
+            );
+        }
         else{
             die "REGEX NOT WORKING";
         }
@@ -146,7 +159,17 @@ class Bio::Moose::IgBlastI::Format3 {
         
         while (my $sb = shift @sub_blocks){
             if ( $sb =~ /ThisQuery/mi ) {
-                $info_block = $sb;
+                $info_block = $sb;                
+            }
+            elsif ( $sb =~ /Length/ && $sb =~ /alignment/mi && $sb =~ /producing/mi ) {
+                $info_block .= $sb;
+                $germline_block = shift @sub_blocks;
+            }
+            elsif ( $sb =~ /Length/ && $sb !~ /alignment/mi && $sb !~ /producing/mi ) {
+                $info_block .= $sb;
+            }
+            elsif ( $sb =~ /Length=/mi ) {
+                $info_block .= $sb;
             }
             elsif ( $sb =~ /domain classification/mi ) {
                 $info_block .= $sb;
@@ -156,12 +179,6 @@ class Bio::Moose::IgBlastI::Format3 {
             }
             elsif ( $sb =~ /junction details/mi ) {
                 $junction_block = $sb;
-            }
-            elsif ( $sb =~ /Length/ && $sb =~ /alignment/mi && $sb =~ /producing/mi ) {
-                $germline_block = join "\n", ($sb, shift @sub_blocks);
-            }
-            elsif ( $sb =~ /Length/ && $sb !~ /alignment/mi && $sb !~ /producing/mi ) {
-                $germline_block = $sb;
             }
             elsif ( $sb =~ /alignment/mi && $sb =~ /top germline/mi ) {
                 $aln_block = $sb;
@@ -189,6 +206,8 @@ class Bio::Moose::IgBlastI::Format3 {
         if ($info =~ /^
             .*ThisQuery=\s* 
             (\S+)           # Get query name
+            \s+.*Length=\s*
+            (\S+)
             .*
             \s+Domain\s+classification\s+requested:\s*
             (\S+)           # Get classification
@@ -197,17 +216,22 @@ class Bio::Moose::IgBlastI::Format3 {
         {
             %hash = (
                 query_id              => $1,
-                domain_classification => $2,
+                query_length          => $2,
+                domain_classification => $3,
             );
         }
+        
         elsif ($info =~ /^
             .*ThisQuery=\s* 
             (\S+)           # Get query name
+            \s+.*Length=\s*
+            (\S+)
             /xs
             )
         {
             %hash = (
                 query_id              => $1,
+                query_length          => $2,
             );
         }
 
@@ -216,6 +240,31 @@ class Bio::Moose::IgBlastI::Format3 {
         }
         $query_id = $hash{query_id};
         return \%hash;
+    }
+
+
+    method _parse_germline_block (Str $germ) {
+        my %hash;
+        local $/ = "\n";
+        open( my $in, '<', \$germ );
+        my @aux;
+        while ( my $row = <$in> ) {
+            chomp $row;
+            next if $row =~ /^$/;
+            next if $row =~ /^\#/;
+            my ($seq, $score, $evalue);
+            ($seq, $score, $evalue) = ($1, $2, $3) if ( $row =~ /^(.*)\s+(\d+\S+)\s+(\d+\S+)/ ) ;
+
+            my $entry = Bio::Moose::IgBlast::GermlineScore->new(
+                sequence_name => $seq,
+                score         => $score,
+                evalue        => $evalue,
+            );
+            push @aux, $entry;
+        }
+
+        close($in);
+        return { germline_score => \@aux };
     }
 
 
@@ -293,7 +342,7 @@ class Bio::Moose::IgBlastI::Format3 {
             next if $row =~ /^$/;
             
             my $regex = qr/V.*[\(]D[\)].*J.*?\((.*)?\)\./;
-            if ( $self->blast_version eq '2.2.26+' ) {
+            if ( $self->blast_version && $self->blast_version eq '2.2.26+' ) {
                 $regex = qr/V.*[\(]D[\)].*J.*?\((.*J\s+start)\./;
             }
             if ( $row =~ /$regex/i ) {
@@ -409,6 +458,7 @@ class Bio::Moose::IgBlastI::Format3 {
             my $query_row = 'N/A';
             my $germ_pos = 0;
             my $second_translation = 0;
+            my $fixed_space;
             ROWS: while ( my $row = <$in> ) {
                 next if $row =~ /^$/;
                 chomp $row;
@@ -432,26 +482,67 @@ class Bio::Moose::IgBlastI::Format3 {
                 # Query row
                 elsif ( $aux[2] && ($aux[0] eq '' && $aux[2] =~ /\d+/  ))
                 {
+                    my ($seq,$start,$end);
+                    if ($fixed_space) {
+                        $seq = $1 if $row =~ /^.{$fixed_space}(\S+)/;
+                        if ($seq){
+                            my $nt = $seq;
+                            # remove insertions
+                            $nt =~ s/[^acgtn]//gi;
+                            my $orig_length = $aux[4] - $aux[2] + 1;
+                            $start = $aux[2] + ($orig_length - length($nt));
+                        }
+                        $end = $aux[4];
+                    }
+                    else {
+                        $seq   = $aux[3];
+                        $start = $aux[2];
+                        $end   = $aux[4];
+                    }
+                    die "Cannot find sequence" unless $seq;
                     $seq{query}{id} = $aux[1];
-                    push( @{ $seq{query}{starts} }, $aux[2] );
-                    push( @{ $seq{query}{ends} },   $aux[4] );
-                    push @{ $seq{query}{seq} }, $aux[3];
+                    push( @{ $seq{query}{starts} }, $start );
+                    push( @{ $seq{query}{ends} },   $end );
+                    push @{ $seq{query}{seq} }, $seq;
                 }
 
                 # germline row
-                elsif ( $aux[0] =~ /[VDJ]/ && $aux[1] =~ /\%/ ) {
+                elsif ( $aux[0] =~ /[VDJ]/ && $aux[1] =~ /\%/ && $space) {                    
+                    my ($seq,$start,$end);
+                    if ($fixed_space) {
+                        $seq = $1 if $row =~ /^.{$fixed_space}(\S+)/;
+                        if ($seq){
+                            my $nt = $seq;
+                            # remove insertions
+                            $nt =~ s/[^acgtn]//gi;
+                            my $orig_length = $aux[6] - $aux[4] + 1;
+                            $start = $aux[4] + ($orig_length - length($nt));
+                        }
+                        $end = $aux[6];
+                    }
+                    else {
+                        $seq   = $aux[5];
+                        $start = $aux[4];
+                        $end   = $aux[6];
+                    }
+                    die "Cannot find sequence" unless $seq;
+                    
                      my $germ_id = $aux[3];
                      my $germ_type = $aux[0];
+                     # sometimes igblast choose the same sequence (e.g IGHV5)
+                     # for first and second best alignment so the to should be a
+                     # combination of 
+                     my $uniq_germ_id = "$germ_id|$aux[2]|$aux[1]";
  
                     # keep ids of best V D and J germlines
-                    $seq{top_germline}{$germ_type} = $germ_id unless $seq{top_germline}{$germ_type};
+                    $seq{top_germline}{$germ_type} = $uniq_germ_id unless $seq{top_germline}{$germ_type};
 
-                    $seq{germline}{$germ_id}{type}             = $germ_type;
-                    $seq{germline}{$germ_id}{percent}          = $aux[1];
-                    $seq{germline}{$germ_id}{identity}         = $aux[2];
-                    $seq{germline}{$germ_id}{starts}{$b_count} = $aux[4];
-                    $seq{germline}{$germ_id}{ends}{$b_count}   = $aux[6];
-                    $seq{germline}{$germ_id}{seq}{$b_count}    = $aux[5];
+                    $seq{germline}{$uniq_germ_id}{type}             = $germ_type;
+                    $seq{germline}{$uniq_germ_id}{percent}          = $aux[1];
+                    $seq{germline}{$uniq_germ_id}{identity}         = $aux[2];
+                    $seq{germline}{$uniq_germ_id}{starts}{$b_count} = $start;
+                    $seq{germline}{$uniq_germ_id}{ends}{$b_count}   = $end;
+                    $seq{germline}{$uniq_germ_id}{seq}{$b_count}    = $seq;
                 }
 
                 # Translation
@@ -460,6 +551,14 @@ class Bio::Moose::IgBlastI::Format3 {
                     my $aa;
                     if ($l_space) {
                         $aa = $1 if $row =~ /^\s{$l_space}(.*)/;
+                        # Try harder to get the right translation
+                        # when the regions don't start in the beginning
+                        # of alignment
+                        unless ($aa){
+                            $aa = $1 if $row =~ /^.{$l_space}(.*)/;
+                            $fixed_space = $l_space if $aa;
+                        }
+
                         if ($second_translation) {
                             $seq{germline}{translation} .= $aa if $aa;
                         }
@@ -469,8 +568,10 @@ class Bio::Moose::IgBlastI::Format3 {
                         $second_translation = 1;
                     }
                     else {
-                        print "no space found before regions row:" . p @aux;
-                        die $rendered_aln;
+                        # sometimes igblast show an complete alignment without
+                        # a region defined, so is better skip this alignment
+                        # block it anyway
+                        next ROWS;
                     }
 
                 }
@@ -480,12 +581,13 @@ class Bio::Moose::IgBlastI::Format3 {
             close($in);
             $b_count++;
         }
- 
+        
         my $best_V_id = $seq{top_germline}{V};
         my %aux_hash;
         if ($best_V_id) {
 
             # For query
+            print "Sequence_id: ".$query_id."\n"  unless $seq{query}{translation};
             my $q_subregion_seq = $self->_get_region_sequences( $seq{regions}, $seq{query}{seq},
                 translation => $seq{query}{translation} );
 
@@ -495,20 +597,30 @@ class Bio::Moose::IgBlastI::Format3 {
 
             # For germline
             # V region
+
+            unless ( $seq{germline}{translation} ) {
+                print "Sequence_id: " . $query_id . "\n";
+                p %seq;
+            }
+
             my $germ_subregion_seq = $self->_get_region_sequences(
                 $seq{regions},
                 $seq{germline}{$best_V_id}{seq},
                 translation => $seq{germline}{translation}
             );
 
+            $best_V_id =~ s/\|.*//g; 
             $aux_hash{best_V} =
                 Bio::Moose::IgBlast::RenderedAlignment::Feature->new( %{$germ_subregion_seq},
                 id => $best_V_id, );
              
            
             # D region
-            my $best_D_id = $seq{top_germline}{D};
-            if ($best_D_id) {
+           my $best_D_id = $seq{top_germline}{D};
+
+           if ($best_D_id) {
+               $best_D_id =~ s/\|.*//g; 
+ 
                 $aux_hash{best_D} =
                     Bio::Moose::IgBlast::RenderedAlignment::Feature->new( 
                     id => $best_D_id, );
@@ -516,7 +628,9 @@ class Bio::Moose::IgBlastI::Format3 {
 
             # J region
             my $best_J_id = $seq{top_germline}{J};
+   
             if ($best_J_id) {
+                $best_J_id =~ s/\|.*//g; 
                 $aux_hash{best_J} =
                     Bio::Moose::IgBlast::RenderedAlignment::Feature->new( 
                     id => $best_J_id, );
@@ -615,6 +729,7 @@ class Bio::Moose::IgBlastI::Format3 {
         };
 
     }
+
 
     method _parse_hit_table_block (Str $hit_table) {
         my (%hash, @fields);
