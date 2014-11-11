@@ -106,7 +106,7 @@ class Bio::Moose::IgBlastI::Format3 {
                 %obj_params = (%obj_params, %{$rendered_aln_param});
             }
             my $obj =
-                Bio::Moose::IgBlast->new( %obj_params, init_pos => $init_pos );
+                Bio::Moose::IgBlast->new( %obj_params, init_pos => $init_pos, igblast_block => $block );
 
             if ($converted_block){
                 $obj->converted_sequence(1);
@@ -116,7 +116,8 @@ class Bio::Moose::IgBlastI::Format3 {
             $init_pos++;
         }
         close($in);
-        
+
+       
         return \@objects;
     }
 
@@ -404,8 +405,10 @@ class Bio::Moose::IgBlastI::Format3 {
             next if $row =~ /Alignment summary/i;
             $row =~ s/\s+\(.*\)\s+/ /g;
             my @f = split /\s+/, $row;
-
-            die "Error with entry $row",p $aln if scalar @f != 8;
+            
+            if (scalar @f != 8){
+                #"Error with entry $row",p $aln;
+            }
 
             my $region = Bio::Moose::IgBlast::Alignment::Region->new(
                 from              => $f[1],
@@ -441,7 +444,8 @@ class Bio::Moose::IgBlastI::Format3 {
         my %seq;
         my $b_count=0;
         my $space;
-
+        my $regions_found = 0; # flag if there is regions alredy and keep colecting sequences in order to infer CDR3 later
+        
         BLOCKS: foreach my $aln_block (@aln_blocks) {
 
             next if $aln_block =~ /Alignments/;
@@ -473,46 +477,82 @@ class Bio::Moose::IgBlastI::Format3 {
                         my $region;
                         ( $space, $region ) = ( $1, $2 );
                         $seq{regions} .= $region;
+                        $regions_found = 1;
                     }
                     else {
-                        die "Problem with region: $row form $rendered_aln";
+                        die "Problem with region: $row from $rendered_aln";
                     }
                 }
-
+                # skip block if no region annotation if found
+                elsif ( $i == 0 &&  $row !~ /\%/ && $aux[1] !~ /[\-\<\>]/  && $regions_found == 0){
+                    next BLOCKS;
+                }
                 # Query row
                 elsif ( $aux[2] && ($aux[0] eq '' && $aux[2] =~ /\d+/  ))
                 {
-                    my ($seq,$start,$end);
+                    my ($this_seq,$start,$end);
+                    my $l_space = length($space);
+                    
+                    # If V regions don't start from the beginig of the alignment,
+                    # then use translation to get correct space
                     if ($fixed_space) {
-                        $seq = $1 if $row =~ /^.{$fixed_space}(\S+)/;
-                        if ($seq){
-                            my $nt = $seq;
+                        $this_seq = $1 if $row =~ /^.{$fixed_space}(\S+)/;
+                        if ($this_seq) {
+                            my $nt = $this_seq;
+
                             # remove insertions
                             $nt =~ s/[^acgtn]//gi;
                             my $orig_length = $aux[4] - $aux[2] + 1;
-                            $start = $aux[2] + ($orig_length - length($nt));
+                            $start = $aux[2] + ( $orig_length - length($nt) );
                         }
+
                         $end = $aux[4];
                     }
+                    # otherwise use the space given by the region
+                    elsif ( $l_space && $l_space > 1 ) {
+                        $this_seq = $1 if $row =~ /^.{$l_space}(\S+)/;
+                        if ($this_seq) {
+                            my $nt = $this_seq;
+                            
+                            # remove insertions
+                            $nt =~ s/[^acgtn]//gi;
+                            my $orig_length = $aux[4] - $aux[2] + 1;
+                            $start = $aux[2] + ( $orig_length - length($nt) );
+                        }
+
+                    }
                     else {
-                        $seq   = $aux[3];
+                        $this_seq = $aux[3];
                         $start = $aux[2];
                         $end   = $aux[4];
                     }
-                    die "Cannot find sequence" unless $seq;
+                    unless ($this_seq){
+                        next BLOCKS;
+                        #print "$aln_block\n";
+                        #print "$row\n";
+                        #p @aux;
+                        #print $this_seq;
+                        #die "Cannot find sequence for query: " .$query_id;
+                    }
                     $seq{query}{id} = $aux[1];
-                    push( @{ $seq{query}{starts} }, $start );
-                    push( @{ $seq{query}{ends} },   $end );
-                    push @{ $seq{query}{seq} }, $seq;
+                #    push( @{ $seq{query}{starts} }, $start );
+                    #push( @{ $seq{query}{ends} },   $end );
+                    #push @{ $seq{query}{seq} }, $seq;
+                    $seq{query}{starts}{$b_count} = $start;
+                    $seq{query}{ends}{$b_count} = $end;
+                    $seq{query}{seq}{$b_count} = $this_seq;
                 }
 
                 # germline row
                 elsif ( $aux[0] =~ /[VDJ]/ && $aux[1] =~ /\%/ && $space) {                    
-                    my ($seq,$start,$end);
+                    my ($this_seq,$start,$end);
+
+                    my $l_space = length($space);
+
                     if ($fixed_space) {
-                        $seq = $1 if $row =~ /^.{$fixed_space}(\S+)/;
-                        if ($seq){
-                            my $nt = $seq;
+                        $this_seq = $1 if $row =~ /^.{$fixed_space}(\S+)/;
+                        if ($this_seq){
+                            my $nt = $this_seq;
                             # remove insertions
                             $nt =~ s/[^acgtn]//gi;
                             my $orig_length = $aux[6] - $aux[4] + 1;
@@ -520,12 +560,25 @@ class Bio::Moose::IgBlastI::Format3 {
                         }
                         $end = $aux[6];
                     }
+                    # otherwise use the space given by the region
+                    elsif ( $l_space > 1 ) {
+                        $this_seq = $1 if $row =~ /^.{$l_space}(\S+)/;
+                        if ($this_seq){
+                            my $nt = $this_seq;
+                            # remove insertions
+                            $nt =~ s/[^acgtn]//gi;
+                            my $orig_length = $aux[6] - $aux[4] + 1;
+                            $start = $aux[4] + ($orig_length - length($nt));
+                        }
+                        $end = $aux[6];
+                    }
+
                     else {
-                        $seq   = $aux[5];
+                        $this_seq   = $aux[5];
                         $start = $aux[4];
                         $end   = $aux[6];
                     }
-                    die "Cannot find sequence" unless $seq;
+                    die "Cannot find sequence" unless $this_seq;
                     
                      my $germ_id = $aux[3];
                      my $germ_type = $aux[0];
@@ -542,7 +595,7 @@ class Bio::Moose::IgBlastI::Format3 {
                     $seq{germline}{$uniq_germ_id}{identity}         = $aux[2];
                     $seq{germline}{$uniq_germ_id}{starts}{$b_count} = $start;
                     $seq{germline}{$uniq_germ_id}{ends}{$b_count}   = $end;
-                    $seq{germline}{$uniq_germ_id}{seq}{$b_count}    = $seq;
+                    $seq{germline}{$uniq_germ_id}{seq}{$b_count}    = $this_seq;
                 }
 
                 # Translation
@@ -588,16 +641,18 @@ class Bio::Moose::IgBlastI::Format3 {
 
             # For query
             print "Sequence_id: ".$query_id."\n"  unless $seq{query}{translation};
-            my $q_subregion_seq = $self->_get_region_sequences( $seq{regions}, $seq{query}{seq},
+            my $q_subregion_seq = $self->_get_region_sequences( 
+                $seq{regions}, 
+                $seq{query}{seq},
+                $seq{query}{starts},
                 translation => $seq{query}{translation} );
-
+            
             $aux_hash{query} =
                 Bio::Moose::IgBlast::RenderedAlignment::Feature->new( %{$q_subregion_seq},
                 id => $seq{query}{id}, );
 
             # For germline
             # V region
-
             unless ( $seq{germline}{translation} ) {
                 print "Sequence_id: " . $query_id . "\n";
                 p %seq;
@@ -606,6 +661,7 @@ class Bio::Moose::IgBlastI::Format3 {
             my $germ_subregion_seq = $self->_get_region_sequences(
                 $seq{regions},
                 $seq{germline}{$best_V_id}{seq},
+                $seq{germline}{$best_V_id}{starts},
                 translation => $seq{germline}{translation}
             );
 
@@ -646,7 +702,8 @@ class Bio::Moose::IgBlastI::Format3 {
     }
 
 
-    method _get_region_sequences (Str $v_regions_str, ArrayRef | HashRef $seq_ref, Str : $translation) {
+    method _get_region_sequences (Str $v_regions_str, ArrayRef | HashRef $seq_ref, HashRef $starts, Str : $translation) {
+        my $seq_str_orig;
         my $seq_str;
         
         if ( ref $seq_ref eq 'ARRAY' ) {
@@ -657,6 +714,8 @@ class Bio::Moose::IgBlastI::Format3 {
                 $seq_str .= $seq_ref->{$k};
             }
         }
+
+        $seq_str_orig = $seq_str;
 
         $v_regions_str =~ s/^\<//;
         $v_regions_str =~ s/\>$//;
@@ -671,14 +730,12 @@ class Bio::Moose::IgBlastI::Format3 {
                 $seq_str       = $1 if ( $seq_str =~ /^.{$rm}(.*)/ );
             }
         }
-        
         my @regions = split '><', $v_regions_str;
         my @r_name;
         my $regex;
        
         my $regex_length = 0;
         foreach my $r (@regions) {
-
             # Getting region names and sizes;
             if ( $r =~ /([^-]+)/ ) {
                 my $aux = $1;
@@ -718,14 +775,75 @@ class Bio::Moose::IgBlastI::Format3 {
         my %seq_aa;
         @seq_nt{@r_name} = @parts_nt;
         @seq_aa{@r_name} = @parts_aa;
+       
+        # Correct start
+        my @aux_starts = sort {$a <=> $b} values %{$starts};
+        my $real_start = $aux_starts[0];
+
+        my $i=0;
+        my $removed = 0;
+        my %seq_nt_range;
+        foreach my $part (@parts_nt) {
+            next unless $part;
+            if ( $seq_str_orig =~ m/$part?/ ) {
+                
+                my ($region_start, $region_end);
+                my $match_start = $-[0];
+                my $match_end = $+[0];
+                my $length = length($seq_str_orig) - $match_end;
+                my $rest_of_sequence = substr $seq_str_orig, $match_end, $length;
+
+                # find is are insertions in part
+                my @insertion = $part =~ /\-/g;
+                # for initial number insertion were already corrected;
+                @insertion = () if $i == 0;
+                
+                # Igblast output is NOT ZERO-based!
+                $region_start = $removed + $real_start + $match_start - scalar(@insertion);
+
+                # Always remove 1 from END;
+                $region_end = ( $removed + $real_start + $match_end ) - 1;
+
+                #print $r_name[$i]."\n";
+                #print $part."\n";
+                #print "start: $region_start\n";
+                #print "end: $region_end\n";
+                
+                $seq_nt_range{$r_name[$i]."_start"} = $region_start;
+                $seq_nt_range{$r_name[$i]."_end"} = $region_end;
+
+                
+                # Keep the amount of sequence removed from original sequence;
+                $removed += (length($seq_str_orig) - length($rest_of_sequence)) - scalar(@insertion);
+                
+                # Always use the rest of the sequence for next match (avoid
+                # repetive regions always match the same place)
+                $seq_str_orig = $rest_of_sequence;
+            }
+            $i++;
+        }
+       
+        my $new_translation;
+        foreach my $part_aa (@parts_aa) {
+            $new_translation .= $part_aa if $part_aa;
+        }
+        my $new_seq;
+        foreach my $part_nt (@parts_nt) {
+            $new_seq .= $part_nt if $part_nt;
+        }
+
 
         return {
             sub_regions_translation =>
                 Bio::Moose::IgBlast::RenderedAlignment::Feature::Region->new(%seq_aa),
-            sub_regions_sequence =>
-                Bio::Moose::IgBlast::RenderedAlignment::Feature::Region->new(%seq_nt),
-            translation => $translation,
-            sequence    => $seq_str
+                sub_regions_sequence =>
+                Bio::Moose::IgBlast::RenderedAlignment::Feature::Region->new(
+                %seq_nt, %seq_nt_range
+                ),
+                translation         => $translation,
+                translation_trimmed => $new_translation,
+                sequence            => $seq_str,
+                sequence_trimmed    => $new_seq
         };
 
     }

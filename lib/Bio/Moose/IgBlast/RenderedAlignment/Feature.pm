@@ -7,7 +7,9 @@ class Bio::Moose::IgBlast::RenderedAlignment::Feature {
 #    has 'identity'                => ( is => 'ro', isa => 'Str',     required => 1 );
 #    has 'identity_percent'        => ( is => 'ro', isa => 'Str',     required => 1 );
     has 'translation'             => ( is => 'ro', isa => 'Str',     required => 0 );
+    has 'translation_trimmed'     => ( is => 'ro', isa => 'Str|Undef',     required => 0 );
     has 'sequence'                => ( is => 'ro', isa => 'Str',     required => 0 );
+    has 'sequence_trimmed'        => ( is => 'ro', isa => 'Str|Undef',     required => 0 );
     has 'sub_regions_sequence'    => ( is => 'ro', isa => 'Bio::Moose::IgBlast::RenderedAlignment::Feature::Region', required => 0 );
     has 'sub_regions_translation' => ( is => 'ro', isa => 'Bio::Moose::IgBlast::RenderedAlignment::Feature::Region', required => 0 );
 

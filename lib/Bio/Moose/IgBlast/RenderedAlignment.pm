@@ -3,6 +3,7 @@ use Method::Signatures::Modifiers;
 
 class Bio::Moose::IgBlast::RenderedAlignment {
     use MooseX::StrictConstructor;
+    use Data::Printer;
 
     has 'query' => (
         is            => 'rw',
@@ -36,4 +37,5 @@ class Bio::Moose::IgBlast::RenderedAlignment {
         documentation => 'Best J',
     );
 
+   
 }

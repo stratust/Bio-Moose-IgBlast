@@ -1,9 +1,11 @@
 use MooseX::Declare;
+use feature 'say';
 use Method::Signatures::Modifiers;
 
 class Bio::Moose::IgBlast {
     use MooseX::StrictConstructor;
     use Text::Brew qw(distance);
+    use Data::Printer;
 
     has 'molecule'              => ( is => 'ro', isa => 'Str',  required => 1 );
     has 'version'               => ( is => 'ro', isa => 'Str',  required => 1 );
@@ -85,7 +87,151 @@ class Bio::Moose::IgBlast {
     # store any information you want in this part
     has misc     => ( is => 'rw', isa => 'Any' );
     has init_pos => ( is => 'ro', isa => 'Int' );
+    has igblast_block => ( is => 'ro', isa => 'Str' );
 
+    has 'mismatches' => (
+        is      => 'rw',
+        isa     => 'HashRef|Undef',
+        lazy    => 1,
+        builder => '_build_mismatches',
+    );
+
+    method _build_mismatches {
+        my $mismatches;
+
+        my ( $germ_nt, $germ_aa, $query_nt, $query_aa );
+
+        # Check germline best V region;
+        if ( $self->rendered_alignment && $self->rendered_alignment->best_V ) {
+            my $V = $self->rendered_alignment->best_V;
+            if ( $V->sub_regions_sequence && $V->sub_regions_translation ) {
+                $germ_nt = $V->sub_regions_sequence;
+                $germ_aa = $V->sub_regions_translation;
+                $self->_check_aa_nt_shared_regions($germ_nt,$germ_aa);
+            }
+        }
+        # Check query V region;
+        if ( $self->rendered_alignment && $self->rendered_alignment->query ) {
+            my $V = $self->rendered_alignment->query;
+            if ( $V->sub_regions_sequence && $V->sub_regions_translation ) {
+                $query_nt = $V->sub_regions_sequence;
+                $query_aa = $V->sub_regions_translation;
+                $self->_check_aa_nt_shared_regions($query_nt,$query_aa);
+            }
+        }
+
+
+        if ( $germ_nt && $germ_aa && $query_nt && $query_aa ) {
+            if ( $self->is_almost_perfect ) {
+                $mismatches = $self->_mutation_relative_to_germiline_nt($query_nt, $germ_nt);
+            }
+        }
+        return $mismatches;
+    }
+
+
+    method _check_aa_nt_shared_regions (Object $nt, Object $aa) {
+        my @accessors_in_nt;
+        my $meta = $nt->meta;
+        # Get all accessor present in nt
+        for my $attr ( $meta->get_all_attributes ) {
+            my $accessor = $attr->name;
+            my $predicate = "has_".$accessor;
+            push @accessors_in_nt, $accessor if $nt->$predicate;
+        }
+
+        # Check if we have the same accessors in aa
+        foreach my $accessor (@accessors_in_nt) {
+            next if $accessor =~ /start|end/i;
+            my $predicate = "has_".$accessor;
+            unless ($aa->$predicate){
+                print "query_id: ".$self->query_id."\n";
+                print "Cannot find accessor in translation: ". $accessor."\n";
+                p $nt;
+                p $aa;
+                die;
+            }
+        } 
+    }
+
+
+    method _mutation_relative_to_germiline_nt (Object $query_nt, Object $germ_nt) {
+        my @regions = (qw/ FWR1 CDR1 FWR2 CDR2 FWR3 /);
+        my @germline_array = ('N') x ( $germ_nt->FWR1_start - 1 );
+        my %hash_germline_regions;
+        push @{$hash_germline_regions{FWR1}}, @germline_array;
+        #say "=================================";
+        #say "QUERY: " . $self->query_id;
+        foreach my $r (@regions) {
+            my $predicate = 'has_' . $r;
+            next unless $germ_nt->$predicate && $query_nt->$predicate;
+            #say $r;
+            my ( $query, $germ ) = $self->_inspect_size( $query_nt->$r, $germ_nt->$r, $r );
+            my $germline_mutations = $self->_compare_string($query,$germ);
+            #say $germline_mutations;
+            #while ( $germline_mutations =~ /[ACGT]+/gi ) {
+            #    say $-[0];
+            # }
+            push @germline_array, split '', $germline_mutations;
+            push @{$hash_germline_regions{$r}}, split '', $germline_mutations;
+        }
+        
+        return {germ_regions => \%hash_germline_regions, complete_germ => \@germline_array };
+    }
+
+    method _compare_string ($query,$germ) {
+        my @g = split '', $germ;
+        my @q = split '', $query;
+        my $result = join '', map { $g[$_] eq $q[$_] ? '.' : $q[$_] } 0 .. $#q;
+        return $result;
+    }
+
+    method _inspect_size ($query,$germ, $region) {
+        my $l_germ  = length $germ;
+        my $l_query = length $query;
+        my $final_germ; 
+        my $final_query;
+        if ( $l_germ == $l_query ) {
+            $final_germ = $germ;
+            $final_query= $query;
+        }
+        else {
+            if ( $l_query > $l_germ && $region =~ /FWR3/) {
+                # Correct
+                $final_germ = $germ;
+                my @q = split '', $query;
+                $final_query = join '', @q[0..($l_germ-1)]; 
+            }
+            else {
+                p $germ;
+                p $query;
+                say $self->igblast_block;
+                p $self;
+                die "Cannot compare strings with different sizes"
+ 
+            }
+        }
+
+        # remove insertion from germline
+        if ( $final_germ =~ /\-/ ) {
+            my @g = split '', $final_germ;
+            my @q = split '', $final_query;
+            my $aux_germ  = $g[0];
+            my $aux_query = $q[0];
+            for ( 1 .. $#q ) {
+                $aux_query .= $q[$_] unless $g[$_] eq '-';
+                $aux_germ  .= $g[$_] unless $g[$_] eq '-';
+            }
+
+            $final_germ  = $aux_germ;
+            $final_query = $aux_query;
+        }
+
+        return ($final_query, $final_germ);
+    }
+
+    # Test mismatches after object contruction;
+    sub BUILD { my $self = shift; $self->mismatches; }
 
     method infer_CDR3_nt {
         my $cdr3_seq = "N/A";
@@ -98,25 +244,36 @@ class Bio::Moose::IgBlast {
                 my $r = quotemeta $query->sub_regions_sequence->FWR3;
 
                 # If heavy chain
-                if ( $self->rearrangement_summary->chain_type =~ /VH/i ) {
+                if ( $self->chain_type =~ /gamma/i ) {
 
-                    if ( $query->sequence =~ /($r)(\S+)TGGGG[ATCG]/i ) {
-                        $cdr3_seq = $2 . "|";
+                    if ( $query->sequence =~ /($r)(\S+)(TGGGG[ATCG])/i ) {
+                        $cdr3_seq = $2 . $3."|";
                     }
                     elsif ( $query->sequence =~ /($r)(\S+)/i ) {
                         $cdr3_seq = $2;
                     }
                 }
 
-                # If light chain
-                elsif ( $self->rearrangement_summary->chain_type =~ /V[LK]/i ) {
+                # If Iflight chain
+                elsif ( $self->chain_type =~ /kappa|lambda/i ) {
 
-                    if ( $query->sequence =~ /($r)(\S+)TT[CT]GG[TC]/i ) {
-                        $cdr3_seq = $2 . "|";
+                    if ( $self->database =~ /human/i ) {
+                        if ( $query->sequence =~ /($r)(\S+)(TT[CT]GG[TCA])/i ) {
+                            $cdr3_seq = $2 . $3."|";
+                        }
+                        elsif ( $query->sequence =~ /($r)(\S+)/i ) {
+                            $cdr3_seq = $2;
+                        }
                     }
-                    elsif ( $query->sequence =~ /($r)(\S+)/i ) {
-                        $cdr3_seq = $2;
+                    elsif ( $self->database =~ /mouse/i ) {
+                        if ( $query->sequence =~ /($r)(\S+)([ACGT][ACGT][ACGT]GG[TCA])[ACTG][ACGT][ACGT]GG[TGCA](AC[ACTG]AA[AG]){0,1}/i ) {
+                            $cdr3_seq = $2 . $3. "|";
+                        }
+                        elsif ( $query->sequence =~ /($r)(\S+)/i ) {
+                            $cdr3_seq = $2;
+                        }
                     }
+
                 }
             }
         }
@@ -145,9 +302,9 @@ class Bio::Moose::IgBlast {
 
                 my $r = quotemeta $query->sub_regions_translation->FWR3;
 
-                if ( $self->rearrangement_summary->chain_type =~ /VH/i ) {
-                    if ( $query->translation =~ /($r)(\S+)WG/i ) {
-                        $cdr3_seq = $2 . "|";
+                if ( $self->chain_type =~ /gamma/i ) {
+                    if ( $query->translation =~ /($r)(\S+)(WG)/i ) {
+                        $cdr3_seq = $2 . $3. "|";
                     }
                     elsif ( $query->translation =~ /($r)(\S+)/i ) {
                         $cdr3_seq = $2;
@@ -155,13 +312,24 @@ class Bio::Moose::IgBlast {
                 }
 
                 # If light chain
-                elsif ( $self->rearrangement_summary->chain_type =~ /V[LK]/i ) {
-                    if ( $query->translation =~ /($r)(\S+)FG/i ) {
-                        $cdr3_seq = $2 . "|";
+                elsif ( $self->chain_type =~ /kappa|lambda/i ) {
+                    if ( $self->database =~ /human/i ) {
+                        if ( $query->translation =~ /($r)(\S+)(FG)/i ) {
+                            $cdr3_seq = $2 . $3 . "|";
+                        }
+                        elsif ( $query->translation =~ /($r)(\S+)/i ) {
+                            $cdr3_seq = $2;
+                        }
                     }
-                    elsif ( $query->translation =~ /($r)(\S+)/i ) {
-                        $cdr3_seq = $2;
+                    elsif ( $self->database =~ /mouse/i ) {
+                        if ( $query->translation =~ /($r)(\S+)(\S{1}G)\S{1}GTK/i ) {
+                            $cdr3_seq = $2 . $3 . "|";
+                        }
+                        elsif ( $query->translation =~ /($r)(\S+)/i ) {
+                            $cdr3_seq = $2;
+                        }
                     }
+
                 }
             }
         }
@@ -263,6 +431,107 @@ class Bio::Moose::IgBlast {
         return $answer;
     }
 
+    method is_v_complete {
+        my $answer  = 0;
+        my @regions = (qw/ FWR1 FWR2 FWR3 CDR1 CDR2 /);
+        my @perfect_regions;
+        if ( $self->rendered_alignment && $self->rendered_alignment->query ) {
+            my $V = $self->rendered_alignment->query;
+            if ( $V->sub_regions_sequence && $V->sub_regions_translation ) {
+                my $query_nt = $V->sub_regions_sequence;
+                foreach my $region (@regions) {
+                    my $predicate = "has_" . $region;
+                    if ( $query_nt->$predicate ) {
+                        my $region_length = length $query_nt->$region;
+                        my @count_n       = $query_nt->$region =~ m/N+/i;
+                        my $ratio         = scalar @count_n / $region_length;
+                        if ( $ratio > 0.2 ) {
+                            return 0;
+                        }
+                        else {
+                            push @perfect_regions, $region;
+                        }
+                    }
+                    else {
+                        return 0;
+                    }
+                }
+            }
+
+        }
+        $answer = 1 if ( scalar @regions == scalar @perfect_regions );
+        return $answer;
+    }
+
+
+    # almost perfect means is_complete and also it has all FRW and CDR regions
+    # with 20% or less of nucleotides unknown
+    method is_almost_perfect {
+        my $answer      = 0;
+        my @regions     = (qw/ FWR1 FWR2 FWR3 CDR1 CDR2 /);
+        my @perfect_regions;
+        if ( $self->is_complete ) {
+            if ( $self->rendered_alignment && $self->rendered_alignment->query ) {
+                my $V = $self->rendered_alignment->query;
+                if ( $V->sub_regions_sequence && $V->sub_regions_translation ) {
+                    my $query_nt = $V->sub_regions_sequence;
+                    foreach my $region (@regions) {
+                        my $predicate = "has_" . $region;
+                        if ( $query_nt->$predicate ) {
+                            my $region_length = length $query_nt->$region; 
+                            my @count_n = $query_nt->$region =~ m/N+/i; 
+                            my $ratio = scalar @count_n/$region_length;
+                            if ( $ratio > 0.2 ){
+                                return 0
+                            }
+                            else {
+                                push @perfect_regions,$region;
+                            }
+                        }
+                        else {
+                            return 0;
+                        }
+                    }
+                }
+            }
+
+        }
+        $answer = 1 if (scalar @regions == scalar @perfect_regions);
+        return $answer;
+    }
+
+
+    # perfect means is_complete and also it has all FRW and CDR regions + those regions are without N (good quality)
+    method is_perfect {
+        my $answer      = 0;
+        my @regions     = (qw/ FWR1 FWR2 FWR3 CDR1 CDR2 /);
+        my @perfect_regions;
+        if ( $self->is_complete ) {
+            if ( $self->rendered_alignment && $self->rendered_alignment->query ) {
+                my $V = $self->rendered_alignment->query;
+                if ( $V->sub_regions_sequence && $V->sub_regions_translation ) {
+                    my $query_nt = $V->sub_regions_sequence;
+                    foreach my $region (@regions) {
+                        my $predicate = "has_" . $region;
+                        if ( $query_nt->$predicate ) {
+                            if ( $query_nt->$region =~ /N+/i ){
+                                return 0
+                            }
+                            else {
+                                push @perfect_regions,$region;
+                            }
+                        }
+                        else {
+                            return 0;
+                        }
+                    }
+                }
+            }
+
+        }
+        $answer = 1 if (scalar @regions == scalar @perfect_regions);
+        return $answer;
+    }
 
     method _infer_best_V {
         my $chain = 'N/A';
