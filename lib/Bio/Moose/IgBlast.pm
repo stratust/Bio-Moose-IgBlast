@@ -5,6 +5,7 @@ use Method::Signatures::Modifiers;
 class Bio::Moose::IgBlast {
     use MooseX::StrictConstructor;
     use Text::Brew qw(distance);
+    use Bio::Seq;
     use Data::Printer;
 
     has 'molecule'              => ( is => 'ro', isa => 'Str',  required => 1 );
@@ -123,7 +124,7 @@ class Bio::Moose::IgBlast {
 
         if ( $germ_nt && $germ_aa && $query_nt && $query_aa ) {
             if ( $self->is_almost_perfect ) {
-                $mismatches = $self->_mutation_relative_to_germiline_nt($query_nt, $germ_nt);
+                $mismatches = $self->_mutation_relative_to_germiline_nt($query_nt, $germ_nt, $query_aa, $germ_aa );
             }
         }
         return $mismatches;
@@ -155,34 +156,70 @@ class Bio::Moose::IgBlast {
     }
 
 
-    method _mutation_relative_to_germiline_nt (Object $query_nt, Object $germ_nt) {
+    method _mutation_relative_to_germiline_nt (Object $query_nt, Object $germ_nt, Object $query_aa, Object $germ_aa) {
         my @regions = (qw/ FWR1 CDR1 FWR2 CDR2 FWR3 /);
-        my @germline_array = ('N') x ( $germ_nt->FWR1_start - 1 );
+        
+        my @germline_array = ('N') x ( $germ_nt->FWR1_start - 1 ); # keep diff compared to germline
+        my @germline_array_aa = ('X') x (( $germ_nt->FWR1_start - 1 )/3);
+
+        my @query_array = @germline_array; # keep query sequence
+        my @query_array_aa = @germline_array_aa;
+
         my %hash_germline_regions;
+        my %hash_query_regions;
+
+        # aminoacid version
+        my %hash_germline_regions_aa;
+        my %hash_query_regions_aa;
+        
         push @{$hash_germline_regions{FWR1}}, @germline_array;
-        #say "=================================";
-        #say "QUERY: " . $self->query_id;
+        push @{$hash_query_regions{FWR1}}, @germline_array;
+        
         foreach my $r (@regions) {
             my $predicate = 'has_' . $r;
             next unless $germ_nt->$predicate && $query_nt->$predicate;
-            #say $r;
+            
             my ( $query, $germ ) = $self->_inspect_size( $query_nt->$r, $germ_nt->$r, $r );
-            my $germline_mutations = $self->_compare_string($query,$germ);
-            #say $germline_mutations;
-            #while ( $germline_mutations =~ /[ACGT]+/gi ) {
-            #    say $-[0];
-            # }
+            my ( $query_aa, $germ_aa ) = $self->_tranlaste( $query, $germ );
+
+            my $germline_mutations = $self->_compare_string($query,$germ, use_dots => 1);
+            my $query_sequence = $self->_compare_string($query,$germ, use_dots => 0 );
+ 
+            my $germline_mutations_aa = $self->_compare_string($query_aa, $germ_aa, use_dots => 1);
+            my $query_sequence_aa = $self->_compare_string($query_aa, $germ_aa, use_dots => 0 );
+            
             push @germline_array, split '', $germline_mutations;
-            push @{$hash_germline_regions{$r}}, split '', $germline_mutations;
+            push @query_array, split '', $query_sequence;
+    
+            push @germline_array_aa, split '', $germline_mutations_aa;
+            push @query_array_aa, split '', $query_sequence_aa;
+            
+            push @{ $hash_germline_regions{$r} }, split '', $germline_mutations;
+            push @{ $hash_query_regions{$r} },    split '', $query_sequence;
+
+            push @{ $hash_germline_regions_aa{$r} }, split '', $germline_mutations_aa;
+            push @{ $hash_query_regions_aa{$r} },    split '', $query_sequence_aa;
         }
         
-        return {germ_regions => \%hash_germline_regions, complete_germ => \@germline_array };
+        return {
+            germ_regions => \%hash_germline_regions, 
+            germ_regions_aa => \%hash_germline_regions_aa, 
+            complete_germ => \@germline_array,
+            complete_germ_aa => \@germline_array_aa,
+        };
     }
 
-    method _compare_string ($query,$germ) {
+
+    method _compare_string ($query, $germ, :$use_dots ) {
         my @g = split '', $germ;
         my @q = split '', $query;
-        my $result = join '', map { $g[$_] eq $q[$_] ? '.' : $q[$_] } 0 .. $#q;
+        my $result;
+        if ($use_dots){
+            $result = join '', map { $g[$_] eq $q[$_] ? '.' : $q[$_] } 0 .. $#q;
+        }
+        else {
+            $result = join '', map { $g[$_] eq $q[$_] ? $g[$_] : $q[$_] } 0 .. $#q;
+        }
         return $result;
     }
 
@@ -230,6 +267,19 @@ class Bio::Moose::IgBlast {
         return ($final_query, $final_germ);
     }
 
+    method _tranlaste ($query, $germ) {
+        my $query_obj = Bio::PrimarySeq->new(
+            -id => 'query',
+            -seq => $query,
+        );
+        my $germ_obj = Bio::PrimarySeq->new(
+            -id => 'germ',
+            -seq => $germ,
+        );
+        
+        return( $query_obj->translate->seq, $germ_obj->translate->seq );
+    }
+
     # Test mismatches after object contruction;
     sub BUILD { my $self = shift; $self->mismatches; }
 
@@ -244,7 +294,7 @@ class Bio::Moose::IgBlast {
                 my $r = quotemeta $query->sub_regions_sequence->FWR3;
 
                 # If heavy chain
-                if ( $self->chain_type =~ /gamma/i ) {
+                if ( $self->chain_type =~ /heavy/i ) {
 
                     if ( $query->sequence =~ /($r)(\S+)(TGGGG[ATCG])/i ) {
                         $cdr3_seq = $2 . $3."|";
@@ -302,7 +352,7 @@ class Bio::Moose::IgBlast {
 
                 my $r = quotemeta $query->sub_regions_translation->FWR3;
 
-                if ( $self->chain_type =~ /gamma/i ) {
+                if ( $self->chain_type =~ /heavy/i ) {
                     if ( $query->translation =~ /($r)(\S+)(WG)/i ) {
                         $cdr3_seq = $2 . $3. "|";
                     }
@@ -385,7 +435,7 @@ class Bio::Moose::IgBlast {
             my $r = $self->rearrangement_summary;
             if ( $r->top_V_match ) {
                 if ( $r->top_V_match =~ /IGH/i ) {
-                    $type = 'gamma';
+                    $type = 'heavy';
                 }
                 elsif ($r->top_V_match =~ /IGL/i){
                     $type = 'lambda';
@@ -421,7 +471,7 @@ class Bio::Moose::IgBlast {
                     if ( $self->chain_type =~ /kappa|lambda/i ) {
                         $answer = 1;
                     }
-                    elsif ( $self->chain_type =~ /gamma/i ) {
+                    elsif ( $self->chain_type =~ /heavy/i ) {
                         $answer = 1 if $r->top_D_match && $r->top_D_match ne 'N/A';
                     }
                 }
@@ -545,7 +595,7 @@ class Bio::Moose::IgBlast {
 
     method _infer_best_D {
         my $chain = 'N/A';
-        if ($self->chain_type =~ /gamma/i){
+        if ($self->chain_type =~ /heavy/i){
              my $r = $self->rearrangement_summary;
              $chain = $r->top_D_match if $r->top_D_match;
         }
