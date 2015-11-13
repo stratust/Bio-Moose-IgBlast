@@ -10,7 +10,7 @@ class Bio::Moose::IgBlast {
 
     has 'molecule'              => ( is => 'ro', isa => 'Str',  required => 1 );
     has 'version'               => ( is => 'ro', isa => 'Str',  required => 1 );
-    has 'query_id'              => ( is => 'ro', isa => 'Str',  required => 1 );
+    has 'query_id'              => ( is => 'rw', isa => 'Str',  required => 1 );
     has 'query_length'          => ( is => 'ro', isa => 'Int',  required => 0 );
     has 'database'              => ( is => 'ro', isa => 'Str',  required => 1 );
     has 'domain_classification' => ( is => 'ro', isa => 'Str',  required => 0 );
@@ -160,7 +160,7 @@ class Bio::Moose::IgBlast {
         my @regions = (qw/ FWR1 CDR1 FWR2 CDR2 FWR3 /);
         
         my @germline_array = ('N') x ( $germ_nt->FWR1_start - 1 ); # keep diff compared to germline
-        my @germline_array_aa = ('X') x (( $germ_nt->FWR1_start - 1 )/3);
+        my @germline_array_aa = ('X') x int(( $germ_nt->FWR1_start - 1 )/3);
 
         my @query_array = @germline_array; # keep query sequence
         my @query_array_aa = @germline_array_aa;
@@ -173,23 +173,26 @@ class Bio::Moose::IgBlast {
         my %hash_query_regions_aa;
         
         push @{$hash_germline_regions{FWR1}}, @germline_array;
+        push @{$hash_germline_regions_aa{FWR1}}, @germline_array_aa;
         push @{$hash_query_regions{FWR1}}, @germline_array;
+        push @{$hash_query_regions_aa{FWR1}}, @germline_array_aa;
         
         foreach my $r (@regions) {
             my $predicate = 'has_' . $r;
             next unless $germ_nt->$predicate && $query_nt->$predicate;
             
             my ( $query, $germ ) = $self->_inspect_size( $query_nt->$r, $germ_nt->$r, $r );
-            my ( $query_aa, $germ_aa ) = $self->_tranlaste( $query, $germ );
-
             my $germline_mutations = $self->_compare_string($query,$germ, use_dots => 1);
             my $query_sequence = $self->_compare_string($query,$germ, use_dots => 0 );
  
-            my $germline_mutations_aa = $self->_compare_string($query_aa, $germ_aa, use_dots => 1);
-            my $query_sequence_aa = $self->_compare_string($query_aa, $germ_aa, use_dots => 0 );
-            
+           
             push @germline_array, split '', $germline_mutations;
             push @query_array, split '', $query_sequence;
+ 
+            my ( $query_aa, $germ_aa ) = $self->_translate( $query, $germ );
+
+            my $germline_mutations_aa = $self->_compare_string($query_aa, $germ_aa, use_dots => 1);
+            my $query_sequence_aa = $self->_compare_string($query_aa, $germ_aa, use_dots => 0 );
     
             push @germline_array_aa, split '', $germline_mutations_aa;
             push @query_array_aa, split '', $query_sequence_aa;
@@ -203,9 +206,12 @@ class Bio::Moose::IgBlast {
         
         return {
             germ_regions => \%hash_germline_regions, 
+            query_regions => \%hash_query_regions, 
             germ_regions_aa => \%hash_germline_regions_aa, 
+            query_regions_aa => \%hash_query_regions_aa, 
             complete_germ => \@germline_array,
-            complete_germ_aa => \@germline_array_aa,
+            complete_query => \@query_array,
+            complete_query_aa => \@query_array_aa,
         };
     }
 
@@ -267,7 +273,7 @@ class Bio::Moose::IgBlast {
         return ($final_query, $final_germ);
     }
 
-    method _tranlaste ($query, $germ) {
+    method _translate ($query, $germ) {
         my $query_obj = Bio::PrimarySeq->new(
             -id => 'query',
             -seq => $query,
@@ -306,16 +312,7 @@ class Bio::Moose::IgBlast {
 
                 # If Iflight chain
                 elsif ( $self->chain_type =~ /kappa|lambda/i ) {
-
-                    if ( $self->database =~ /human/i ) {
-                        if ( $query->sequence =~ /($r)(\S+)(TT[CT]GG[TCA])/i ) {
-                            $cdr3_seq = $2 . $3."|";
-                        }
-                        elsif ( $query->sequence =~ /($r)(\S+)/i ) {
-                            $cdr3_seq = $2;
-                        }
-                    }
-                    elsif ( $self->database =~ /mouse/i ) {
+                    if ( $self->database =~ /mouse/i ) {
                         if ( $query->sequence =~ /($r)(\S+)([ACGT][ACGT][ACGT]GG[TCA])[ACTG][ACGT][ACGT]GG[TGCA](AC[ACTG]AA[AG]){0,1}/i ) {
                             $cdr3_seq = $2 . $3. "|";
                         }
@@ -323,7 +320,15 @@ class Bio::Moose::IgBlast {
                             $cdr3_seq = $2;
                         }
                     }
-
+                    # default human
+                    else {
+                        if ( $query->sequence =~ /($r)(\S+)(TT[CT]GG[TCA])/i ) {
+                            $cdr3_seq = $2 . $3."|";
+                        }
+                        elsif ( $query->sequence =~ /($r)(\S+)/i ) {
+                            $cdr3_seq = $2;
+                        }
+                    }
                 }
             }
         }
@@ -363,7 +368,16 @@ class Bio::Moose::IgBlast {
 
                 # If light chain
                 elsif ( $self->chain_type =~ /kappa|lambda/i ) {
-                    if ( $self->database =~ /human/i ) {
+                    if ( $self->database =~ /mouse/i ) {
+                        if ( $query->translation =~ /($r)(\S+)(\S{1}G)\S{1}G(TK){0,1}/i ) {
+                            $cdr3_seq = $2 . $3 . "|";
+                        }
+                        elsif ( $query->translation =~ /($r)(\S+)/i ) {
+                            $cdr3_seq = $2;
+                        }
+                    }
+                    # default human
+                    else {
                         if ( $query->translation =~ /($r)(\S+)(FG)/i ) {
                             $cdr3_seq = $2 . $3 . "|";
                         }
@@ -371,15 +385,6 @@ class Bio::Moose::IgBlast {
                             $cdr3_seq = $2;
                         }
                     }
-                    elsif ( $self->database =~ /mouse/i ) {
-                        if ( $query->translation =~ /($r)(\S+)(\S{1}G)\S{1}GTK/i ) {
-                            $cdr3_seq = $2 . $3 . "|";
-                        }
-                        elsif ( $query->translation =~ /($r)(\S+)/i ) {
-                            $cdr3_seq = $2;
-                        }
-                    }
-
                 }
             }
         }
